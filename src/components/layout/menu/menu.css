@@ -1,0 +1,25 @@
+.menunav {
+    background-color:#FFFFFF;
+    width: 100%;
+}
+.menunav .logo{
+    width: 20%;
+    margin: 0;
+}
+.menunav .logo img{
+    width: 90px;
+}
+.menunav .menu{
+    width: 80%;
+    justify-content: space-between;
+}
+.menunav .item{
+    color: #400040!important;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.menunav .item:hover{
+    text-decoration: underline;
+}
