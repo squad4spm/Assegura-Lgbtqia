@@ -2,6 +2,7 @@ import { Container} from "react-bootstrap";
 
 import { Menu } from "./menu/menu.js";
 import { Footer } from "./footer/footer.js";
+import { BtnAjude } from "./btnAjude/btnAjude.js";
 import "./layout.css"
 
 export const Layout = ({ children }) => {
@@ -9,6 +10,7 @@ export const Layout = ({ children }) => {
     <>
       <Menu />
       <Container fluid className="principal">{children}</Container>
+      <BtnAjude />
       <Footer />
     </>
   );
