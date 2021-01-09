@@ -29,7 +29,7 @@ export const Menu = () => {
       path: "casa-de-acolhimento"
     },
     {
-      label: "Localizacoes",
+      label: "Localizações",
       path: "localizacoes"
     },
   ];
