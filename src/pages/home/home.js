@@ -13,7 +13,7 @@ export default () => {
         <Row>
             <Col xs={2} className="left">left</Col>
             <Col xs={8} className="middle">
-                <div class="navbar">
+                <div class="circlenav">
                     <img src="./images/logoAssegura.png" alt="Logo assegura LGBTQIA+" />
                     <ul class="iconsM">
                         <li class="item">
