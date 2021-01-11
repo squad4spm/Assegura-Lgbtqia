@@ -1,0 +1,75 @@
+.left{
+    background-color: blue;
+    height: 100%;
+}
+.middle{
+    background-color: red;
+    height: 100%;
+}
+.right{
+    background-color: blue;
+    height: 100%;
+}
+
+.navbar {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    border-radius: 50%;
+    background-color: #fffafa;
+    margin-top: 260px;
+    margin-bottom: 260px;
+    margin-right: 290px;
+    margin-left: 290px;
+    position: relative;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2.75em;
+    font-weight: bold;
+    transition: 0.24s 0.2s;
+    border: 2px solid #fffafa;
+    animation: pulse 1.5s infinite running;
+    animation-delay: 1.5s;
+    z-index: 5;
+}
+
+/*Inicio da animação pulsante do botão principal*/
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.5);
+      transform: scale(1);
+    }
+    10% {
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+      transform: scale(1);
+    }
+    20% {
+      box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.4);
+      transform: scale(1);
+    }
+    30% {
+      box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.4);
+      transform: scale(1);
+    }
+    40% {
+      box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.3);
+      transform: scale(1);
+    }
+    50% {
+      box-shadow: 0 0 0 50px rgba(255, 255, 255, 0.3);
+      transform: scale(1);
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255, 255, 255, 0.2);
+      transform: scale(1);
+    }
+    65% {
+      box-shadow: 0 0 0 65px rgba(255, 255, 255, 0.1);
+      transform: scale(1);
+    }
+    100% {
+      box-shadow: 0 0 0 70px rgba(255, 255, 255, 0);
+      transform: scale(1);
+    }
+  }
+  /*Fim da animação pulsante do botão principal*/
