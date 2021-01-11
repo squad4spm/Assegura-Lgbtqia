@@ -1,8 +1,8 @@
 #botao_flutuante {
     background-color: #400040;
     color: rgb(255, 255, 255);
-    width: 140px;
-    height: 140px;
+    width: 80px;
+    height: 80px;
     display: flex;
     position: fixed;
     bottom: 10%;
