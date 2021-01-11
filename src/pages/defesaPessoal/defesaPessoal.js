@@ -1,18 +1,17 @@
 import "./defesaPessoal.css"
-import { Container } from "react-bootstrap";
-
 import img01 from "../../assets/images/Defesa.png";
 import img02 from "../../assets/images/Defesa_Pessoal.png";
 import img03 from "../../assets/images/imagemartigotrans.jpg";
 import img04 from "../../assets/images/defesa5.jpeg";
 import img05 from "../../assets/images/artigosemdiferenca.png";
 import img06 from "../../assets/images/defesa4.png";
+import { Container } from "react-bootstrap";
 
 export default () => {
   return (
-    <Container>
-        <section id="pg_defesa_pessoal_banner" >
-        <div class="jumbotron card card-image  d-block">
+    <Container fluid>
+        <section id="pg_defesa_pessoal_banner">
+        <div class="jumbotron card card-image d-block">
             <p class="mx-2 mb-4">Defesa Pessoal <br /> LGBTQIA+</p>
         </div>
       </section>
@@ -115,6 +114,6 @@ export default () => {
             </div>
         </div>
       </section>
-    </Container>
+      </Container>
   );
 };
