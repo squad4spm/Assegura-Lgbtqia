@@ -1,4 +1,9 @@
 /*primeira sectiom com imagem de fundo*/
+
+#pg_defesa_pessoal_banner .container-fluid {
+  padding-left: 0;
+}
+
 #pg_defesa_pessoal_banner .jumbotron.nomeSocial {
     background-image: url("../../assets/images/nomesocial.jpeg");
     text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
@@ -14,6 +19,7 @@
     background-size: cover;
     object-fit: cover;
     height: 500px;
+    width: 100%;
   }
   #pg_defesa_pessoal_banner .jumbotron p {
     text-align: right;

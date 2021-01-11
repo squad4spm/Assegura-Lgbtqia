@@ -7,9 +7,9 @@ import img03 from "../../assets/images/casa1.png";
 import img04 from "../../assets/images/artigo2.jpg";
 import img05 from "../../assets/images/translives5.png";
 
-export default () => {
+export default function nomeSocial(){
   return (
-    <Container>
+    <Container fluid>
       <section id="pg_defesa_pessoal_banner" >
         <div class="jumbotron card card-image d-block nomeSocial">
             <p class="mx-2 mb-4">Nome Social <br/> LGBTQIA+</p>
@@ -30,7 +30,7 @@ export default () => {
         </div>
       </section>
 
-      <section id="pg_defesa_pessoal_segundaClass" class="container-fluid segundaClass" >
+      <section id="pg_defesa_pessoal_segundaClass" class="container segundaClass" >
         <div class="container imagemNomeSocial">
             <div class="row">
               <div class="col-md-6 my-4 mb-4">
@@ -46,7 +46,7 @@ export default () => {
         </div>
       </section>
 
-      <section class="container-fluid terceiraClass">
+      <section class="container terceiraClass">
         <div class="container">
             <div class="row my-3">
                 <div class="col">
@@ -92,7 +92,7 @@ export default () => {
                     <img src={img04} class="mr-3 img-fluid" alt="Conheça a primeira Trans faixa-preta de Jiu-Jitsu" />
                     <h5 class="mt-0">Defensoria Pública de São Paulo </h5>
                     <p>Guia para retificação do registro civil de pessoas não-cisgêneras</p>
-                    <a class="btn btn-primary" target="_blank" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6771" role="button">Leia Mais</a>
+                   <a class="btn btn-primary" target="_blank" href="https://www.defensoria.sp.def.br/dpesp/Default.aspx?idPagina=6771" role="button">Leia Mais</a>
                 </div>
 
                 <div class="col-md-4">

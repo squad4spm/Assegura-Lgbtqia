@@ -9,7 +9,7 @@ export const Layout = ({ children }) => {
   return (
     <>
       <Menu />
-      <Container fluid className="principal">{children}</Container>
+      <div>{children}</div>
       <BtnAjude />
       <Footer />
     </>
