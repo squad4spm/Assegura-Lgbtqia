@@ -46,6 +46,7 @@
 
 #botao_flutuante:hover a {
     color: #400040;
+    cursor: pointer;
 }
 
 @media (max-width: 992px) {
