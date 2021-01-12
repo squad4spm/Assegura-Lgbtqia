@@ -14,11 +14,21 @@ import img07 from "../../assets/images/psicologhy.png";
 export default () => {
   return (
     <Container fluid>
-        <Row>
-            <Col xs={3} className="left">left</Col>
+        <Row id="bcg">
+            <Col xs={3} className="left">
+                <div class="descricaoH">
+                    <h2>Psicológico</h2>
+                    <p class="textoCards">
+                        Cadastro Para Psicólogos Voluntários
+                        <br />
+                        Cadastro Para Conseguir Atendimento  
+                    </p>
+                </div>
+            </Col>
+
             <Col xs={6} className="middle">
                 <div class="circlenav">
-                    <img src={imglogo} />
+                    <img src={imglogo} class="logo" />
                     <ul class="iconsM">
                         <li class="item">
                             <a href="defesaPessoal.php"><img src={img01} /></a>
@@ -44,7 +54,17 @@ export default () => {
                     </ul>
                 </div>
             </Col>
-            <Col xs={3} className="right">right</Col>
+
+            <Col xs={3} className="right">
+                <div class="descricaoA">
+                    <h2>Defesa Pessoal</h2>
+                    <p class="textoCards">
+                        Pesquisas mostram que uma pessoa treinada para responder adequadamente a um ataque, 
+                        pode até mesmo impedir que a agressão comece, pois, reagem ao perigo de forma mais assertiva e confiante, 
+                        aumentando as chances de evitar situações violentas ou enfrentá-las com segurança. 
+                    </p>
+                </div>
+            </Col>
         </Row>
     </Container>
   );
