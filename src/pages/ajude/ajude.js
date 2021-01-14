@@ -8,7 +8,7 @@ import img04 from "../../assets/images/ajude08.jpg";
 
 export default () => {
   return (
-    <Container>
+    <Container fluid>
     <section id="pg_defesa_pessoal_banner" >
         <div class="jumbotron card card-image  d-block ajude">
             <p class="mx-2 mb-4">Ajude Nossa <br /> Causa!</p>
