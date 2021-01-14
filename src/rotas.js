@@ -15,6 +15,7 @@ export default () => {
       <Route exact path="/ajude" component={Pages.ajude} />
       <Route exact path="/pages-login" component={Pages.login} />
       <Route exact path="/perfil" component={Pages.perfil} />
+      <Route exact path="/cadastro" component={Pages.cadastro} />
     </Switch>
   );
 }
