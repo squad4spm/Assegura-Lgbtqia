@@ -8,7 +8,7 @@ export default () => {
     <Form>
         <Container>
         
-            <Form.Label>Por Gentileza Preencha os Dados Abaixo Para Efetuar o Seu Cadastro</Form.Label>
+            <h1>Por Gentileza Preencha todos os Dados Abaixo:</h1>
 
             <Form.Row>
                 <Form.Group as={Col} controlId="Primeiro Nome">
@@ -70,13 +70,12 @@ export default () => {
                 <Form.Group as={Col}>
                     <Form.File id="exampleFormControlFile1" label="Escolha uma foto de perfil" />
                 </Form.Group>
-                <Form.Group as={Col} id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="Check me out" />
-                </Form.Group>
-            </Form.Row>
-            <Button variant="primary" type="submit">
-                    Submit
+                
+                <Button variant="dark" type="submit">
+                    Enviar
             </Button>
+            </Form.Row>
+            
         </Container>
     </Form>
   );
