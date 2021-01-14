@@ -30,7 +30,7 @@ export default function nomeSocial(){
         </div>
       </section>
 
-      <section id="pg_defesa_pessoal_segundaClass" class="container segundaClass" >
+      <section id="pg_defesa_pessoal_segundaClass" class="container-fluid segundaClass" >
         <div class="container imagemNomeSocial">
             <div class="row">
               <div class="col-md-6 my-4 mb-4">

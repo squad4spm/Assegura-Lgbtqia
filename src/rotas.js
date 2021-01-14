@@ -13,6 +13,7 @@ export default () => {
       <Route exact path="/casa-de-acolhimento" component={Pages.casaDeAcolhimento} />
       <Route exact path="/localizacoes" component={Pages.localizacoes} />
       <Route exact path="/ajude" component={Pages.ajude} />
+      <Route exact path="/pages-login" component={Pages.login} />
     </Switch>
   );
 }
