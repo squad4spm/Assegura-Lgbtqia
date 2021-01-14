@@ -1,15 +1,17 @@
 import React from 'react';
 import { Container, Form, Button, Row } from "react-bootstrap";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./login.css";
 
-import user from "../../assets/images/user.png";
+import user from "../../assets/images/userProfile.png";
 
-export default () => {
+export default ()  => {
   return(
-    <Container class="my-4 mx-5 ">
+    <Container class="my-4 mx-5 container-geral">
       <Row class="coluna no-gutters">
         <div class="col-lg-5">
             <img src= {user} class="img-fluid" alt="" />
+            <p>Não tem uma conta? <a href="#">Registre-se</a></p>
         </div>
         <div class="col-lg-7">
           <Form>
@@ -27,9 +29,8 @@ export default () => {
             <Form.Group controlId="formBasicCheckbox">
                 <Form.Check type="checkbox" label="Check me out"  />
             </Form.Group>
-            <Button variant="primary" type="submit">Enviar</Button>
+            <Button variant="dark" type="submit">Entrar</Button>
             <a href="#">Esqueceu a Senha?</a>
-            <p>Não tem uma conta? <a href="#">Registre-se</a></p>
           </Form>
         </div>
       </Row>
