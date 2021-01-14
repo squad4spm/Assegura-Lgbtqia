@@ -17,10 +17,8 @@ export default () => {
             <Button className="botaoEdit">Editar perfil</Button>
           </Col>
           
-          <Col xs={8} className="coluna2">
-                <br />
-              
-              <InputGroup>
+          <Col xs={8} className="coluna2">    
+              <InputGroup className="camposUsuario">
                 <InputGroup.Prepend>
                     <InputGroup.Text id="basic-addon1">Nome</InputGroup.Text>
                 </InputGroup.Prepend>
@@ -31,9 +29,7 @@ export default () => {
                 />
               </InputGroup>
 
-              <br />
-
-              <InputGroup>
+              <InputGroup className="camposUsuario">
                 <InputGroup.Prepend>
                     <InputGroup.Text id="basic-addon1">Idade</InputGroup.Text>
                 </InputGroup.Prepend>
@@ -44,9 +40,7 @@ export default () => {
                 />
               </InputGroup>
 
-              <br />
-
-              <InputGroup>
+              <InputGroup className="camposUsuario">
                 <InputGroup.Prepend>
                     <InputGroup.Text id="basic-addon1">Nome</InputGroup.Text>
                 </InputGroup.Prepend>
@@ -57,9 +51,7 @@ export default () => {
                 />
               </InputGroup>
 
-              <br />
-
-              <InputGroup>
+              <InputGroup className="camposUsuario">
                 <InputGroup.Prepend>
                     <InputGroup.Text id="basic-addon1">Nome</InputGroup.Text>
                 </InputGroup.Prepend>

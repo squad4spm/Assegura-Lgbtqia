@@ -1,6 +1,8 @@
 import "./localizacoes.css"
 import { Container } from "react-bootstrap";
 
+import { MapContainer } from "../../components/layout/maps/maps.js";
+
 import img01 from "../../assets/images/markerDefesa.png";
 import img02 from "../../assets/images/markerNome.png";
 import img03 from "../../assets/images/markerCasaAcolhimento.png";
@@ -9,7 +11,7 @@ import img05 from "../../assets/images/markerP.png";
 
 export default () => {
   return (
-    <Container>
+    <Container fluid>
       <section id="pg_localizacao">
         <div class="center">
             <div class="container">
@@ -27,7 +29,7 @@ export default () => {
                     </div>
                     
                     <div class="col-md-8">
-                        <div class="mapa" id="mapa"></div>
+                        <MapContainer />
                     </div>
                 </div>
             </div>
