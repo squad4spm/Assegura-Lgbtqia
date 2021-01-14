@@ -1,0 +1,28 @@
+.linha{
+    padding: 10px;
+}
+.coluna1{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.coluna2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #400040;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.profileImg{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+.botaoEdit{
+    background-color: #400040 !important;
+    width: 250px;
+    height: 40px;
+    border: 1px solid black !important;
+    border-radius: 5px;
+}

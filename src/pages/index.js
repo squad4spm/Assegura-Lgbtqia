@@ -6,3 +6,4 @@ export { default as direitosLgbtqia } from "./direitosLgbtqia/direitosLgbtqia.js
 export { default as casaDeAcolhimento } from "./casaDeAcolhimento/casaDeAcolhimento.js";
 export { default as localizacoes } from "./localizacoes/localizacoes.js";
 export { default as ajude } from "./ajude/ajude.js";
+export { default as perfil } from "./userProfile/userProfile.js";
