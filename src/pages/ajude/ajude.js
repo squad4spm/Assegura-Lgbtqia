@@ -1,13 +1,15 @@
 import "./ajude.css"
-import { Container } from "react-bootstrap";
+import React from 'react';
+import { Container, Form, Button, Row, Col } from "react-bootstrap";
 
 import img01 from "../../assets/images/ajude02.jpg";
 import img02 from "../../assets/images/ajude04.jpg";
 import img03 from "../../assets/images/ajude05.jpg";
 import img04 from "../../assets/images/ajude08.jpg";
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-  return (
+    return (
     <Container fluid>
     <section id="pg_defesa_pessoal_banner" >
         <div class="jumbotron card card-image  d-block ajude">
@@ -20,8 +22,8 @@ export default () => {
             <div class="col-md-6">
                 <p>Com o intuito de ajudar as pessoas da comunidade LGBTQIA+ em situação de vulnerabilidade social, criamos meios que você pode de forma totalmente voluntária ajudar nessa missão tão importante que é vivermos em um país inclusivo onde todas as pessoas podem expressar suas vontades normalmente sem serem ofendidas pela sua orientação sexual.</p>
             </div>
-            <div class="col-md-6">
-                <img src={img01} class="img-fluid"/>
+            <div class="col-md-6">""
+                <img src={img01} class="img-fluid" alt=""/>
             </div>
         </div>
     </section>
@@ -37,7 +39,7 @@ export default () => {
             <div>
                 <div class="row py-4">
                     <div class="col-md-6">
-                        <img src={img02} class="img-fluid" />
+                        <img src={img02} class="img-fluid" alt=""/>
                     </div>
                     <div class="col my-5">
                         <p>Por que ajudar? O Brasil é o país que mais sofre com a violência contra a comunidade LGBTQIA+, para mudarmos esse triste cenário que tal unirmos forças para combatermos essa realidade? O ASSEGURA LGBTQIA+ conta com sua contribuição para cada vez mais vivermos em um país mais inclusivo e melhor para todos :D</p>
@@ -48,64 +50,83 @@ export default () => {
     </section>
 
     <section class="container-fluid terceiraClass">
-        <div class="container">
-            <form method="post" action="">
-                <h1>Seja um Voluntário:</h1>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="nome">Nome</label>
-                        <input name="nome" type="text" class="form-control" placeholder="Primeiro Nome" id="nome" />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="sobreNome">Sobrenome</label>
-                        <input name="sobreNome" type="text" class="form-control" placeholder="Sobrenome" id="sobreNome" />
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="email">E-mail</label>
-                        <input name="email" type="text" class="form-control" id="email" />
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="senha">Senha</label>
-                        <input name="senha" type="text" class="form-control" id="senha" />
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="endereco">Endereço</label>
-                    <input name="endereco" type="text" class="form-control" id="endereco" placeholder="Ex: Rua Maria Joana 123, Bairro x...." />
-                </div>
-                <div class="form-group">
-                    <label for="complemeto">Complemento</label>
-                    <input name="complemento" type="text" class="form-control" id="complemento" placeholder="Apartamento, Studio, ou Piso" />
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="cidade">Cidade de Residência</label>
-                        <input name="cidade" type="text" class="form-control" id="cidade" />
-                </div>
-                <div class="form-group col-md-4">
-                    <label for="estado">Estado de Nascimento</label>
-                    <input name="estado" type="text" class="form-control" id="estado" />
-                </div>
-                <div class="form-group col-md-2">
-                    <label for="cep">CEP</label>
-                    <input name="cep" type="number" class="form-control" id="cep" />
-                </div>
-            </div>
-            <div class="form-group">
-            <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck" />
-                    <label class="form-check-label" for="gridCheck">
-                    Verificar
-                </label>
-                </div>
-            </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
-        </div>
-    </section>
+    <Form>
+        <Container>
+        
+            <h1>Seja um Voluntário dos nossos parceiros:</h1>
 
+            <Form.Row>
+                <Form.Group as={Col} controlId="Primeiro Nome">
+                    <Form.Label>Nome</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu nome" />
+                </Form.Group>
+
+                <Form.Group as={Col} controlId="Sobrenome">
+                    <Form.Label>Sobrenome</Form.Label>
+                    <Form.Control type="text" placeholder="Digite seu sobrenome" />
+                </Form.Group>
+            </Form.Row>
+            <Form.Group controlId="formGridAddress1">
+                <Form.Label>Endereço</Form.Label>
+                <Form.Control placeholder="Ex: Rua xxxx 1234" />
+            </Form.Group>
+
+            <Form.Group controlId="formGridAddress2">
+                <Form.Label>Complemento</Form.Label>
+                <Form.Control placeholder="Apartamento, studio, ou piso, sítio" />
+            </Form.Group>
+
+            <Form.Row>
+                <Form.Group as={Col} controlId="formGridCity">
+                    <Form.Label>Cidade</Form.Label>
+                    <Form.Control placeholder="Digite sua cidade"></Form.Control>
+                </Form.Group>
+
+                <Form.Group as={Col} controlId="formGridZip">
+                    <Form.Label>CEP</Form.Label>
+                    <Form.Control placeholder="0000-000"></Form.Control>
+                </Form.Group>
+            </Form.Row>
+
+            <Form.Row>
+            <Form.Group as={Col}>
+                    <Form.Label>Voluntário</Form.Label>
+                    <Form.Control as="select" defaultValue="Escolha...">
+                        <option>Escolha...</option>
+                        <option>Voluntário 1</option>
+                        <option>Voluntário 2</option>
+                        <option>Voluntário 3</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col}>
+                    <Form.Label>Área</Form.Label>
+                    <Form.Control as="select" defaultValue="Escolha...">
+                        <option>Escolha...</option>
+                        <option>Área 1</option>
+                        <option>Área 2</option>
+                        <option>Área 3</option>
+                    </Form.Control>
+                </Form.Group>
+                <Form.Group as={Col}>
+                    <Form.Label>Parceiro</Form.Label>
+                    <Form.Control as="select" defaultValue="Escolha...">
+                        <option>Escolha...</option>
+                        <option>Parceiro 2</option>
+                        <option>Parceiro 3</option>
+                        <option>Parceiro 4</option>
+                    </Form.Control>
+                </Form.Group>
+            </Form.Row>
+            
+            <Form.Row>                
+                <Button type="submit" className="btn-ajuda">
+                    Enviar
+            </Button>
+            </Form.Row>
+            
+        </Container>
+    </Form>
+    </section>
     <section class="container-fluid quartaClass">
         <div class="container">
             <div class="row my-3">
@@ -145,6 +166,6 @@ export default () => {
             </div>
         </div>
     </section>
-    </Container>
+    </Container >
   );
 };

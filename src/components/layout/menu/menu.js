@@ -1,5 +1,6 @@
 import { Navbar, Nav, NavbarBrand, Container } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
+import "./menuref.css";
 import "./menu.css";
 import logo from "../../../assets/images/logoAssegura-250px.png";
 
@@ -35,7 +36,7 @@ export const Menu = () => {
   ];
 
   return (
-    <Navbar className="menunav" expand="lg">
+    <Navbar className="menunav" expand="xl">
       <Container>
 
         <Navbar.Brand className="logo">
