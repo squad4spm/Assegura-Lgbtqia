@@ -116,6 +116,7 @@
   transition: transform 0.4s 0.08s, z-index 0s 0.5s;
   transform: scale(1);
   z-index: 1;
+  cursor: pointer;
 }
 
 .circlenav .iconsM li {
@@ -152,6 +153,7 @@ transition-delay: 0.02s;
   transform: rotate(623.6deg);
   background-color: #fffafa;
   border: 3px solid #9400d3;
+  cursor: pointer;
 }
 /*Fim do item defesa pessoal*/
 
@@ -166,6 +168,7 @@ transition-delay: 0.02s;
   transform: rotate(572.2deg);
   background-color: #fffafa;
   border: 3px solid #a0522d;
+  cursor: pointer;
 }
 /*Fim do item nome social*/
 
@@ -180,6 +183,7 @@ transition-delay: 0.02s;
   transform: rotate(520.8deg);
   background-color: #fffafa;
   border: 3px solid #00ffff;
+  cursor: pointer;
 }
 /*Fim do item localizaçõoes*/
 
@@ -194,6 +198,7 @@ transition-delay: 0.02s;
   transform: rotate(469.4deg);
   background-color: #fffafa;
   border: 3px solid #7cfc00;
+  cursor: pointer;
 }
 /*Fim do item quer ajudar*/
 
@@ -208,6 +213,7 @@ transition-delay: 0.02s;
   transform: rotate(418deg);
   background-color: #fffafa;
   border: 3px solid #0000ff;
+  cursor: pointer;
 }
 /*fim do item casas de acolhimento*/
 
@@ -222,6 +228,7 @@ transition-delay: 0.02s;
   transform: rotate(366.6deg);
   background-color: #fffafa;
   border: 3px solid #ff0000;
+  cursor: pointer;
 }
 /*Fim do item juridico*/
 
@@ -236,6 +243,7 @@ transition-delay: 0.02s;
   transform: rotate(315.2deg);
   background-color: #fffafa;
   border: 3px solid #ffff00;
+  cursor: pointer;
 }
 /*Fim do item psicológico*/
 
