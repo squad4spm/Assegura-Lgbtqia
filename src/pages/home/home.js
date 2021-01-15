@@ -1,6 +1,7 @@
 import "./home.css"
 import { Container, Col, Row } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
+import CarrosselHome from './carrosselHome.js';
 
 import imglogo from "../../assets/images/logoAssegura.png";
 
@@ -136,6 +137,9 @@ export default () => {
                     </p>
                 </div>
             </Col>
+            <Row id="carrosselHome">
+                <CarrosselHome />
+            </Row>
         </Row>
     </Container>
   );
