@@ -40,7 +40,7 @@ export const Menu = () => {
       <Container>
 
         <Navbar.Brand className="logo">
-          <img src={logo} alt='logo' />
+          <img src={logo} alt='logo' id="logo" onClick={() => history.push(`/`)} />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="menu-topo" />

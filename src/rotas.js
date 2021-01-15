@@ -5,7 +5,7 @@ import * as Pages from "./pages"
 export default () => {
   return (
     <Switch>
-      <Route exact path="/home" component={Pages.home} />
+      <Route exact path="/" component={Pages.home} />
       <Route exact path="/defesa-pessoal" component={Pages.defesaPessoal} />
       <Route exact path="/nome-social" component={Pages.nomeSocial} />
       <Route exact path="/atendimento-psicologico" component={Pages.atendimentoPsicologico} />

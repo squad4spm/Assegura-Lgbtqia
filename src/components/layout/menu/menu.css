@@ -23,3 +23,6 @@
 .menunav .item:hover{
     text-decoration: underline;
 }
+#logo{
+    cursor: pointer;
+}
