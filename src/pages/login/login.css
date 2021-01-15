@@ -39,3 +39,8 @@
     border-radius: 30px !important;
     margin: 7px !important;
 }
+@media(max-width:500px){
+#botao_flutuante{
+    display: none !important;
+}
+}

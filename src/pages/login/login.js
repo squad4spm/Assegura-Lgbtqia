@@ -9,7 +9,7 @@ import user from "../../assets/images/userProfile.png";
 
 export default ()  => {
   return(
-    <Container class="my-4 mx-5 container-geral">
+    <Container class="my-4 mx-5">
       <Row class="coluna no-gutters">
         <div class="col-lg-5">
             <img src= {user} class="img-fluid" alt="" />
