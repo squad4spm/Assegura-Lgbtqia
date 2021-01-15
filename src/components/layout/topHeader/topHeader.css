@@ -1,5 +1,13 @@
 #topmenu{
     width: 100%; 
-    height: 10px; 
+    height: 25px;
     background: #400040;
+}
+
+#colLeft{
+    text-align: start;
+}
+
+#colRight{
+    text-align: end;
 }
