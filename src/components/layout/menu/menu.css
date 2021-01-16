@@ -26,3 +26,20 @@
 #logo{
     cursor: pointer;
 }
+
+.nav-item {
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    button.navbar-toggler {
+        background-color: #400040;
+        border-radius: 1px solid #fff;
+        color: #fff;
+        padding: 10px 15px;
+    }
+    .nav-item .nav-link {
+        border-top: 1px solid #400040;
+    }
+
+}

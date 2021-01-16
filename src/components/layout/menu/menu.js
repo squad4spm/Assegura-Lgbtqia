@@ -46,7 +46,7 @@ export const Menu = () => {
         <Navbar.Toggle aria-controls="menu-topo" />
 
         <Navbar.Collapse id="menu-topo">
-          <Nav className="menu ml-auto">
+          <Nav className="menu m-auto">
 
             {menuItens.map((iten) => (
               <Nav.Item>
