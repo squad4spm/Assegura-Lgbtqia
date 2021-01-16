@@ -18,3 +18,16 @@
 .form-file, .form-file-label label {
     margin-left: 100px!important;
 }
+
+
+.form-row img {
+    vertical-align: middle !important;
+    border-style: none !important;
+    justify-content: center !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    margin: 0 auto !important;
+    width: 250px !important;
+    height: 250px !important;
+    margin-bottom: 20px !important;
+}

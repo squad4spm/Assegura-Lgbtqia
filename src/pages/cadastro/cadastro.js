@@ -3,12 +3,14 @@ import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import "./cadastro.css";
 
 
+
 export default () => {
   return(
+      
     <Form>
         <Container>
         
-            <h1>Por gentileza preencha todos os dados abaixo:</h1>
+            <h1>Por gentileza preencha todos os dados abaixo:</h1>            
 
             <Form.Row>
                 <Form.Group as={Col} controlId="Primeiro Nome">
@@ -94,5 +96,6 @@ export default () => {
                 </Button>
         </Container>
     </Form>
+
   );
 };
