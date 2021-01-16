@@ -1,17 +1,59 @@
-import React from 'react';
+import { React, useRef, useState, useEffect }from 'react';
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import "./cadastro.css";
 
 
-
 export default () => {
-  return(
+   const [imagem, setimagem] = useState();
+   const [preview, setPreview] = useState();
+   const fileInputRef = useRef();
+    
+   useEffect(() => {
+    if (imagem){
+        const reader = new FileReader();
+        reader.onloadend = () => {
+            setPreview(reader.result);
+        };
+        reader.readAsDataURL(imagem);
+    } else {
+        setPreview(null);
+    }
+   }, [imagem])
+    return(
       
     <Form>
         <Container>
         
             <h1>Por gentileza preencha todos os dados abaixo:</h1>            
+            <div className={StyleSheet.container}>
+                <Form>
+                    {preview ? (
 
+                    <img src={preview} class="img-fluid" onClick={() => { 
+                        setimagem(null);
+                    }}/> 
+                    
+                    ) : (
+
+                    <button onClick={(Event) => {
+                        Event.preventDefault();
+                        fileInputRef.current.click();
+                    }}>Inserir Imagem</button> )}
+                    <input 
+                        type="file" 
+                        style={{ display: "none"}} 
+                        ref={fileInputRef} 
+                        accept="image/*"
+                        onChange={(Event) => {
+                            const file = Event.target.files[0];
+                            if (file) {
+                                setimagem(file);
+                            }else{
+                                setimagem(null);
+                            }
+                        }}/>
+                </Form>
+            </div>
             <Form.Row>
                 <Form.Group as={Col} controlId="Primeiro Nome">
                     <Form.Label>Nome:</Form.Label>

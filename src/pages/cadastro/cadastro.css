@@ -19,8 +19,7 @@
     margin-left: 100px!important;
 }
 
-
-.form-row img {
+.img, button {
     vertical-align: middle !important;
     border-style: none !important;
     justify-content: center !important;
@@ -30,4 +29,14 @@
     width: 250px !important;
     height: 250px !important;
     margin-bottom: 20px !important;
+}
+
+.container div form img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: fill;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
