@@ -15,3 +15,6 @@
 .form-control-file, .form-control-range {
     width: 50px !important;
 }
+.form-file, .form-file-label label {
+    margin-left: 100px!important;
+}
