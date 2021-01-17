@@ -11,8 +11,8 @@ export const TopHeader = () => {
 
   return (
   <Container fluid id="topmenu">
-    <Row>
-      <Col xs={8} id="colLeft">
+    <Row id="rowTop">
+      <Col xs={6} id="colLeft">
         <IconContext.Provider value={{ color: "white", size: "1.3em" }}>
           <FaFacebookSquare id="iconsLeft" onClick={() => window.open('https://pt-br.facebook.com/')} />
           <FaInstagramSquare id="iconsLeft" onClick={() => window.open('https://www.instagram.com/')} />
@@ -21,7 +21,7 @@ export const TopHeader = () => {
         </IconContext.Provider>
       </Col>
       
-      <Col xs={4} id="colRight">
+      <Col xs={6} id="colRight">
         <IconContext.Provider value={{ color: "white" }}>
           Faça seu login
           <FaUser id="iconsRight" onClick={() => history.push(`/pages-login`)} />
