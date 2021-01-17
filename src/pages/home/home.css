@@ -520,5 +520,16 @@ transition-delay: 0.02s;
 .textoCards {
   font-size: 16px;
   line-height: 20px;
+  color: black;
+}
+
+.titleCards {
+  font-size: 25px;
+  line-height: 20px;
+  color: black;
+}
+
+#topText{
+  top: 0;
 }
 /*Cards mobile*/

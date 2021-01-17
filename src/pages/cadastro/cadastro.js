@@ -64,6 +64,11 @@ export default () => {
                     <Form.Label>Sobrenome:</Form.Label>
                     <Form.Control type="text" placeholder="Digite seu sobrenome" />
                 </Form.Group>
+
+                <Form.Group as={Col} controlId="Sobrenome">
+                    <Form.Label>Data de nascimento:</Form.Label>
+                    <Form.Control type="text" placeholder="DD/MM/AAAA" />
+                </Form.Group>
             </Form.Row>
             <Form.Row>
                 <Form.Group as={Col} controlId="formGridEmail">

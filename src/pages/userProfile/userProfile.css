@@ -1,5 +1,5 @@
 .linha{
-    padding: 10px;
+    padding: 10px;  
 }
 .coluna1{
     align-items: center;
@@ -9,7 +9,7 @@
 .coluna2{
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     background-color: #400040;
     border: 2px solid black;
     border-radius: 10px;
@@ -25,8 +25,9 @@
     height: 40px;
     border: 1px solid black !important;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.camposUsuario{
-    margin-top: 20px;
+#formLabel{
+    color: white;
 }
