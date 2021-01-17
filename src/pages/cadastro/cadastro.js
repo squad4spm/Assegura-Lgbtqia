@@ -22,7 +22,7 @@ export default () => {
     return(
       
     <Form>
-        <Container>
+        <Container id="contaCadastro">
         
             <h1>Por gentileza preencha todos os dados abaixo:</h1>            
             <div className={StyleSheet.container}>
@@ -38,7 +38,7 @@ export default () => {
                     <button onClick={(Event) => {
                         Event.preventDefault();
                         fileInputRef.current.click();
-                    }}>Inserir Imagem</button> )}
+                    }} className="imgBtn">Inserir Imagem</button> )}
                     <input 
                         type="file" 
                         style={{ display: "none"}} 
@@ -76,7 +76,7 @@ export default () => {
                     <Form.Control as="select" defaultValue="Choose...">
                         <option>Escolha...</option>
                         <option>Voluntário</option>
-                        <option>Normal</option>
+                        <option>Parceiro</option>
                     </Form.Control>
                 </Form.Group>
             </Form.Row>
@@ -101,13 +101,8 @@ export default () => {
             <Form.Row>
                 <Form.Group as={Col} controlId="formGridAddress2">
                     <Form.Label>Complemento:</Form.Label>
-                    <Form.Control placeholder="Apartmento, studio, or piso, síto" />
+                    <Form.Control placeholder="Apartmento, studio, piso ou sitio" />
                 </Form.Group>
-
-                <Form.Group as={Col}>
-                    <Form.File id="exampleFormControlFile1" label="Escolha uma foto de perfil" />
-                </Form.Group>
-                
             </Form.Row>
 
             <Form.Row>
@@ -134,8 +129,8 @@ export default () => {
             
             
             <Button variant="dark" type="submit" >
-                    Enviar
-                </Button>
+                Enviar
+            </Button>
         </Container>
     </Form>
 
