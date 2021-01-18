@@ -1,4 +1,5 @@
 import { React, useRef, useState, useEffect }from 'react';
+import {MyContext} from '../../contexts/MyContext';
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import "./cadastro.css";
 
