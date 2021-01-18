@@ -38,8 +38,12 @@
         color: #fff;
         padding: 10px 15px;
     }
-    .nav-item .nav-link {
+    .nav-item {
         border-top: 1px solid #400040;
+    }
+
+   .nav-item:nth-child(6) {
+        border-bottom: 1px solid #400040;
     }
 
 }
