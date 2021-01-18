@@ -1,8 +1,10 @@
 import "./home.css"
 import imgLogoCard from "../../assets/images/logoAssegura-250px.png";
 import Carousel from 'react-bootstrap/Carousel'
+import { useHistory } from 'react-router-dom';
 
 export const CarrosselHome = () => {
+    const history = useHistory();
   
     return (
         <Carousel>
@@ -10,7 +12,7 @@ export const CarrosselHome = () => {
                 <img src={imgLogoCard} alt="" />
             </Carousel.Item>
             
-            <Carousel.Item className="cardDescricaoD">
+            <Carousel.Item className="cardDescricaoD" onClick={() => history.push(`/${'defesa-pessoal'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Defesa pessoal</h2>
                     <p class="textoCards">
@@ -21,7 +23,7 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
             
-            <Carousel.Item className="cardDescricaoN">
+            <Carousel.Item className="cardDescricaoN" onClick={() => history.push(`/${'nome-social'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Nome social</h2>
                     <p class="textoCards">
@@ -33,7 +35,7 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item className="cardDescricaoL">
+            <Carousel.Item className="cardDescricaoL" onClick={() => history.push(`/${'localizacoes'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Localizações</h2>
                     <p class="textoCards">
@@ -46,7 +48,7 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item className="cardDescricaoP">
+            <Carousel.Item className="cardDescricaoP" onClick={() => history.push(`/${'atendimento-psicologico'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Psicológico</h2>
                     <p class="textoCards">
@@ -57,7 +59,7 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item className="cardDescricaoJ">
+            <Carousel.Item className="cardDescricaoJ" onClick={() => history.push(`/${'direitos-lgbtqia'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Direitos Lgbtqia+</h2>
                     <p class="textoCards">
@@ -68,7 +70,7 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item className="cardDescricaoC">
+            <Carousel.Item className="cardDescricaoC" onClick={() => history.push(`/${'casa-de-acolhimento'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Casa de acolhimento</h2>
                     <p class="textoCards">
@@ -77,7 +79,7 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item className="cardDescricaoA">
+            <Carousel.Item className="cardDescricaoA" onClick={() => history.push(`/${'ajude'}`)}>
                 <Carousel.Caption id="topText">
                     <h2 class="titleCards">Ajudar</h2>
                     <p class="textoCards">
