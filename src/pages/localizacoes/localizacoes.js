@@ -18,7 +18,7 @@ export default () => {
         <div class="center">
             <div class="container">
                 <div class="row my-5">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                         <Dropdown>
                           <Dropdown.Toggle id="dropdown-basic">
                             <img src={img01} alt="" width="50px" />Defesa pessoal
@@ -85,7 +85,7 @@ export default () => {
                         </Dropdown>
                     </div>
                     
-                    <div class="col-md-9">
+                    <div class="col-md-8 google-maps">
                     <iframe src="https://www.google.com/maps/d/embed?mid=1vF4oeGJEHx0F0Xt6MwO1CbRC_fud4VuW" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
