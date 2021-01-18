@@ -1,33 +1,96 @@
-import { React, useRef, useState, useEffect }from 'react';
+import { React, useRef, useState, useEffect, useContext}from 'react';
 import {MyContext} from '../../contexts/MyContext';
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 import "./cadastro.css";
 
 
 export default () => {
-   const [imagem, setimagem] = useState();
+   const [imagemM, setimagem] = useState();
    const [preview, setPreview] = useState();
    const fileInputRef = useRef();
     
    useEffect(() => {
-    if (imagem){
+    if (imagemM){
         const reader = new FileReader();
         reader.onloadend = () => {
             setPreview(reader.result);
         };
-        reader.readAsDataURL(imagem);
+        reader.readAsDataURL(imagemM);
     } else {
         setPreview(null);
     }
-   }, [imagem])
-    return(
-      
-    <Form>
+   }, [imagemM])
+    
+   /* ------ ------ */
+   
+   const {toggleNav,registerUser} = useContext(MyContext);
+    const initialState = {
+        userInfo:{
+            nome:'',
+            sobrenome:'',
+            dataNascimento:'',
+            email:'',
+            tipo:'',
+            senha:'',
+            endereco:'',
+            complemento:'',
+            cidade:'',
+            estado:'',
+            cep:'',
+            imagem:'',
+        },
+        errorMsg:'',
+        successMsg:'',
+    }
+    const [state,setState] = useState(initialState);
+
+    // On Submit the Registration Form
+    const submitForm = async (event) => {
+        event.preventDefault();
+        const data = await registerUser(state.userInfo);
+        if(data.success){
+            setState({
+                ...initialState,
+                successMsg:data.message,
+            });
+        }
+        else{
+            setState({
+                ...state,
+                successMsg:'',
+                errorMsg:data.message
+            });
+        }
+    }
+
+    // On change the Input Value (nome, email, senha)
+    const onChangeValue = (e) => {
+        setState({
+            ...state,
+            userInfo:{
+                ...state.userInfo,
+                [e.target.name]:e.target.value
+            }
+        });
+    }
+    
+    // Show Message on Success or Error
+    let successMsg = '';
+    let errorMsg = '';
+    if(state.errorMsg){
+        errorMsg = <div className="error-msg">{state.errorMsg}</div>;
+    }
+    if(state.successMsg){
+        successMsg = <div className="success-msg">{state.successMsg}</div>;
+    }
+
+   return(  
+    <Form onSubmit={submitForm} noValidate>
         <Container id="contaCadastro">
         
             <h1>Por gentileza preencha todos os dados abaixo:</h1>            
             <div className={StyleSheet.container}>
-                <Form>
+                <div>
                     {preview ? (
 
                     <img src={preview} class="img-fluid" onClick={() => { 
@@ -53,33 +116,33 @@ export default () => {
                                 setimagem(null);
                             }
                         }}/>
-                </Form>
+                </div>
             </div>
             <Form.Row>
-                <Form.Group as={Col} controlId="Primeiro Nome">
+                <Form.Group as={Col}>
                     <Form.Label>Nome:</Form.Label>
-                    <Form.Control type="text" placeholder="Digite seu nome" />
+                    <Form.Control name="nome" id="nome" type="text" placeholder="Digite seu nome" value={state.userInfo.nome} onChange={onChangeValue} />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="Sobrenome">
+                <Form.Group as={Col}>
                     <Form.Label>Sobrenome:</Form.Label>
-                    <Form.Control type="text" placeholder="Digite seu sobrenome" />
+                    <Form.Control name="sobrenome" id="sobrenome" type="text" placeholder="Digite seu sobrenome" value={state.userInfo.sobrenome} onChange={onChangeValue} />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="Sobrenome">
+                <Form.Group as={Col}>
                     <Form.Label>Data de nascimento:</Form.Label>
-                    <Form.Control type="text" placeholder="DD/MM/AAAA" />
+                    <Form.Control name="dataNascimento" id="dataNascimento" type="text" placeholder="DD/MM/AAAA" value={state.userInfo.dataNascimento} onChange={onChangeValue} />
                 </Form.Group>
             </Form.Row>
             <Form.Row>
-                <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Group as={Col}>
                     <Form.Label>Email:</Form.Label>
-                    <Form.Control type="email" placeholder="Digite seu email" />
+                    <Form.Control name="email" id="email" type="text" placeholder="Digite seu email" value={state.userInfo.email} onChange={onChangeValue} />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridState">
+                <Form.Group as={Col}>
                     <Form.Label>Tipo de cadastro:</Form.Label>
-                    <Form.Control as="select" defaultValue="Choose...">
+                    <Form.Control name="tipo" id="tipo" type="text" as="select" defaultValue="Choose..." value={state.userInfo.tipo} onChange={onChangeValue}>
                         <option>Escolha...</option>
                         <option>Voluntário</option>
                         <option>Parceiro</option>
@@ -88,38 +151,38 @@ export default () => {
             </Form.Row>
 
             <Form.Row>
-                <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Group as={Col}>
                     <Form.Label>Senha:</Form.Label>
-                    <Form.Control type="password" placeholder="Digite sua senha" />
+                    <Form.Control name="senha" id="senha" type="password" placeholder="Digite sua senha" value={state.userInfo.senha} onChange={onChangeValue} />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridPassword">
+                <Form.Group as={Col}>
                     <Form.Label>Confirme a senha:</Form.Label>
                     <Form.Control type="password" placeholder="Digite sua senha" />
                 </Form.Group>
             </Form.Row>
 
-            <Form.Group controlId="formGridAddress1">
+            <Form.Group>
                 <Form.Label>Endereço:</Form.Label>
-                <Form.Control placeholder="Ex: Rua xxxx 1234" />
+                <Form.Control name="endereco" id="endereco" type="text" placeholder="Ex: Rua xxxx 1234" value={state.userInfo.endereco} onChange={onChangeValue} />
             </Form.Group>
             
             <Form.Row>
-                <Form.Group as={Col} controlId="formGridAddress2">
+                <Form.Group as={Col}>
                     <Form.Label>Complemento:</Form.Label>
-                    <Form.Control placeholder="Apartmento, studio, piso ou sitio" />
+                    <Form.Control name="complemento" id="complemento" type="text" placeholder="Apartmento, studio, piso ou sitio" value={state.userInfo.complemento} onChange={onChangeValue} />
                 </Form.Group>
             </Form.Row>
 
             <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
+                <Form.Group as={Col}>
                     <Form.Label>Cidade:</Form.Label>
-                    <Form.Control placeholder="Digite sua cidade"></Form.Control>
+                    <Form.Control name="cidade" id="cidade" type="text" placeholder="Digite sua cidade" value={state.userInfo.cidade} onChange={onChangeValue}></Form.Control>
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridState">
+                <Form.Group as={Col}>
                     <Form.Label>Estado:</Form.Label>
-                    <Form.Control as="select" defaultValue="Choose...">
+                    <Form.Control name="estado" id="estado" type="text" as="select" defaultValue="Choose..." value={state.userInfo.estado} onChange={onChangeValue}>
                         <option>Escolha...</option>
                         <option>São Paulo</option>
                         <option>Rio de Janeiro</option>
@@ -127,12 +190,14 @@ export default () => {
                     </Form.Control>
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="formGridZip">
+                <Form.Group as={Col}>
                     <Form.Label>CEP :</Form.Label>
-                    <Form.Control placeholder="0000-000"></Form.Control>
+                    <Form.Control name="cep" id="cep" type="text" placeholder="0000-000" value={state.userInfo.cep} onChange={onChangeValue}></Form.Control>
                 </Form.Group>
             </Form.Row>
             
+            {errorMsg}
+            {successMsg}
             
             <Button variant="dark" type="submit" >
                 Enviar

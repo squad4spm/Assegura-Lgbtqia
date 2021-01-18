@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import "./login.css";
 
 import Cadastro from "../cadastro/cadastro.js";
-import {MyContext} from '../../contexts/MyContext.js';
+import {MyContext} from '../../contexts/MyContext';
 import user from "../../assets/images/userProfile.png";
 
 export default ()  => {
@@ -21,13 +21,13 @@ export default ()  => {
 
     const [state,setState] = useState(initialState);
 
-    // On change input value (email & password)
+    // On change input value (email & senha)
     const onChangeValue = (e) => {
         setState({
             ...state,
             userInfo:{
                 ...state.userInfo,
-                [e.target.nome]:e.target.value
+                [e.target.name]:e.target.value
             }
         });
     }
@@ -71,17 +71,19 @@ export default ()  => {
         </div>
         <div class="col-lg-7">
           <Form onSubmit={submitForm} noValidate>
-            <Form.Group contolId="email">
-                <Form.Label>E-mail</Form.Label>
-                <Form.Control name="email" type="email" placeholder="Digite seu email" />
-                <Form.Text className="text-muted">Dados confidenciais</Form.Text>
+            <Form.Group>
+              <Form.Label>E-mail</Form.Label>
+              <Form.Control name="email" id="email" type="text" placeholder="Digite seu email" value={state.userInfo.email} onChange={onChangeValue} />
             </Form.Group>
 
-            <Form.Group controlId="senha">
-              <Form.Label>Password</Form.Label>
-              <Form.Control name="senha" type="text" placeholder="Password" />
+            <Form.Group>
+              <Form.Label>Senha</Form.Label>
+              <Form.Control name="senha" id="senha" type="password" placeholder="Password" value={state.userInfo.senha} onChange={onChangeValue} />
             </Form.Group>
-
+            
+            {errorMsg}
+            {successMsg}
+            
             <Button variant="dark" type="submit">Entrar</Button>
             <Link to="#">Esqueceu a Senha?</Link>
           </Form>

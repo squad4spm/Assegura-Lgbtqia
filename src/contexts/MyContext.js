@@ -1,6 +1,6 @@
-import React, { createContext,Component } from "react";
+import React, { createContext, Component } from "react";
 import axios from 'axios'
-export const MyContext = React.createContext();
+export const MyContext = createContext();
 
 // Define the base URL
 const Axios = axios.create({
@@ -43,8 +43,17 @@ class MyContextProvider extends Component{
         // Sending the user registration request
         const register = await Axios.post('register.php',{
             nome:user.nome,
+            sobrenome:user.sobrenome,
+            dataNascimento:user.dataNascimento,
             email:user.email,
-            senha:user.senha 
+            tipo:user.tipo,
+            senha:user.senha,
+            endereco:user.endereco,
+            complemento:user.complemento,
+            cidade:user.cidade,
+            estado:user.estado,
+            cep:user.cep,
+            imagem:user.imagem
         });
 
         return register.data;
