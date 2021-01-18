@@ -1,13 +1,27 @@
 import "./topHeader.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
+import React, {useContext} from 'react';
+import {MyContext} from '../../../contexts/MyContext';
 
 import { IconContext } from "react-icons";
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare, FaUser } from 'react-icons/fa';
 
 export const TopHeader = () => {
-  
+  let userLabel = "";
+  let userPL = "";
   const history = useHistory();
+
+  const {rootState,logoutUser} = useContext(MyContext);
+  const {isAuth,theUser,showLogin} = rootState;
+
+  if(isAuth){
+    userLabel = `${theUser.nome}`;
+    userPL = () => history.push(`/perfil`);
+  }else{
+    userLabel = "faça seu login";
+    userPL = () => history.push(`/pages-login`);
+  }
 
   return (
   <Container fluid id="topmenu">
@@ -22,9 +36,9 @@ export const TopHeader = () => {
       </Col>
       
       <Col xs={6} id="colRight">
+        {userLabel}
         <IconContext.Provider value={{ color: "white" }}>
-          Faça seu login
-          <FaUser id="iconsRight" onClick={() => history.push(`/pages-login`)} />
+          <FaUser id="iconsRight" onClick={userPL} />
         </IconContext.Provider>
       </Col>
     </Row>

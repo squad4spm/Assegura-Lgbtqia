@@ -27,6 +27,14 @@
     border-radius: 5px;
     margin-bottom: 20px;
 }
+.botaoEditL{
+    background-color: #830083 !important;
+    width: 250px;
+    height: 40px;
+    border: 1px solid black !important;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
 
 #formLabel{
     color: white;

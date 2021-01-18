@@ -2,10 +2,6 @@ import "./userProfile.css"
 import { Container, Col, Row, Image, Button, Form } from "react-bootstrap";
 
 import userProfile from "../../assets/images/userProfile.png";
-import img02 from "../../assets/images/markerNome.png";
-import img03 from "../../assets/images/markerCasaAcolhimento.png";
-import img04 from "../../assets/images/markerJuridico.png";
-import img05 from "../../assets/images/markerP.png";
 
 export default () => {
   return (
@@ -15,6 +11,8 @@ export default () => {
             <Image src={userProfile} roundedCircle className="profileImg" />
             <p>Usuário</p>
             <Button className="botaoEdit">Editar perfil</Button>
+            <br />
+            <Button className="botaoEditL">Logout</Button>
           </Col>
           
           <Col className="coluna2">    
