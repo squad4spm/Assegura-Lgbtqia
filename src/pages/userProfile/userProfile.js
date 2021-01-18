@@ -7,7 +7,7 @@ export default () => {
   return (
     <Container>
       <Row className="linha">
-          <Col className="coluna1">
+          <Col lg={6} className="coluna1">
             <Image src={userProfile} roundedCircle className="profileImg" />
             <p>Usuário</p>
             <Button className="botaoEdit">Editar perfil</Button>
@@ -15,25 +15,25 @@ export default () => {
             <Button className="botaoEditL">Logout</Button>
           </Col>
           
-          <Col className="coluna2">    
+          <Col lg={6} className="coluna2">    
             <Form.Row>
-                <Form.Group as={Col} controlId="Primeiro Nome">
+                <Form.Group as={Col} controlId="Primeiro Nome"  xs={12} lg={6}>
                     <Form.Label id="formLabel">Nome:</Form.Label>
                     <Form.Control type="text" placeholder="Digite seu nome" />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="Sobrenome">
+                <Form.Group as={Col} controlId="Sobrenome" lg={6}>
                     <Form.Label id="formLabel">Sobrenome:</Form.Label>
                     <Form.Control type="text" placeholder="Digite seu sobrenome" />
                 </Form.Group>
 
-                <Form.Group as={Col} controlId="Sobrenome">
+                <Form.Group as={Col} controlId="dataNascimento" lg={12}>
                     <Form.Label id="formLabel">Data de nascimento:</Form.Label>
                     <Form.Control type="text" placeholder="DD/MM/AAAA" />
                 </Form.Group>
             </Form.Row>
             <Form.Row>
-                <Form.Group as={Col} controlId="formGridEmail">
+                <Form.Group as={Col} controlId="formGridEmail" lg={12}>
                     <Form.Label id="formLabel">Email:</Form.Label>
                     <Form.Control type="email" placeholder="Digite seu email" />
                 </Form.Group>
