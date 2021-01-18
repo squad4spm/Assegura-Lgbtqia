@@ -8,3 +8,7 @@ main {
     text-align: left;
     border: none;
 }
+
+#pg_localizacao {
+    height: 700px;
+}
