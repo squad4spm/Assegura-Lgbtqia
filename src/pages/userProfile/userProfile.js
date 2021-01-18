@@ -59,21 +59,19 @@ export default () => {
                     <Form.Control type="password" placeholder="Digite sua senha" />
                 </Form.Group>
             </Form.Row>
-
-            <Form.Group controlId="formGridAddress1">
+            <Form.Row>
+            <Form.Group as={Col} controlId="formGridAddress1" lg={8}>
                 <Form.Label id="formLabel">Endereço:</Form.Label>
                 <Form.Control placeholder="Ex: Rua xxxx 1234" />
             </Form.Group>
-            
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridAddress2">
+                <Form.Group as={Col} controlId="formGridAddress2" lg={4}>
                     <Form.Label id="formLabel">Complemento:</Form.Label>
                     <Form.Control placeholder="Apartmento, studio, piso ou sitio" />
                 </Form.Group>
             </Form.Row>
 
             <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
+                <Form.Group as={Col} controlId="formGridCity" xs={12} lg={6}>
                     <Form.Label id="formLabel">Cidade:</Form.Label>
                     <Form.Control placeholder="Digite sua cidade"></Form.Control>
                 </Form.Group>
