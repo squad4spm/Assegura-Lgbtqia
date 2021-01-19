@@ -11,29 +11,6 @@
     font-weight: 500;
 }
 
-.imgBtn {
-    vertical-align: middle !important;
-    border-style: none !important;
-    justify-content: center !important;
-    border-radius: 50% !important;
-    display: flex !important;
-    margin: 0 auto !important;
-    width: 250px !important;
-    height: 250px !important;
-    margin-bottom: 20px !important;
-    align-items:center !important;
-}
-
-#contaCadastro div form img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: fill;
-    display: flex;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
 #contaCadastro{
     height: 100%;
 }
