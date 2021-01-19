@@ -4,11 +4,11 @@
     box-sizing: border-box;
 }
 .container {
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
 }
 #contaH{
-    height: 67vh;
+    height: 600px;
 }
 .col-lg-7 {
     flex: 1 0 58.333333% !important;
