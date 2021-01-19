@@ -2,16 +2,18 @@ import { TopHeader } from "./topHeader/topHeader";
 import { Menu } from "./menu/menu.js";
 import { Footer } from "./footer/footer.js";
 import { BtnAjude } from "./btnAjude/btnAjude.js";
+import { useRouteMatch } from "react-router-dom";
 import "./layout.css"
 
 export const Layout = ({ children }) => {
+
   return (
     <>
       <TopHeader />
-      <Menu />
+      {useRouteMatch("/")?.isExact ? null : (<Menu />)}
       <div>{children}</div>
-      <BtnAjude />
-      <Footer />
+      {useRouteMatch("/")?.isExact ? null : (<BtnAjude />)}
+      {useRouteMatch("/")?.isExact ? null : (<Footer />)}
     </>
   );
 };
