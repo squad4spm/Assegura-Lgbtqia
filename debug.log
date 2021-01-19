@@ -4,3 +4,4 @@
 [0112/121202.169:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
 >>>>>>> ffccfb6684e18eb04105a8708f5fa84d8cf8243f
 [0116/133142.858:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)
+[0118/211323.375:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)

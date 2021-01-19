@@ -17,6 +17,7 @@ export default () => {
       <Route exact path="/perfil" component={Pages.perfil} />
       <Route exact path="/cadastro" component={Pages.cadastro} />
       <Route exact path="/voluntarios" component={Pages.voluntarios} />
+      <Route exact path="/parceiros" component={Pages.parceiros} />
     </Switch>
   );
 }
