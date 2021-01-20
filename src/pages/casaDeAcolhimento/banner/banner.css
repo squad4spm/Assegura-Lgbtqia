@@ -1,0 +1,43 @@
+#pg_acolhimento_banner {
+  background-color: rgb(192, 193, 255);
+  padding: 100px 0;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 17em;
+    }
+  }
+  
+  @keyframes blinkCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+
+#pg_acolhimento_banner .line {
+  border-right: 2px solid rgba(255, 255, 255, 0.76);
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+#pg_acolhimento_banner .typing-animation {
+  animation: blinkCursor 500ms infinite normal,
+    typing 4s steps(40) 1s normal both;
+  animation-delay: 9;
+  animation-iteration-count: infinite;
+}
+
+
