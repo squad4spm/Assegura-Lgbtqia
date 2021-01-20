@@ -1,6 +1,7 @@
 import "./localizacoes.css"
 import {React, useState} from "react";
-import { Container, Dropdown, FormControl } from "react-bootstrap";
+import { useHistory } from 'react-router-dom';
+import { Container, Dropdown, FormControl, Button } from "react-bootstrap";
 
 import MapContainer from "../../components/layout/maps/maps.js";
 
@@ -11,6 +12,7 @@ import img04 from "../../assets/images/markerJuridico.png";
 import img05 from "../../assets/images/markerP.png";
 
 export default () => {
+  const history = useHistory();
 
   return (
     <Container fluid>
@@ -25,9 +27,7 @@ export default () => {
                           </Dropdown.Toggle>
 
                           <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            <Dropdown.Item href="#/action-1">CRD - Centro de Referência e Defesa da Diversidade</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <br />
@@ -38,9 +38,6 @@ export default () => {
                           </Dropdown.Toggle>
 
                           <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <br />
@@ -54,7 +51,7 @@ export default () => {
                             <Dropdown.Item href="#/action-1">Casa flor</Dropdown.Item>
                             <Dropdown.Item href="#/action-2">Casa chama</Dropdown.Item>
                             <Dropdown.Item href="#/action-3">Arouchianos</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Casa 1</Dropdown.Item>
+                            <Dropdown.Item href="#/action-4">Casa 1</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <br />
@@ -65,9 +62,10 @@ export default () => {
                           </Dropdown.Toggle>
 
                           <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            <Dropdown.Item href="#/action-1">DECRADI - Delegacia de Crimes Raciais e Delitos de Intolerância</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Coordenação de Políticas para a Diversidade Sexual</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Núcleo Especializado de Defesa da Diversidade e da Igualdade Racial - Defensoria Pública do Estado de São Paulo</Dropdown.Item>
+                            <Dropdown.Item href="#/action-4">Ouvidoria da Secretaria da Justiça e Cidadania</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
                         <br />
@@ -78,11 +76,17 @@ export default () => {
                           </Dropdown.Toggle>
 
                           <Dropdown.Menu>
-                            <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            <Dropdown.Item href="#/action-1">Centro de Cidadania LGBTI Laura Vermont (Região Leste)</Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">Centro de Cidadania LGBTI Luana Barbosa dos Reis</Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">Centro de Cidadania LGBTI Claudia Wonder (Zona Oeste)</Dropdown.Item>
+                            <Dropdown.Item href="#/action-4">Ambulatório de Transtorno de Identidade de Gênero e Orientação Sexual (AMTIGOS)</Dropdown.Item>
+                            <Dropdown.Item href="#/action-5">Ambulatório do Núcleo de Assistência Multiprofissional à Pessoa Trans da Unifesp</Dropdown.Item>
+                            <Dropdown.Item href="#/action-6">Ambulatório de Saúde Integral de Travestis e Transexuais – Centro de Referência e Treinamento DST/AIDS</Dropdown.Item>
+                            <Dropdown.Item href="#/action-7">Centro de Cidadania LGBTI Edson Neris (Zona Sul)</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
+
+                        <Button id="btnSejaP" onClick={() => history.push(`/cadastro`)}>Seja um parceiro</Button>
                     </div>
                     
                     <div class="col-md-8 google-maps">
