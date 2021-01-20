@@ -8,15 +8,15 @@ import { MyContext } from "../../contexts/MyContext";
 import { IconContext } from "react-icons";
 import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
-
-
 export default () => {
+
   return (
+    
     <>
       <Container fluid>
         <section id="pg_casas_de_acolhimento_banner">
           <div>
-            <h1>Principais Casas de Acolhimento SP</h1>
+            <h1 className="line typing-animation">Principais Casas de Acolhimento SP</h1>
             <p></p>
             <p>
               Quando se é uma pessoa LGBTI+, a própria casa pode representar uma
@@ -183,5 +183,6 @@ export default () => {
         </section>
       </Container>
     </>
+    
   );
 };
