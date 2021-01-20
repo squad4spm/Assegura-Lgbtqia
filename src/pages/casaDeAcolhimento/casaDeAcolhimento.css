@@ -29,6 +29,8 @@
 
 .typing-animation {
   animation: blinkCursor 500ms infinite normal, typing 4s steps(40) 1s normal both;
+  animation-delay: 9;
+  animation-iteration-count: infinite;
 }
 
 @keyframes typing {
