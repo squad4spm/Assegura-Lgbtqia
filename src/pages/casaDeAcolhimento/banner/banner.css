@@ -26,8 +26,9 @@
   }
 
   #pg_acolhimento_banner .container h1 {
-    padding-top: 0px;
     margin-bottom: 18px;
+    padding: 15px 0;
+    line-height: 0px;
   }
 
 #pg_acolhimento_banner .line {
@@ -41,9 +42,26 @@
 
 #pg_acolhimento_banner .typing-animation {
   animation: blinkCursor 500ms infinite normal,
-    typing 4s steps(40) 1s normal both;
+  typing 4s steps(40) 1s normal both;
   animation-delay: 9;
   animation-iteration-count: infinite;
 }
 
+@media (max-width: 600px){
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 18em;
+    }
+  }
+  #pg_acolhimento_banner .container h1 {
+    font-size: 19px;
+  }
+
+  #pg_acolhimento_banner h1 {
+    color: #400040;
+  }
+}
 
