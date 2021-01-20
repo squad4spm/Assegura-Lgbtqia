@@ -1,5 +1,6 @@
 import "./ajude.css"
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 
 import img01 from "../../assets/images/ajude02.jpg";
@@ -9,6 +10,8 @@ import img04 from "../../assets/images/ajude08.jpg";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
+    const history = useHistory();
+
     return (
     <Container fluid>
     <section id="pg_defesa_pessoal_banner" >
@@ -50,82 +53,7 @@ export default () => {
     </section>
 
     <section class="container-fluid terceiraClass">
-    <Form>
-        <Container>
-        
-            <h1>Seja um Voluntário dos nossos parceiros:</h1>
-
-            <Form.Row>
-                <Form.Group as={Col} controlId="Primeiro Nome">
-                    <Form.Label>Nome</Form.Label>
-                    <Form.Control type="text" placeholder="Digite seu nome" />
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="Sobrenome">
-                    <Form.Label>Sobrenome</Form.Label>
-                    <Form.Control type="text" placeholder="Digite seu sobrenome" />
-                </Form.Group>
-            </Form.Row>
-            <Form.Group controlId="formGridAddress1">
-                <Form.Label>Endereço</Form.Label>
-                <Form.Control placeholder="Ex: Rua xxxx 1234" />
-            </Form.Group>
-
-            <Form.Group controlId="formGridAddress2">
-                <Form.Label>Complemento</Form.Label>
-                <Form.Control placeholder="Apartamento, studio, ou piso, sítio" />
-            </Form.Group>
-
-            <Form.Row>
-                <Form.Group as={Col} controlId="formGridCity">
-                    <Form.Label>Cidade</Form.Label>
-                    <Form.Control placeholder="Digite sua cidade"></Form.Control>
-                </Form.Group>
-
-                <Form.Group as={Col} controlId="formGridZip">
-                    <Form.Label>CEP</Form.Label>
-                    <Form.Control placeholder="0000-000"></Form.Control>
-                </Form.Group>
-            </Form.Row>
-
-            <Form.Row>
-            <Form.Group as={Col}>
-                    <Form.Label>Voluntário</Form.Label>
-                    <Form.Control as="select" defaultValue="Escolha...">
-                        <option>Escolha...</option>
-                        <option>Voluntário 1</option>
-                        <option>Voluntário 2</option>
-                        <option>Voluntário 3</option>
-                    </Form.Control>
-                </Form.Group>
-                <Form.Group as={Col}>
-                    <Form.Label>Área</Form.Label>
-                    <Form.Control as="select" defaultValue="Escolha...">
-                        <option>Escolha...</option>
-                        <option>Área 1</option>
-                        <option>Área 2</option>
-                        <option>Área 3</option>
-                    </Form.Control>
-                </Form.Group>
-                <Form.Group as={Col}>
-                    <Form.Label>Parceiro</Form.Label>
-                    <Form.Control as="select" defaultValue="Escolha...">
-                        <option>Escolha...</option>
-                        <option>Parceiro 2</option>
-                        <option>Parceiro 3</option>
-                        <option>Parceiro 4</option>
-                    </Form.Control>
-                </Form.Group>
-            </Form.Row>
-            
-            <Form.Row>                
-                <Button type="submit" className="btn-ajuda">
-                    Enviar
-            </Button>
-            </Form.Row>
-            
-        </Container>
-    </Form>
+    <Button id="btnCadastrese" onClick={() => history.push(`/cadastro`)}>Cadastre-se</Button>
     </section>
     <section class="container-fluid quartaClass">
         <div class="container">

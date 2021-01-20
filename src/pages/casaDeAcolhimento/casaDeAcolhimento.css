@@ -1,3 +1,166 @@
-main {
-    background-color: #FFFFFF;
+/*primeira sectiom com imagem de fundo*/
+
+#pg_casas_de_acolhimento_banner .container-fluid {
+  padding-left: 0;
+}
+#pg_casas_de_acolhimento_banner {
+  background-color: rgb(192, 193, 255);
+  padding: 100px 100px;
+  text-align: center;
+  color: white;
+  right: 160px;
+  font-size: 20px;
+  font-style: italic;
+}
+/*final da edição da section*/
+
+/*Primeira Class*/
+#pg_casas_de_acolhimento_primeiraClass {
+  padding: 100px 0;
+}
+
+.line {
+  border-right: 2px solid rgba(255, 255, 255, .76);
+  white-space: nowrap;
+  text-align: center;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.typing-animation {
+  animation: blinkCursor 500ms infinite normal, typing 4s steps(40) 1s normal both;
+  animation-delay: 9;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17em;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  #pg_casas_de_acolhimento_primeiraClass {
+    padding: 25px 0;
+  }
+}
+#pg_casas_de_acolhimento_primeiraClass div div p {
+  color: #727272;
+  font-size: 16px;
+  text-align: justify;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+#pg_casas_de_acolhimento_primeiraClass div div h3 {
+  color: #333333;
+  font-weight: 520;
+  font-size: 27px;
+  margin-right: 22px;
+}
+
+#pg_casas_de_acolhimento_primeiraClass div div img {
+  height: 300px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+/*Segunda Class*/
+
+
+/*Primeira Class*/
+#pg_casas_de_acolhimento_segundaClass {
+  padding: 100px 0;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+}
+@media (max-width: 768px) {
+  #pg_casas_de_acolhimento_segundaClass {
+    padding: 25px 0;
+  }
+}
+#pg_casas_de_acolhimento_segundaClass div div p {
+  color: #727272;
+  font-size: 16px;
+  text-align: justify;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+#pg_casas_de_acolhimento_segundaClass div div h3 {
+  color: #333333;
+  font-weight: 520;
+  font-size: 27px;
+  margin-right: 22px;
+  padding-top: 30px;
+}
+#pg_casas_de_acolhimento_segundaClass div div img {
+  height: 300px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 60px;
+}
+
+/*Terceira Class*/
+#pg_casas_de_acolhimento_terceiraClass {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  #pg_casas_de_acolhimento_terceiraClass {
+    padding: 25px 0;
+  }
+}
+#pg_casas_de_acolhimento_terceiraClass div div p {
+  color: #727272;
+  font-size: 16px;
+  text-align: justify;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-top: 30px;
+}
+#pg_casas_de_acolhimento_terceiraClass div div h3 {
+  color: #333333;
+  font-weight: 520;
+  font-size: 27px;
+  margin-right: 22px;
+  padding-top: 30px;
+}
+#pg_casas_de_acolhimento_terceiraClass div div img {
+  height: 300px;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+/*Quarta Class*/
+
+#pg_casas_de_acolhimento_quartaClass{
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  #pg_casas_de_acolhimento_quartaClass {
+    padding: 25px 0;
+  }
+}
+
+#pg_casas_de_acolhimento_quartaClass {
+  background-color: rgb(192, 193, 255);
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
 }
