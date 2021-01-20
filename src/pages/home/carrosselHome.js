@@ -48,9 +48,9 @@ export const CarrosselHome = () => {
                 </Carousel.Caption>
             </Carousel.Item>
 
-            <Carousel.Item className="cardDescricaoP" onClick={() => history.push(`/${'atendimento-psicologico'}`)}>
+            <Carousel.Item className="cardDescricaoP" onClick={() => history.push(`/${'ajuda-psicologica'}`)}>
                 <Carousel.Caption id="topText">
-                    <h2 class="titleCards">Psicológico</h2>
+                    <h2 class="titleCards">Ajuda Pscicologica</h2>
                     <p class="textoCards">
                     Atendimento psicológico, pode ajudar muito uma pessoa LGBTQIA+ a viver com mais tranquilidade e segurança na sociedade perigosa em que vivemos, pensando em proporcionar ambientes seguros e acessíveis, para a comunidade Lgbt obter esse apoio, a assegura reúne algumas informações sobre onde encontrar profissionais preparados e instituições que fazem esse serviço. 
                     </p>
