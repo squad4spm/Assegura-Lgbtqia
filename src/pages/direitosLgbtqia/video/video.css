@@ -1,0 +1,12 @@
+#pg_direito_video{
+    padding: 50px 0;
+    background: #ffffed;
+}
+
+#pg_direito_video h3{
+    text-transform: capitalize;
+}
+
+#pg_direito_video iframe{
+    width: 100%;
+}
