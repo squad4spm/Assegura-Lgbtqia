@@ -1,5 +1,5 @@
 import "./userProfile.css"
-import React, {useContext} from 'react'
+import React, {useContext} from 'react';
 import { Container, Col, Row, Image, Button, Form } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
 
