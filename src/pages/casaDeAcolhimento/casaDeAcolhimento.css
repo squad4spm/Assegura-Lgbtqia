@@ -1,3 +1,97 @@
-main {
-    background-color: #FFFFFF;
-}
+/*primeira sectiom com imagem de fundo*/
+
+#pg_casas_de_acolhimento_banner .container-fluid {
+    padding-left: 0;
+  }
+    #pg_casas_de_acolhimento_banner {
+      background-color: rgb(192, 193, 255);
+      padding: 100px 100px;
+      text-align: center;
+      color: white;
+      right: 160px;
+      font-size: 20px;
+      font-style: italic; 
+    }
+    /*final da edição da section*/
+    
+    /*Primeira Class*/
+    #pg_casas_de_acolhimento_primeiraClass div div p {
+      color: #727272;
+      font-size: 16px;
+      text-align: justify;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding-top: 30px;
+    }
+    #pg_casas_de_acolhimento_primeiraClass div div h3 {
+      color: #333333;
+      font-weight: 520;
+      font-size: 27px;
+      margin-right: 22px;
+      padding-top: 30px;
+    }
+    #pg_casas_de_acolhimento_primeiraClass div div img {
+      height: 300px;
+      margin-left: 10px;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      padding-top: 60px;
+    }
+    /*Segunda Class*/
+
+      #pg_casas_de_acolhimento_segundaClass div div p {
+        color: #727272;
+        font-size: 16px;
+        text-align: justify;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding-top: 30px;
+      }
+      #pg_casas_de_acolhimento_segundaClass div div h3 {
+        color: #333333;
+        font-weight: 520;
+        font-size: 27px;
+        margin-right: 22px;
+        padding-top: 30px;
+      }
+      #pg_casas_de_acolhimento_segundaClass div div img {
+        height: 300px;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding-top: 60px;
+      }
+
+      /*Terceira Class*/
+      #pg_casas_de_acolhimento_terceiraClass div div p {
+        color: #727272;
+        font-size: 16px;
+        text-align: justify;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding-top: 30px;
+      }
+      #pg_casas_de_acolhimento_terceiraClass div div h3 {
+        color: #333333;
+        font-weight: 520;
+        font-size: 27px;
+        margin-right: 22px;
+        padding-top: 30px;
+      }
+      #pg_casas_de_acolhimento_terceiraClass div div img {
+        height: 300px;
+        margin-left: 10px;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+      }
+
+      /*Quarta Class*/
+      #pg_casas_de_acolhimento_quartaClass {
+        background-color: rgb(192, 193, 255);
+        color: #727272;
+        font-size: 16px;
+        text-align: center;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        padding-top: 30px;
+      }
