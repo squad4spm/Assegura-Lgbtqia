@@ -97,7 +97,7 @@ export default () => {
                             ><img src={img06} /></a>
                         </li>
                         <li class="item">
-                            <a onClick={() => history.push(`/${'atendimento-psicologico'}`)}
+                            <a onClick={() => history.push(`/${'ajuda-psicologica'}`)}
                                 onMouseOver={() => document.getElementById('descricaoP').className='descricaoP'}
                                 onMouseLeave={() => document.getElementById('descricaoP').className='descricaoPH'}
                             ><img src={img07} /></a>

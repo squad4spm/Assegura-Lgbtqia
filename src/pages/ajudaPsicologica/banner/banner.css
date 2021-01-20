@@ -1,0 +1,10 @@
+/*primeira sectiom com imagem de fundo*/
+#pg_sobre_psicologia_banner .jumbotron {
+    background-image: url("../../../assets/images/psicologico1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 600px;
+    width: 100%;
+  }

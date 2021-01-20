@@ -9,7 +9,7 @@ export default () => {
         <Route exact path="/" component={Pages.home} />
         <Route exact path="/defesa-pessoal" component={Pages.defesaPessoal} />
         <Route exact path="/nome-social" component={Pages.nomeSocial} />
-        <Route exact path="/atendimento-psicologico" component={Pages.atendimentoPsicologico} />
+        <Route exact path="/ajuda-psicologica" component={Pages.ajudaPsicologica} />
         <Route exact path="/direitos-lgbtqia" component={Pages.direitosLgbtqia} />
         <Route exact path="/casa-de-acolhimento" component={Pages.casaDeAcolhimento} />
         <Route exact path="/localizacoes" component={Pages.localizacoes} />

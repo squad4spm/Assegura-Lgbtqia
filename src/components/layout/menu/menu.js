@@ -22,8 +22,8 @@ export const Menu = () => {
       path: "nome-social"
     },
     {
-      label: "Atendimento psicologico",
-      path: "atendimento-psicologico"
+      label: "Ajuda Psicologica",
+      path: "ajuda-psicologica"
     },
     {
       label: "Direitos lgbtqia",
