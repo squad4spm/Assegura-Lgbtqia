@@ -1,0 +1,26 @@
+/* Inicio Seção quartaClass - artigo tela Defesa Pessoal */
+#pg_sobre_psicologia_articles {
+  background-color: rgb(71, 104, 71);
+  color: #fff;
+  padding: 50px 0 ;
+}
+#pg_sobre_psicologia_articles div h3 {
+  text-align: center;
+  padding: 20px 0 40px;
+}
+#pg_sobre_psicologia_articles div img {
+  display: block;
+  margin: 0 auto 20px;
+  height: 220px;
+}
+#pg_sobre_psicologia_articles div p {
+  text-align: center;
+}
+#pg_sobre_psicologia_articles div h6 {
+  text-align: center;
+  font-weight: normal !important;
+  font-size: 13px;
+}
+#pg_sobre_psicologia_articles p {
+  font-size: 14px;
+}

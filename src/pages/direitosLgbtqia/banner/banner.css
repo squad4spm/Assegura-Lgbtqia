@@ -1,0 +1,10 @@
+/*primeira sectiom com imagem de fundo*/
+#pg_direito_banner .jumbotron {
+    background-image: url("../../../assets/images/banner_mulher_direito.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 600px;
+    background-color: #ffffed;
+    border-bottom: unset;
+  }

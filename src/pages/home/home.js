@@ -22,27 +22,25 @@ export default () => {
         <Row id="bcg">
             <Col xs={3} className="left">
                 <div class="descricaoPH" id="descricaoP">
-                    <h2>Psicológico</h2>
+                    <h2>Ajuda Psicologica</h2>
                     <p class="textoCards">
-                        Cadastro Para Psicólogos Voluntários
-                        <br />
-                        Cadastro Para Conseguir Atendimento  
+                        Atendimento psicológico, pode ajudar muito uma pessoa LGBTQIA+ a viver com mais tranquilidade e segurança na sociedade perigosa em que vivemos, pensando em proporcionar ambientes seguros e acessíveis, para a comunidade Lgbt obter esse apoio, a assegura reúne algumas informações sobre onde encontrar profissionais preparados e instituições que fazem esse serviço. 
                     </p>
                 </div>
 
                 <div class="descricaoJH" id="descricaoJ">
                     <h2>Direitos Lgbtqia+</h2>
                     <p class="textoCards">
-                        Direito Civil Brasileiro
+                        A LGBTIfobia é o termo utilizado para compreender as violências cometidas contra a população LGBTI+ e se apresenta como uma série de atitudes ou sentimentos negativos em relação às pessoas LGBTI+, motivadas pela orientação sexual e/ou sua Identidade de gênero.
                         <br />
-                        Evolução dos Direitos LGBTQI+
+                        Aqui buscamos compilar o máximo de informações sobre direitos LGBTQIA+ e direcionar você a instituições e sites que possam ajudar na tomada de decisão e na tirada de dúvidas sobre direitos LGBTQIA+
                     </p>
                 </div>
 
                 <div class="descricaoCH" id="descricaoC">
                     <h2>Casas de acolhimento</h2>
                     <p class="textoCards">
-                        Conheça algumas Casas De Acolhimento Localizadas em São Paulo.
+                        Quando se é uma pessoa LGBTQIA+, a própria casa pode representar uma ameaça ou oferecer perigo. Segundo levantamento mais recente do Grupo Gay da Bahia (GGB), 35,5% das lésbicas, gays, bissexuais, travestis e transexuais assassinadas em 2019 foram mortas em suas residências. Pelo Brasil, as chamadas casas de acolhimento para pessoal LGBTQIA+ auxiliam com apoio moradia e projetos sociais ligados a educação e mercado de trabalho, conheça aqui algumas dessas casas. 
                     </p>
                 </div>
 
@@ -97,7 +95,7 @@ export default () => {
                             ><img src={img06} /></a>
                         </li>
                         <li class="item">
-                            <a onClick={() => history.push(`/${'atendimento-psicologico'}`)}
+                            <a onClick={() => history.push(`/${'ajuda-psicologica'}`)}
                                 onMouseOver={() => document.getElementById('descricaoP').className='descricaoP'}
                                 onMouseLeave={() => document.getElementById('descricaoP').className='descricaoPH'}
                             ><img src={img07} /></a>

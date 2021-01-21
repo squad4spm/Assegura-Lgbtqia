@@ -1,0 +1,29 @@
+#pg_direito_call_download{
+    padding: 50px 0;
+}
+
+#pg_direito_call_download h3{
+    margin-bottom: 20px;
+}
+
+#pg_direito_call_download img{
+    width: 250px;
+}
+
+#pg_direito_call_download p{
+ font-size: 16px;
+}
+
+#pg_direito_call_download .containerButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pg_direito_call_download button{
+    padding: 20px 100px;
+
+}
+

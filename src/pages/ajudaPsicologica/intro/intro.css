@@ -1,0 +1,14 @@
+##pg_sobre_psicologia_intro {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  ##pg_sobre_psicologia_intro {
+    padding: 25px 0;
+  }
+}
+#pg_sobre_psicologia_intro .primeiraClass {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
