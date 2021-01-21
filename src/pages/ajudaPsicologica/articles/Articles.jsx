@@ -1,6 +1,7 @@
 import { Container, Button } from "react-bootstrap";
 
 import casa1 from "../../../assets/images/casa1.jpg";
+import artigo1 from "../../../assets/images/artigo1.jpg";
 import casa_florecer from "../../../assets/images/casa_florecer.jpg";
 
 import "./articles.css";
@@ -10,18 +11,18 @@ export default () => {
     {
       image: casa1,
       title:
-        "Qualquer um pode ser uma ameaça”: no Brasil de Bolsonaro, LGBTs tomam a defesa pessoal com suas próprias mãos",
+        "A importância da psicoterapia para LGBTs",
       description:
-        "Em um país com uma das maiores taxas de violência do mundo contra gays e transgêneros, onde as redes sociais...",
+        "No espaço psicoterapêutico é possível reconhecer sua história e caso haja aspectos negativos eles podem, em alguns casos, serem ressignificados, mas principalmente processados e integrados na história pessoal, entendendo sua influência na personalidade e como isso impacta nas tomadas de decisão...",
       linkAction:
         "https://medium.com/@piranhasteamfc/qualquer-um-pode-ser-uma-amea%C3%A7a-no-brasil-de-bolsonaro-lgbts-tomam-a-defesa-pessoal-com-suas-a9b62555aa0e",
     },
     {
-      image: casa1,
+      image: artigo1,
       title:
-        "Qualquer um pode ser uma ameaça”: no Brasil de Bolsonaro, LGBTs tomam a defesa pessoal com suas próprias mãos",
+        "Cuidar da saúde mental de negros e LGBTs exige combater racismo e LGBTfobia",
       description:
-        "Em um país com uma das maiores taxas de violência do mundo contra gays e transgêneros, onde as redes sociais...",
+        "Para a psicóloga Beatriz Machado, integrante do Instituto Afro Amparo e Saúde, que atua com terapia para pessoas negras, isso acontece porque “corpos negros e LGBTs são vistos pela sociedade branca e cisnormativa como descartáveis”.",
       linkAction:
         "https://medium.com/@piranhasteamfc/qualquer-um-pode-ser-uma-amea%C3%A7a-no-brasil-de-bolsonaro-lgbts-tomam-a-defesa-pessoal-com-suas-a9b62555aa0e",
     },

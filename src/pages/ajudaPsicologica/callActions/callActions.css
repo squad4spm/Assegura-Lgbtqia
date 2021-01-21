@@ -19,6 +19,7 @@
 }
 #pg_sobre_psicologia_callAction .containerButtonActions Button {
   padding: 30px 60px;
+  margin-bottom: 10px;
 }
 #pg_sobre_psicologia_callAction .segundaClass {
   display: flex;
