@@ -1,6 +1,8 @@
 import { Container } from "react-bootstrap";
 
-import casa1 from "../../../assets/images/casa1.jpg";
+import ajudar from "../../../assets/images/ajudar.jpg";
+import preciso from "../../../assets/images/precisoajuda.jpg";
+import match from "../../../assets/images/match.jpg";
 
 import "./works.css";
 
@@ -17,7 +19,7 @@ export default () => {
 
           <div class="row">
             <div class="col-md-4">
-              <img src={casa1} />
+              <img src={ajudar} />
               <h3>QUERO AJUDAR!</h3>
               <p>
                 Profissionais de psicologia que topem ajudar de forma voluntária
@@ -25,7 +27,7 @@ export default () => {
               </p>
             </div>
             <div class="col-md-4">
-              <img src={casa1} />
+              <img src={preciso} />
               <h3>PRECISO DE AJUDA!</h3>
               <p>
                 Pessoas LGBTQIA+ que precisam de acolhimento psicológico se
@@ -33,7 +35,7 @@ export default () => {
               </p>
             </div>
             <div class="col-md-4">
-              <img src={casa1} />
+              <img src={match} />
               <h3>DEU "MACTH"!</h3>
               <p>
                 Nossa equipe cruza os dados e conectamos quem precsa de
