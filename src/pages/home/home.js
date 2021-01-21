@@ -22,7 +22,7 @@ export default () => {
         <Row id="bcg">
             <Col xs={3} className="left">
                 <div class="descricaoPH" id="descricaoP">
-                    <h2>Psicológico</h2>
+                    <h2>Ajuda Psicologica</h2>
                     <p class="textoCards">
                         Atendimento psicológico, pode ajudar muito uma pessoa LGBTQIA+ a viver com mais tranquilidade e segurança na sociedade perigosa em que vivemos, pensando em proporcionar ambientes seguros e acessíveis, para a comunidade Lgbt obter esse apoio, a assegura reúne algumas informações sobre onde encontrar profissionais preparados e instituições que fazem esse serviço. 
                     </p>

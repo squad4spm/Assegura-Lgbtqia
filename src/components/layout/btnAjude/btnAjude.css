@@ -50,10 +50,10 @@
 }
 
 @media (max-width: 992px) {
-  
+
     #botao_flutuante i {
       display: none;
-    }
+    } 
   
     #botao_flutuante {
       background-color: #400040;
@@ -96,4 +96,4 @@
       text-decoration: none;
       flex-direction: column;
     }
-  }
+  } 
