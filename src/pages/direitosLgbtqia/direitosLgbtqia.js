@@ -1,9 +1,15 @@
-import "./direitosLgbtqia.css"
+import Video from "./video/Video";
+import Banner from "./banner/Banner";
+import CallDownload from "./callDownload/CallDownload";
+import Informacoes from "./informacoes/Informacoes";
 
 export default () => {
   return (
-    <main>
-      <h4>Direitos Lgbtqia+</h4>
-    </main>
+    <>
+      <Banner />
+      <Informacoes />
+      <Video />
+      <CallDownload />
+    </>
   );
 };

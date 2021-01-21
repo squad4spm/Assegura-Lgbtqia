@@ -1,0 +1,8 @@
+#pg_direito_informacoes {
+    padding: 50px 0;
+}
+#pg_direito_informacoes .row{ margin-bottom: 20px;}
+
+#pg_direito_informacoes .row img{ width: 100%;}
+
+#pg_direito_informacoes .row h3{ text-transform: capitalize;}
