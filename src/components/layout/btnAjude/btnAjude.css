@@ -1,99 +1,92 @@
 #botao_flutuante {
-    background-color: #400040;
-    color: rgb(255, 255, 255);
-    width: 80px;
-    height: 80px;
-    display: flex;
-    position: fixed;
-    bottom: 10%;
-    right: 5%;
-    z-index: 1;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    transition: 0.3s;
-    text-decoration: none;
-    flex-direction: column;
-}
-  
-#botao_flutuante:hover {
-    background-color: #ffd5ff;
-    color: #400040;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    position: fixed;
-    bottom: 10%;
-    right: 5%;
-    z-index: 1;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    transition: 0.3s;
-    text-decoration: none;
-    font-weight: 600;
+  background-color: #400040;
+  color: rgb(255, 255, 255);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.3s;
+  text-decoration: none;
+  flex-direction: column;
 }
 
-#botao_flutuante a{
-    color: white;
+#botao_flutuante:hover {
+  background-color: #ffd5ff;
+  color: #400040;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#botao_flutuante a {
+  color: white;
 }
 
 #botao_flutuante:hover a {
-    color: #400040;
-    cursor: pointer;
+  color: #400040;
+  cursor: pointer;
 }
 
-@media (max-width: 992px) {
+#botao_flutuante {
+  background-color: #400040;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex !important;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  z-index: 1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  text-decoration: none;
+  flex-direction: column;
+}
 
-    #botao_flutuante i {
-      display: none;
-    } 
-  
-    #botao_flutuante {
-      background-color: #400040;
-      color: #fff;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      position: fixed;
-      bottom: 5%;
-      right: 10%;
-      z-index: 1;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      font-size: 16px;
-      transition: 0.3s;
-      text-decoration: none;
-      flex-direction: column;
-    }
-  
-    #botao_flutuante:hover {
-      background-color: #400040;
-      color: #fff;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      position: fixed;
-      bottom: 5%;
-      right: 10%;
-      z-index: 1;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      font-size: 16px;
-      transition: 0.3s;
-      text-decoration: none;
-      flex-direction: column;
-    }
-  } 
+#botao_flutuante:hover {
+  background-color: #400040;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  z-index: 1;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: 0.3s;
+  text-decoration: none;
+  flex-direction: column;
+}
