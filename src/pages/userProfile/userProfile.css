@@ -13,6 +13,7 @@
     background-color: #400040;
     border: 2px solid black;
     border-radius: 10px;
+    margin-bottom: 20px;
 }
 .profileImg{
     width: 250px;
@@ -20,12 +21,14 @@
     margin-bottom: 20px;
 }
 .botaoEdit{
-    background-color: #400040 !important;
+    background-color: white !important;
     width: 250px;
     height: 40px;
     border: 1px solid black !important;
     border-radius: 5px;
     margin-bottom: 20px;
+    color: #400040 !important;
+    font-weight: bold !important;
 }
 .botaoEditL{
     background-color: #830083 !important;
