@@ -2,11 +2,39 @@ import "./userProfile.css"
 import React, {useContext} from 'react';
 import { Container, Col, Row, Image, Button, Form } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
+import axios from "axios";
 
-import {MyContext} from '../../contexts/MyContext';
+import FormEndereco from "./FormEndereco";
+
 import userProfile from "../../assets/images/userProfile.png";
 
+const initialValues = {
+    nome: '',
+    sobreNome: '',
+    telefone: '',
+    email: '',
+    password: '',
+}
+
 export default () => {
+
+    const [values, setValues] = React.useState(initialValues)
+
+    console.log("euu", { values })
+
+    const HandleonChange = e => {
+        const { name, value } = e.target;
+
+        setValues({ ...values, [name]: value })
+    }
+
+
+    const handleOnEndereco = () => {
+       const result =  axios.post("http://app.toplojavirtual.com.br/endereco", values).then(response=> console.log("euu", response)).catch(err=> console.log("euu", err))
+
+       console.log('euu', result)
+    }
+
     const history = useHistory();
 
     return (
@@ -58,37 +86,8 @@ export default () => {
                 </Form.Row>
             </Row>    
             
-            <Row className="coluna2">
-                <Form.Row>
-                <Form.Group as={Col} controlId="formGridAddress1" lg={12}>
-                    <Form.Label id="formLabel">Endereço:</Form.Label>
-                    <Form.Control placeholder="Ex: Rua xxxx 1234" />
-                </Form.Group>
-                    <Form.Group as={Col} controlId="formGridAddress2" lg={12}>
-                        <Form.Label id="formLabel">Complemento:</Form.Label>
-                        <Form.Control placeholder="Apartmento, studio, piso ou sitio" />
-                    </Form.Group>
-                    <Form.Group as={Col} controlId="formGridCity" xs={12} lg={12}>
-                        <Form.Label id="formLabel">Cidade:</Form.Label>
-                        <Form.Control placeholder="Digite sua cidade"></Form.Control>
-                    </Form.Group>
 
-                    <Form.Group as={Col} controlId="formGridState" xs={12} lg={12}>
-                        <Form.Label id="formLabel">Estado:</Form.Label>
-                        <Form.Control as="select" defaultValue="Choose...">
-                            <option>São Paulo</option>
-                            <option>Rio de Janeiro</option>
-                            <option>Outro</option>
-                        </Form.Control>
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridZip" xs={12} lg={12}>
-                        <Form.Label id="formLabel">CEP :</Form.Label>
-                        <Form.Control placeholder="0000-000"></Form.Control>
-                    </Form.Group>
-                </Form.Row>
-                <Button className="botaoEdit">Salvar alterações</Button>
-            </Row>
+            <FormEndereco />
         </Col>
     </Row>
     </Container>
