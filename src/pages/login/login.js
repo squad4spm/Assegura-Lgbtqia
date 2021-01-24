@@ -1,6 +1,7 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useState, useEffect} from 'react';
 import { Container, Form, Button, Row } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import axios from 'axios'
 import "./login.css";
 
 import Cadastro from "../cadastro/cadastro.js";
@@ -8,19 +9,22 @@ import {MyContext} from '../../contexts/MyContext';
 import user from "../../assets/images/userProfile.png";
 
 export default ()  => {
+  const [usuario, setUsuario] = useState([]);
+
+  useEffect(() => {
+    axios.get("http://app.toplojavirtual.com.br/usuario").then((response) => {
+      setUsuario(response.data.usuario);
+    });
+  }, []);
 
   return(
     <Container class="my-4 mx-5" id="contaH">
       <Row class="coluna no-gutters">
-        <div class="col-lg-5">
-            <img src= {user} class="img-fluid" alt="" />
-            <p>Não tem uma conta? <Link to="Cadastro">Registre-se</Link></p>
-        </div>
         <div class="col-lg-7">
           <Form>
             <Form.Group>
-              <Form.Label>E-mail</Form.Label>
-              <Form.Control name="email" id="email" type="text" placeholder="Digite seu email" />
+              <Form.Label>Usuário</Form.Label>
+              <Form.Control name="usuario" id="usuario" type="text" placeholder="Digite seu usúario" />
             </Form.Group>
 
             <Form.Group>
