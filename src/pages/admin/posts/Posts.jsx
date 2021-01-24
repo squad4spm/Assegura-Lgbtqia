@@ -18,6 +18,8 @@ const Button = styled.button`
   border-radius: 4px;
   border: 1px solid #333;
   margin-bottom: 20px;
+  background: #400040;
+  color: white;
 `;
 
 export default ({history}) => {

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
 import { Switch, Route } from "react-router-dom";
+import styled from "styled-components";
 import axios from "axios";
 
 import { FormNew } from "./FormNew";
@@ -16,15 +17,23 @@ export const Lista = ({ history }) => {
     });
   }, []);
 
+  const Button = styled.button`
+    margin-left: auto;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    background: #400040;
+    color: white;
+  `;
+
   return (
     <>
       <Table striped bordered hover>
         <thead>
           <tr>
             <th>Titulo</th>
-            <th>Conteúdo</th>
-            <th>Imagem</th>
-            <th>Link</th>
             <th>Editar</th>
             <th>Deletar</th>
           </tr>
@@ -33,17 +42,14 @@ export const Lista = ({ history }) => {
         {posts.map((item) => (
           <tr key={item.id}>
             <td>{item.title}</td>
-            <td>{item.content}</td>
-            <td>{item.image}</td>
-            <td>{item.link}</td>
             <td>
-              <button
+              <Button
                 onClick={() => {
                   history.push(`/admin/edit/${item.id}`);
                 }}
               >
                 Editar
-              </button>
+              </Button>
             </td>
             <td>
               <Deletar data={item} />

@@ -1,4 +1,16 @@
 import axios from "axios";
+import styled from "styled-components";
+
+const Button = styled.button`
+    margin-left: auto;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    background: #400040;
+    color: white;
+  `;
 
 export const Deletar = ({data}) => {
   const handleOnDelete = () => {
@@ -10,5 +22,5 @@ export const Deletar = ({data}) => {
       })
     }
   };
-  return <button onClick={handleOnDelete}>Deletar</button>;
+  return <Button onClick={handleOnDelete}>Deletar</Button>;
 };

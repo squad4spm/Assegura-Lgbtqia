@@ -20,7 +20,7 @@ export const Siderbar = () => {
   return (
     <Container>
       <Item onClick={()=> history.push("/admin/categorias")}>Categorias</Item>
-      <Item onClick={()=> history.push("/admin")}>Posts</Item>
+      <Item onClick={()=> history.push("/admin/posts")}>Posts</Item>
     </Container>
   );
 };

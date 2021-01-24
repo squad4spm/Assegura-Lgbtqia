@@ -13,11 +13,13 @@ export default () => {
       <Switch>
         <Route path="/">
           <Layout>
-            
+
             <Route path="/admin">
+              
+              <Route exact path="/admin" component={PagesAdmin.login}  />
               <PrivateRoute>
                 <LayoutAdmin>
-                  <Route path="/admin" component={PagesAdmin.posts}  />
+                  <Route path="/admin/posts" component={PagesAdmin.posts}  />
                   <Route path="/admin/categorias" component={PagesAdmin.categorias}/>
                 </LayoutAdmin>
               </PrivateRoute>
