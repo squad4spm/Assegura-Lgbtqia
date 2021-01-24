@@ -14,12 +14,8 @@ export default () => {
         <Route path="/admin">
           <PrivateRoute>
             <LayoutAdmin>
-              <Route exact path="/admin" component={PagesAdmin.posts}  />
-              <Route
-                path="/admin/categorias"
-                component={PagesAdmin.categorias}
-                
-              />
+              <Route path="/admin" component={PagesAdmin.posts}  />
+              <Route path="/admin/categorias" component={PagesAdmin.categorias}/>
             </LayoutAdmin>
           </PrivateRoute>
         </Route>
