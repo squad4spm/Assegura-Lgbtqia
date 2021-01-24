@@ -11,17 +11,18 @@ export default () => {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/admin">
-          <PrivateRoute>
-            <LayoutAdmin>
-              <Route path="/admin" component={PagesAdmin.posts}  />
-              <Route path="/admin/categorias" component={PagesAdmin.categorias}/>
-            </LayoutAdmin>
-          </PrivateRoute>
-        </Route>
-
         <Route path="/">
           <Layout>
+            
+            <Route path="/admin">
+              <PrivateRoute>
+                <LayoutAdmin>
+                  <Route path="/admin" component={PagesAdmin.posts}  />
+                  <Route path="/admin/categorias" component={PagesAdmin.categorias}/>
+                </LayoutAdmin>
+              </PrivateRoute>
+            </Route>
+
             <Route exact path="/" component={Pages.home} />
             <Route
               exact

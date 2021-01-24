@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Switch, Route } from "react-router-dom";
 
 import { Lista } from "./Lista";
 
@@ -10,16 +11,30 @@ const Header = styled.div`
   align-items: center;
 `;
 
-export default ({}) => {
+const Button = styled.button`
+  margin-left: auto;
+  display: block;
+  padding: 10px 30px;
+  border-radius: 4px;
+  border: 1px solid #333;
+  margin-bottom: 20px;
+`;
+
+export default ({history}) => {
   return (
     <Container>
       <Header>
         <h1>Posts</h1>
 
-        <button>Novo</button>
+        <Button onClick={()=>{history.push("/admin/new")}}>Novo</Button>
       </Header>
-      
-      <Lista/>
+
+      <Switch>
+        <Route
+          path={["/admin", "/admin/new"]}
+          component={Lista}
+        />
+      </Switch>
     </Container>
   );
 };
