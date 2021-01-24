@@ -11,7 +11,7 @@ export const Lista = ({ history }) => {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8000/categoria").then((response) => {
+    axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {
       setCategorias(response.data.categorias);
     });
   }, []);

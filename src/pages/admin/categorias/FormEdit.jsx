@@ -55,14 +55,14 @@ export const FormEdit = ({ history, match }) => {
   const { register, handleSubmit, setValue } = useForm();
 
   useEffect(() => {
-    axios.get(`http://localhost:8000/categoria/${match.params.id}`).then((response) => {
+    axios.get(`http://app.toplojavirtual.com.br/categoria/${match.params.id}`).then((response) => {
       // console.log("eee", response.data.categoria[0].nome)
       setValue("nome", response.data.categoria[0].nome);
     });
   }, []);
 
   const handleOnSubmit = (data) => {
-    axios.patch(`http://localhost:8000/categoria/${match.params.id}`, data).then((response) => {
+    axios.patch(`http://app.toplojavirtual.com.br/categoria/${match.params.id}`, data).then((response) => {
       if (response.data.status === "OK") {
         alert("Atualizado com Sucesso");
 

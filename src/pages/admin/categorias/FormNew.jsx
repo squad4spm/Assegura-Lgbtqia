@@ -55,7 +55,7 @@ export const FormNew = ({ history }) => {
   const { register, handleSubmit } = useForm();
 
   const handleOnSubmit = (data) => {
-    axios.post("http://localhost:8000/categoria", data).then((response) => {
+    axios.post("http://app.toplojavirtual.com.br/categoria", data).then((response) => {
       if (response.data.status === "OK") {
         alert("Cadastrado com Sucesso");
 
