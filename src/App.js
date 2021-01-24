@@ -10,9 +10,7 @@ function App() {
   return (
     <MyContextProvider>
         <BrowserRouter>
-        <Layout>
           <Rotas />
-        </Layout>
       </BrowserRouter>
     </MyContextProvider>
   );
