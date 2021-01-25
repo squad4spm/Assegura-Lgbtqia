@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Table } from "react-bootstrap";
 import { Switch, Route } from "react-router-dom";
+import styled from "styled-components";
 import axios from "axios";
 
 import { FormNew } from "./FormNew";
@@ -15,6 +16,17 @@ export const Lista = ({ history }) => {
       setCategorias(response.data.categorias);
     });
   }, []);
+
+  const Button = styled.button`
+    margin-left: auto;
+    display: block;
+    padding: 5px 20px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    margin-bottom: 10px;
+    background: #400040;
+    color: white;
+  `;
 
   return (
     <>
@@ -31,13 +43,13 @@ export const Lista = ({ history }) => {
           <tr key={item.id}>
             <td>{item.nome}</td>
             <td>
-              <button
+              <Button
                 onClick={() => {
                   history.push(`/admin/categorias/edit/${item.id}`);
                 }}
               >
                 Editar
-              </button>
+              </Button>
             </td>
             <td>
               <Deletar data={item} />
