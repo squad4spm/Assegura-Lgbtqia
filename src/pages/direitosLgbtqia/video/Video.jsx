@@ -10,7 +10,7 @@ export default () => {
           <div class="row">
             <div className="col-md-2"></div>
             <div className="col-md-8 text-center">
-              <h3>Titulo desse video</h3>
+              <h3>Direitos LGBT+ no Brasil - Assista Vídeo abaixo</h3>
             </div>
             <div className="col-md-2"></div>
             <div id="pg_direito_video"></div>
