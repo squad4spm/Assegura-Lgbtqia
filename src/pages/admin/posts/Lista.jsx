@@ -34,6 +34,7 @@ export const Lista = ({ history }) => {
         <thead>
           <tr>
             <th>Titulo</th>
+            <th>Categoria</th>
             <th>Editar</th>
             <th>Deletar</th>
           </tr>
@@ -42,6 +43,7 @@ export const Lista = ({ history }) => {
         {posts.map((item) => (
           <tr key={item.id}>
             <td>{item.title}</td>
+            <td><i>{item.categoria}</i></td>
             <td>
               <Button
                 onClick={() => {
