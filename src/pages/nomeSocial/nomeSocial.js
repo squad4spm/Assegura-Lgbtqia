@@ -1,11 +1,16 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import styled from "styled-components"
 
 import { Container } from "react-bootstrap";
 import "./nomeSocial.css";
 
 import img01 from "../../assets/images/unnamed2.png";
 import img02 from "../../assets/images/imgser.jpg";
+
+const Image =styled.img`
+width: 100%;
+`;
 
 export default () => {
   const [posts, setPosts] = useState([]);
@@ -165,14 +170,14 @@ export default () => {
         <div class="container">
           <div class="row my-3">
             <div class="col">
-              <h3>Artigos sobre, Retficação Nome Social e Documentação </h3>
+              <h3>Artigos sobre, Retificação de Nome Social e Documentação </h3>
             </div>
           </div>
 
           <div class="row">
             {posts.map((item) => (
-              <div class="col-md-4">
-                <img
+              <div class="col-md-3">
+                <Image
                   src={item.image}
                   class="mr-3 img-fluid"
                   alt={item.title}
