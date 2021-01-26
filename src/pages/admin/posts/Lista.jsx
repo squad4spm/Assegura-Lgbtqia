@@ -45,7 +45,7 @@ export const Lista = ({ history }) => {
             <td>
               <Button
                 onClick={() => {
-                  history.push(`/admin/edit/${item.id}`);
+                  history.push(`/admin/posts/edit/${item.id}`);
                 }}
               >
                 Editar
@@ -60,8 +60,8 @@ export const Lista = ({ history }) => {
       </Table>
 
       <Switch>
-        <Route path="/admin/new" component={FormNew} />
-        <Route path="/admin/edit/:id" component={FormEdit} />
+        <Route path="/admin/posts/new" component={FormNew} />
+        <Route path="/admin/posts/edit/:id" component={FormEdit} />
       </Switch>
     </>
   );

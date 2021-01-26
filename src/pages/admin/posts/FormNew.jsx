@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect}from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { useForm } from "react-hook-form";
@@ -55,25 +55,33 @@ const Button = styled.button`
 `;
 
 export const FormNew = ({ history }) => {
+  const [categorias, setCategorias] = useState([]);
   const { register, handleSubmit } = useForm();
 
   const handleOnSubmit = (data) => {
     axios.post("http://app.toplojavirtual.com.br/post", data).then((response) => {
       if (response.data.status === "OK") {
         alert("Cadastrado com Sucesso");
-
-        history.push("/admin");
-
+        history.push("/admin/posts");
         window.location.reload()
       }
     });
   };
 
+  useEffect(() => {
+    axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {
+      setCategorias(response.data.categorias);
+    });
+  }, []);
+
+
+  
+
   return (
     <Container>
       <Close
         onClick={() => {
-          history.push("/admin");
+          history.push("/admin/posts");
         }}
       >
         X
@@ -84,12 +92,23 @@ export const FormNew = ({ history }) => {
       <form onSubmit={handleSubmit(handleOnSubmit)}>
         <Label>Titulo do Post:</Label>
         <Input type="text" name="title" ref={register} />
+
         <Label>Conteudo:</Label>
         <Input type="text" name="content" ref={register} />
+
         <Label>Imagem:</Label>
         <Input type="text" name="image" ref={register} />
+
         <Label>Link:</Label>
         <Input type="text" name="link" ref={register} />
+
+        <Label>Categoria</Label>
+        <select type="select" name="categoria_id" ref={register}>
+          {categorias.map(item=>(
+            <option value={item.id} >{item.nome}</option>
+          ))}
+        </select>
+
         <Button>Enviar</Button>
       </form>
     </Container>

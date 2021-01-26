@@ -28,12 +28,12 @@ export default ({history}) => {
       <Header>
         <h1>Posts</h1>
 
-        <Button onClick={()=>{history.push("/admin/new")}}>Novo</Button>
+        <Button onClick={()=>{history.push("/admin/posts/new")}}>Novo</Button>
       </Header>
 
       <Switch>
         <Route
-          path={["/admin", "/admin/new"]}
+          path={["/admin/posts", "/admin/posts/new"]}
           component={Lista}
         />
       </Switch>

@@ -72,7 +72,7 @@ export const FormEdit = ({ history, match }) => {
       if (response.data.status === "OK") {
         alert("Atualizado com Sucesso");
 
-        history.push("/admin");
+        history.push("/admin/posts");
 
         window.location.reload()
       }
@@ -83,7 +83,7 @@ export const FormEdit = ({ history, match }) => {
     <Container>
       <Close
         onClick={() => {
-          history.push("/admin");
+          history.push("/admin/posts");
         }}
       >
         X
