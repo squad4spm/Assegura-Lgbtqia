@@ -74,9 +74,6 @@ export const FormNew = ({ history }) => {
     });
   }, []);
 
-
-  
-
   return (
     <Container>
       <Close
@@ -103,7 +100,7 @@ export const FormNew = ({ history }) => {
         <Input type="text" name="link" ref={register} />
 
         <Label>Categoria</Label>
-        <select type="select" name="categoria_id" ref={register}>
+        <select type="select" name="categoria_id" ref={register} required>
           {categorias.map(item=>(
             <option value={item.id} >{item.nome}</option>
           ))}

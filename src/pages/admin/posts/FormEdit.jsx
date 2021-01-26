@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect , useState} from "react";
 import styled from "styled-components";
 import axios from "axios";
 import { useForm } from "react-hook-form";
@@ -56,6 +56,7 @@ const Button = styled.button`
 
 export const FormEdit = ({ history, match }) => {
   const { register, handleSubmit, setValue } = useForm();
+  const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
     axios.get(`http://app.toplojavirtual.com.br/post/${match.params.id}`).then((response) => {
@@ -64,6 +65,12 @@ export const FormEdit = ({ history, match }) => {
       setValue("content", response.data.post[0].content);
       setValue("image", response.data.post[0].image);
       setValue("link", response.data.post[0].link);
+    });
+  }, []);
+
+  useEffect(() => {
+    axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {
+      setCategorias(response.data.categorias);
     });
   }, []);
 
@@ -78,6 +85,8 @@ export const FormEdit = ({ history, match }) => {
       }
     });
   };
+
+ 
 
   return (
     <Container>
@@ -94,12 +103,23 @@ export const FormEdit = ({ history, match }) => {
       <form onSubmit={handleSubmit(handleOnSubmit)}>
         <Label>Titulo do Post:</Label>
         <Input type="text" name="title" ref={register} />
+
         <Label>Conteudo:</Label>
         <Input type="text" name="content" ref={register} />
+
         <Label>Imagem:</Label>
         <Input type="text" name="image" ref={register} />
+
         <Label>Link:</Label>
         <Input type="text" name="link" ref={register} />
+        
+        <Label>Categoria</Label>
+        <select type="select" name="categoria_id" ref={register} required>
+          {categorias.map(item=>(
+            <option value={item.id} >{item.nome}</option>
+          ))}
+        </select>
+
         <Button>Enviar</Button>
       </form>
     </Container>
