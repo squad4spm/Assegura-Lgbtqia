@@ -1,3 +1,6 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+
 import { Container, Button } from "react-bootstrap";
 
 import casa1 from "../../../assets/images/casa1.jpg";
@@ -7,35 +10,16 @@ import casa_florecer from "../../../assets/images/casa_florecer.jpg";
 import "./articles.css";
 
 export default () => {
-  const data = [
-    {
-      image: casa1,
-      title:
-        "A importância da psicoterapia para LGBTs",
-      description:
-        "No espaço psicoterapêutico é possível reconhecer sua história e caso haja aspectos negativos eles podem, em alguns casos, serem ressignificados, mas principalmente processados e integrados na história pessoal, entendendo sua influência na personalidade e como isso impacta nas tomadas de decisão...",
-      linkAction:
-        "https://medium.com/@piranhasteamfc/qualquer-um-pode-ser-uma-amea%C3%A7a-no-brasil-de-bolsonaro-lgbts-tomam-a-defesa-pessoal-com-suas-a9b62555aa0e",
-    },
-    {
-      image: artigo1,
-      title:
-        "Cuidar da saúde mental de negros e LGBTs exige combater racismo e LGBTfobia",
-      description:
-        "Para a psicóloga Beatriz Machado, integrante do Instituto Afro Amparo e Saúde, que atua com terapia para pessoas negras, isso acontece porque “corpos negros e LGBTs são vistos pela sociedade branca e cisnormativa como descartáveis”.",
-      linkAction:
-        "https://medium.com/@piranhasteamfc/qualquer-um-pode-ser-uma-amea%C3%A7a-no-brasil-de-bolsonaro-lgbts-tomam-a-defesa-pessoal-com-suas-a9b62555aa0e",
-    },
-    {
-      image: casa_florecer,
-      title:
-        "Qualquer um pode ser uma ameaça”: no Brasil de Bolsonaro, LGBTs tomam a defesa pessoal com suas próprias mãos",
-      description:
-        "Em um país com uma das maiores taxas de violência do mundo contra gays e transgêneros, onde as redes sociais...",
-      linkAction:
-        "https://medium.com/@piranhasteamfc/qualquer-um-pode-ser-uma-amea%C3%A7a-no-brasil-de-bolsonaro-lgbts-tomam-a-defesa-pessoal-com-suas-a9b62555aa0e",
-    },
-  ];
+
+  const [posts, setPosts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://app.toplojavirtual.com.br/post/cat/4")
+      .then((response) => {
+        setPosts(response.data.posts);
+      });
+  }, []);
 
   return (
     <Container fluid>
@@ -48,14 +32,14 @@ export default () => {
           </div>
 
           <div class="row">
-            {data.map((item) => (
+            {posts.map((item) => (
               <div class="col-md-4 text-center">
                 <img src={item.image} class="img-fluid" alt={item.title} />
                 <h5 class="mt-0">{item.title}</h5>
-                <p>{item.description}</p>
+                <p>{item.content}</p>
                 <Button
                   variant="outline-success"
-                  onClick={() => window.open(item.linkAction, "_blank")}
+                  onClick={() => window.open(item.link, "_blank")}
                 >
                   Leia mais
                 </Button>
