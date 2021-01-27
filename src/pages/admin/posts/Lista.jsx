@@ -28,18 +28,27 @@ export const Lista = ({ history }) => {
     color: white;
   `;
 
+  const Tbody = styled.tbody`
+    tr:nth-child(even) {background-color: rgba(64, 0, 64, 0.2);}
+  `;
+
+  const Thead = styled.thead`
+    background: #400040;
+    color: white;
+  `;
+
   return (
     <>
       <Table striped bordered hover>
-        <thead>
+        <Thead>
           <tr>
             <th>Titulo</th>
             <th>Categoria</th>
             <th>Editar</th>
             <th>Deletar</th>
           </tr>
-        </thead>
-        <tbody>
+        </Thead>
+        <Tbody>
         {posts.map((item) => (
           <tr key={item.id}>
             <td>{item.title}</td>
@@ -58,7 +67,7 @@ export const Lista = ({ history }) => {
             </td>
           </tr>
         ))}
-        </tbody>
+        </Tbody>
       </Table>
 
       <Switch>

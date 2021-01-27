@@ -5,18 +5,21 @@ import { useForm } from "react-hook-form";
 
 const Container = styled.div`
   position: fixed;
-  top: 150px;
+  top: 50px;
   width: 600px;
-  height: 400px;
-  background: #dedede;
+  height: 650px;
+  background: #400040;
   border: 1px solid #333;
+  border-radius: 20px;
   padding: 40px;
+  color: white;
+  z-index: 2;
 `;
 
 const Close = styled.span`
   position: absolute;
-  top: -40px;
-  right: 0px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   padding: 10px;
   font-weight: bold;
@@ -27,6 +30,7 @@ const Title = styled.h1`
   padding-top: 0 !important;
   padding-bottom: 0 !important;
   margin-bottom: 50px;
+  color: white !important;
 `;
 
 const Label = styled.label`

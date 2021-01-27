@@ -10,8 +10,9 @@ const Container = styled.div`
 const Item = styled.div`
   width: 100%;
   padding: 10px;
-  background: #fdb1b1;
+  background: #400040;
   cursor: pointer;
+  color: white;
 `;
 
 export const Siderbar = () => {

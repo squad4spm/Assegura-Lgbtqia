@@ -7,12 +7,13 @@ const Container = styled.div`
   position: fixed;
   top: 50px;
   width: 600px;
-  height: 600px;
+  height: 650px;
   background: #400040;
   border: 1px solid #333;
   border-radius: 20px;
   padding: 40px;
   color: white;
+  z-index: 2;
 `;
 
 const Close = styled.span`
