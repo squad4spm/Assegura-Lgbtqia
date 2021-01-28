@@ -5,8 +5,8 @@
   height: 80px;
   display: flex;
   position: fixed;
-  bottom: 10%;
-  right: 5%;
+  bottom: 5%;
+  right: 2%;
   z-index: 1;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
@@ -26,8 +26,8 @@
   height: 80px;
   display: flex;
   position: fixed;
-  bottom: 10%;
-  right: 5%;
+  bottom: 5%;
+  right: 2%;
   z-index: 1;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50%;
@@ -49,6 +49,7 @@
   cursor: pointer;
 }
 
+/*
 #botao_flutuante {
   background-color: #400040;
   color: #fff;
@@ -57,7 +58,7 @@
   display: flex !important;
   position: fixed;
   bottom: 5%;
-  right: 10%;
+  right: 2%;
   z-index: 1;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -78,7 +79,7 @@
   display: flex;
   position: fixed;
   bottom: 5%;
-  right: 10%;
+  right: 2%;
   z-index: 1;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -90,3 +91,4 @@
   text-decoration: none;
   flex-direction: column;
 }
+*/

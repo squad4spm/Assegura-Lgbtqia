@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const Container = styled.div`
   width: 100%;
   min-height: 400px;
-  background: #dedede;
+  background: rgba(64, 0, 64, 0.2);
 `;
 
 const Item = styled.div`

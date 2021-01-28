@@ -25,7 +25,7 @@ export const TopHeader = () => {
       <Col xs={6} id="colRight">
         faça seu login
         <IconContext.Provider value={{ color: "white" }}>
-          <FaUser id="iconsRight" onClick={() => history.push(`/pages-login`)} />
+          <FaUser id="iconsRight" onClick={() => history.push(`/admin`)} />
         </IconContext.Provider>
       </Col>
     </Row>
