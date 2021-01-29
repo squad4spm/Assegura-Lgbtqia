@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 
-import casa1 from "../../../assets/images/casa1.jpg";
+import casa1 from "../../../assets/images/casa1logo.png";
 
 import "./sobreCasaUm.css";
 
