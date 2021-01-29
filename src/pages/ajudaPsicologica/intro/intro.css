@@ -1,8 +1,8 @@
-##pg_sobre_psicologia_intro {
+#pg_sobre_psicologia_intro {
   padding: 100px 0;
 }
 @media (max-width: 768px) {
-  ##pg_sobre_psicologia_intro {
+  #pg_sobre_psicologia_intro {
     padding: 25px 0;
   }
 }
