@@ -40,11 +40,11 @@
   font-weight: 600;
 }
 
-#botao_flutuante a {
+#botao_flutuante p {
   color: white;
 }
 
-#botao_flutuante:hover a {
+#botao_flutuante:hover p {
   color: #400040;
   cursor: pointer;
 }

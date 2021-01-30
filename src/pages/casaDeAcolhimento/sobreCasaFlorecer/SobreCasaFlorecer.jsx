@@ -8,11 +8,11 @@ export default () => {
   return (
     <section id="pg_acolhimento_casaflorecer">
       <Container>
-        <div class="row">
-          <div class="col-md-3">
-            <img src={casa_florecer} class="img-fluid" />
+        <div className="row">
+          <div className="col-md-3">
+            <img src={casa_florecer} className="img-fluid" alt="" />
           </div>
-          <div class="col-md-9">
+          <div className="col-md-9">
             <h3>
               <br />
               CASA FLORECER

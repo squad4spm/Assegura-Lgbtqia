@@ -1,12 +1,8 @@
-import React, {useContext, useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import { Container, Form, Button, Row } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import axios from 'axios'
 import "./login.css";
-
-import Cadastro from "../cadastro/cadastro.js";
-import {MyContext} from '../../contexts/MyContext';
-import user from "../../assets/images/userProfile.png";
 
 export default ()  => {
   const [usuario, setUsuario] = useState([]);
@@ -18,9 +14,9 @@ export default ()  => {
   }, []);
 
   return(
-    <Container class="my-4 mx-5" id="contaH">
-      <Row class="coluna no-gutters">
-        <div class="col-lg-7">
+    <Container className="my-4 mx-5" id="contaH">
+      <Row className="coluna no-gutters">
+        <div className="col-lg-7">
           <Form>
             <Form.Group>
               <Form.Label>Usuário</Form.Label>

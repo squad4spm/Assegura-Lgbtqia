@@ -7,9 +7,9 @@ import "./sobreCasaUm.css";
 export default () => {
   return (
     <Container>
-      <section id="pg_acolhimento_casaUm" class="container">
-        <div class="row">
-          <div class="col-md-9">
+      <section id="pg_acolhimento_casaUm" className="container">
+        <div className="row">
+          <div className="col-md-9">
             <h3>CASA 1</h3>
             <p>
               Pioneira no Brasil, a Casa 1 é um centro de acolhida de jovens
@@ -21,8 +21,8 @@ export default () => {
               projetos da casa.
             </p>
           </div>
-          <div class="col-md-3">
-            <img src={casa1} class="img-fluid" />
+          <div className="col-md-3">
+            <img src={casa1} className="img-fluid" alt="" />
           </div>
         </div>
       </section>

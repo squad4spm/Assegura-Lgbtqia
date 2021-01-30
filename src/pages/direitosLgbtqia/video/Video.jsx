@@ -7,7 +7,7 @@ export default () => {
     <Container fluid>
       <div id="pg_direito_video">
         <Container>
-          <div class="row">
+          <div className="row">
             <div className="col-md-2"></div>
             <div className="col-md-8 text-center">
               <h3>Direitos LGBT+ no Brasil - Assista Vídeo abaixo</h3>
@@ -16,11 +16,12 @@ export default () => {
             <div id="pg_direito_video"></div>
           </div>
 
-          <div class="row">
+          <div className="row">
             <div className="col-md-2"></div>
             <div className="col-md-8">
               <iframe
-                width="100%"
+                title="video1"
+                width="100%"Name
                 height="315"
                 src="https://www.youtube.com/embed/FefS4qGbLhs"
                 frameborder="0"

@@ -36,10 +36,10 @@ export default () => {
     <Container fluid>
       <section id="pg_acolhimento_contatos">
         <Container>
-          <div class="row">
+          <div className="row">
             {data.map((item) => (
-              <div class="col-md-4">
-                <h5 class="mt-0">{item.name}</h5>
+              <div className="col-md-4">
+                <h5 className="mt-0">{item.name}</h5>
                 <p>Redes Sociais</p>
                 <IconContext.Provider value={{ color: "white", size: "1.3em" }}>
                   <FaFacebookSquare

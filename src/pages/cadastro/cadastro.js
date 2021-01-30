@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Form, Button, Row, Col } from "react-bootstrap";
+import { Container, Form, Button, Col } from "react-bootstrap";
 import "./cadastro.css";
 import axios from 'axios'
 

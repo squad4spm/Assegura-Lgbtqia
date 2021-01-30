@@ -8,25 +8,25 @@ export default () => {
   return (
     <Container>
       <div id="pg_direito_call_download">
-        <div class="row">
+        <div className="row">
           <div className="col-md-12 text-center">
             <h3>Cartilha Antra Brasil</h3>
           </div>
         </div>
 
-        <div class="row">
+        <div className="row">
           <div className="col-md-12 text-center">
             <p>Baixe ou leia a cartilha</p>
           </div>
         </div>
 
-        <div class="row">
+        <div className="row">
           <div className="col-md-6 text-center">
-            <img src={cartilha} />
+            <img src={cartilha} alt="" />
           </div>
 
           <div className="col-md-6 text-center">
-            <div class="containerButton">
+            <div className="containerButton">
             <Button
               variant="outline-success"
               size="lg"

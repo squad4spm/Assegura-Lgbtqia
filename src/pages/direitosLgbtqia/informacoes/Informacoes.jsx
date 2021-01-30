@@ -19,12 +19,12 @@ export default () => {
     <Container>
       <div id="pg_direito_informacoes">
         {posts.map((item) => (
-          <div class="row">
-            <div class="col-md-3">
-              <img src={item.image} />
+          <div className="row">
+            <div className="col-md-3">
+              <img src={item.image} alt="" />
             </div>
 
-            <div class="col-md-9">
+            <div className="col-md-9">
               <h3>{item.title}</h3>
               <p>{item.content}</p>
               <Button

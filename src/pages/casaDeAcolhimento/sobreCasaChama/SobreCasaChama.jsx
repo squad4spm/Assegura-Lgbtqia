@@ -7,9 +7,9 @@ import "./sobreCasaChama.css"
 export default () => {
   return (
     <Container>
-      <section id="pg_acolhimento_casaChama" class="container">
-        <div class="row">
-          <div class="col-md-6">
+      <section id="pg_acolhimento_casaChama" className="container">
+        <div className="row">
+          <div className="col-md-6">
             <h3>
               <br />
               CASA CHAMA
@@ -25,8 +25,8 @@ export default () => {
               covid-19 e assistidas pelo projeto.
             </p>
           </div>
-          <div class="col-md-6">
-            <img src={casa_chama} class="img-fluid" />
+          <div className="col-md-6">
+            <img src={casa_chama} className="img-fluid" alt="" />
           </div>
         </div>
       </section>

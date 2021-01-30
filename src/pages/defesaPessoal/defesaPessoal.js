@@ -20,16 +20,16 @@ export default () => {
   return (
     <Container fluid>
       <section id="pg_defesa_pessoal_banner">
-        <div class="jumbotron card card-image d-block">
-          <p class="mx-2 mb-4">
+        <div className="jumbotron card card-image d-block">
+          <p className="mx-2 mb-4">
             Defesa Pessoal <br /> LGBTQIA+
           </p>
         </div>
       </section>
 
-      <section id="pg_defesa_pessoal_primeiraClass" class="container">
-        <div class="row">
-          <div class="col-md-6">
+      <section id="pg_defesa_pessoal_primeiraClass" className="container">
+        <div className="row">
+          <div className="col-md-6">
             <p>
               Muitas pessoas LGBTQIA+ no centro de São Paulo precisam de apoio,
               para se defender de violências sofridas. Mas muitas dessas pessoas
@@ -42,16 +42,16 @@ export default () => {
               Por isso criamos o Assegura LGBTQIA+{" "}
             </h3>
           </div>
-          <div class="col-md-6">
-            <img src={img01} class="img-fluid" />
+          <div className="col-md-6">
+            <img src={img01} class="img-fluid" alt="" />
           </div>
         </div>
       </section>
 
-      <section id="pg_defesa_pessoal_segundaClass" class="container-fluid my-4">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 py-5">
+      <section id="pg_defesa_pessoal_segundaClass" className="container-fluid my-4">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12 py-5">
               <p>
                 Por isso, vamos através de Informações e Parcerias com
                 Professores e Escolas de Defesa Pessoal, conectar quem precisa
@@ -68,11 +68,11 @@ export default () => {
             </div>
           </div>
           <div>
-            <div class="row py-4">
-              <div class="col-md-6">
-                <img src={img02} class="img-fluid" />
+            <div className="row py-4">
+              <div className="col-md-6">
+                <img src={img02} className="img-fluid" alt="" />
               </div>
-              <div class="col my-5">
+              <div className="col my-5">
                 <p>
                   Pesquisas mostram que pessoas treinadas para responder
                   adequadamente a um ataque, podem até mesmo impedir que
@@ -86,21 +86,22 @@ export default () => {
         </div>
       </section>
 
-      <section class="container-fluid terceiraClass">
-        <div class="container">
-          <div class="row my-3">
-            <div class="col">
-              <p class="text-center">
+      <section className="container-fluid terceiraClass">
+        <div className="container">
+          <div className="row my-3">
+            <div className="col">
+              <p className="text-center">
                 Você que é alvo de violência deve saber se defender, isto é
                 empoderamento, é ser livre, <br /> é não viver refém do medo.
               </p>
-              <h3 class="text-center">Vídeos com Aulas de Defesa Pessoal</h3>
+              <h3 className="text-center">Vídeos com Aulas de Defesa Pessoal</h3>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-3">
+          <div className="row">
+            <div className="col-md-3">
               <iframe
+                title="video1"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/HF8NxF1QYh0"
@@ -109,8 +110,9 @@ export default () => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <iframe
+                title="video2"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/kxnjvWnpnxQ"
@@ -119,8 +121,9 @@ export default () => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <iframe
+                title="video3"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/rSmerT0ZpFI"
@@ -129,8 +132,9 @@ export default () => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <iframe
+                title="video4"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/C14myVELhnE"
@@ -143,30 +147,30 @@ export default () => {
         </div>
       </section>
 
-      <section class="container-fluid quartaClass">
-        <div class="container">
-          <div class="row my-3">
-            <div class="col">
+      <section className="container-fluid quartaClass">
+        <div className="container">
+          <div className="row my-3">
+            <div className="col">
               <h3>Artigos sobre Defesa Pessoal</h3>
             </div>
           </div>
 
-          <div class="row">
+          <div className="row">
             {posts.map((item) => (
-              <div class="col-md-3" key={item.id}>
+              <div className="col-md-3" key={item.id}>
                 <img
                   src={item.image}
-                  class="mr-3 img-fluid"
+                  className="mr-3 img-fluid"
                   alt={item.title}
                 />
-                <h5 class="mt-0">
+                <h5 className="mt-0">
                     {item.title}
                 </h5>
                 <p>
                 {item.content}
                 </p>
                 <a
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   target="_blank"
                   href={item.link}
                   role="button"

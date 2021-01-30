@@ -1,8 +1,7 @@
 import "./topHeader.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
-import React, {useContext} from 'react';
-import {MyContext} from '../../../contexts/MyContext';
+import React from 'react';
 
 import { IconContext } from "react-icons";
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare, FaUser } from 'react-icons/fa';

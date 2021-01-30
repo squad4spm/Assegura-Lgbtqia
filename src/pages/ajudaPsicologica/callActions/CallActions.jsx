@@ -9,11 +9,11 @@ export default () => {
     <Container fluid>
       <section id="pg_sobre_psicologia_callAction">
         <Container>
-          <div class="row">
-            <div class="col-md-6">
-              <img src={psicologico3} class="img-fluid" />
+          <div className="row">
+            <div className="col-md-6">
+              <img src={psicologico3} className="img-fluid" alt=""/>
             </div>
-            <div class="col-md-6 text-center">
+            <div className="col-md-6 text-center">
               <div className="containerButtonActions">
                 <Button variant="outline-success">QUERO AJUDAR!</Button>
                 <Button variant="outline-success">PRECISO DE AJUDA!</Button>

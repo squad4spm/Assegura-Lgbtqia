@@ -1,12 +1,9 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Container, Form, Button, Row } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import { useForm } from 'react-hook-form'
-import axios from 'axios'
 
 import "./login.css";
-
-import user from "../../../assets/images/userProfile.png";
 
 export default ({ history }) => {
   const [error, setError] = useState(null)

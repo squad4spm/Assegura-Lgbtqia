@@ -8,8 +8,8 @@ export default () => {
   return (
     <Container>
       <section id="#pg_sobre_psicologia_intro">
-        <div class="row">
-          <div class="col-md-6">
+        <div className="row">
+          <div className="col-md-6">
             <h3>
               <br />
               Pessoas Precisando
@@ -27,8 +27,8 @@ export default () => {
             Fonte: Observatório da sociedade civil
             </a>
           </div>
-          <div class="col-md-6 text-center">
-            <img src={psicologico2} class="img-fluid d-inline" />
+          <div className="col-md-6 text-center">
+            <img src={psicologico2} className="img-fluid d-inline" alt="" />
           </div>
         </div>
       </section>

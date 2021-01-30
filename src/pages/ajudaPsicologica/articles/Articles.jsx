@@ -3,10 +3,6 @@ import axios from "axios";
 
 import { Container, Button } from "react-bootstrap";
 
-import casa1 from "../../../assets/images/casa1.jpg";
-import artigo1 from "../../../assets/images/artigo1.jpg";
-import casa_florecer from "../../../assets/images/casa_florecer.jpg";
-
 import "./articles.css";
 
 export default () => {
@@ -25,17 +21,17 @@ export default () => {
     <Container fluid>
       <section id="pg_sobre_psicologia_articles">
         <Container>
-          <div class="row">
-            <div class="col-md-12 text-center">
+          <div className="row">
+            <div className="col-md-12 text-center">
               <h3>Artigos sobre Ajuda Psicológica</h3>
             </div>
           </div>
 
-          <div class="row">
+          <div className="row">
             {posts.map((item) => (
-              <div class="col-md-4 text-center">
+              <div className="col-md-4 text-center">
                 <img src={item.image} class="img-fluid" alt={item.title} />
-                <h5 class="mt-0">{item.title}</h5>
+                <h5 className="mt-0">{item.title}</h5>
                 <p>{item.content}</p>
                 <Button
                   variant="outline-success"

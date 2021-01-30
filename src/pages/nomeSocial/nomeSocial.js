@@ -26,8 +26,8 @@ export default () => {
   return (
     <Container fluid>
       <section id="pg_defesa_pessoal_banner">
-        <div class="jumbotron card card-image d-block nomeSocial">
-          <p class="mx-2 mb-4">
+        <div className="jumbotron card card-image d-block nomeSocial">
+          <p className="mx-2 mb-4">
             Nome Social <br /> LGBTQIA+
           </p>
         </div>
@@ -35,13 +35,13 @@ export default () => {
 
       <section
         id="pg_defesa_pessoal_primeiraClass"
-        class="container primeiraClass"
+        className="container primeiraClass"
       >
-        <div class="row">
-          <div class="col-md-6">
-            <img src={img01} class="img-fluid" />
+        <div className="row">
+          <div className="col-md-6">
+            <img src={img01} className="img-fluid" />
           </div>
-          <div class="col-md-6 my-5 mb-0">
+          <div className="col-md-6 my-5 mb-0">
             <p>
               Nome social é o nome pelo qual pessoas transexuais, travestis ou
               outros preferem ser chamadas no dia a dia, ao invés de seu nome
@@ -51,7 +51,7 @@ export default () => {
               masculino, não-binário, entre outros.
             </p>
           </div>
-          <div class="col-md-12">
+          <div className="col-md-12">
             <p>
               No processo de aceitação e entendimento em relação à identidade de
               gênero de cada um, o nome é uma das questões que têm maior
@@ -66,11 +66,11 @@ export default () => {
 
       <section
         id="pg_defesa_pessoal_segundaClass"
-        class="container-fluid segundaClass"
+        className="container-fluid segundaClass"
       >
-        <div class="container imagemNomeSocial">
-          <div class="row">
-            <div class="col-md-6 my-4 mb-4">
+        <div className="container imagemNomeSocial">
+          <div className="row">
+            <div className="col-md-6 my-4 mb-4">
               <p>
                 {" "}
                 <b> Agora vamos tirar algumas duvidas</b>
@@ -102,28 +102,29 @@ export default () => {
                 para conseguir a gratuidade.
               </p>
             </div>
-            <div class="col-md-6 my-5 mb-0">
-              <img src={img02} class="img-fluid" />
+            <div className="col-md-6 my-5 mb-0">
+              <img src={img02} className="img-fluid" alt="" />
             </div>
           </div>
         </div>
       </section>
 
-      <section class="container terceiraClass">
-        <div class="container">
-          <div class="row my-3">
-            <div class="col">
-              <p class="text-center">
+      <section className="container terceiraClass">
+        <div className="container">
+          <div className="row my-3">
+            <div className="col">
+              <p className="text-center">
                 Separamos aqui alguns videos com mais informaçoes sobre o
                 processo{" "}
               </p>
-              <h3 class="text-center">Vídeos</h3>
+              <h3 className="text-center">Vídeos</h3>
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-3">
+          <div className="row">
+            <div className="col-md-3">
               <iframe
+                title="video1"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/3oqztdVbivk"
@@ -132,8 +133,9 @@ export default () => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <iframe
+                title="video2"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/hRD_xTbIgYc"
@@ -142,8 +144,9 @@ export default () => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <iframe
+                title="video3"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/sBKF5va4nRI"
@@ -152,8 +155,9 @@ export default () => {
                 allowfullscreen
               ></iframe>
             </div>
-            <div class="col-md-3">
+            <div className="col-md-3">
               <iframe
+                title="video4"
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/1NOetBCF_pw"
@@ -166,30 +170,30 @@ export default () => {
         </div>
       </section>
 
-      <section class="container-fluid quartaClass">
-        <div class="container">
-          <div class="row my-3">
-            <div class="col">
+      <section className="container-fluid quartaClass">
+        <div className="container">
+          <div className="row my-3">
+            <div className="col">
               <h3>Artigos sobre, Retificação de Nome Social e Documentação </h3>
             </div>
           </div>
 
-          <div class="row">
+          <div className="row">
             {posts.map((item) => (
-              <div class="col-md-3">
+              <div className="col-md-3">
                 <Image
                   src={item.image}
-                  class="mr-3 img-fluid"
+                  className="mr-3 img-fluid"
                   alt={item.title}
                 />
-                <h5 class="mt-0">
+                <h5 className="mt-0">
                  {item.title}
                 </h5>
                 <p>
                 {item.content}
                 </p>
                 <a
-                  class="btn btn-primary"
+                  className="btn btn-primary"
                   target="_blank"
                   href={item.link}
                   role="button"
