@@ -4,7 +4,7 @@ import CallActions from "./callActions/CallActions";
 import Works from "./works/Works";
 import Articles from "./articles/Articles";
 
-export default () => {
+const ajudaPsicologica = () => {
   return (
     <>
       <Banner />
@@ -15,3 +15,5 @@ export default () => {
     </>
   );
 };
+
+export default ajudaPsicologica;

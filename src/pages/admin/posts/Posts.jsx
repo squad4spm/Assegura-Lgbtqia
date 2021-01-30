@@ -23,7 +23,7 @@ const Button = styled.button`
   color: white;
 `;
 
-export default ({history}) => {
+const posts = ({history}) => {
   return (
     <Container>
       <Header>
@@ -41,3 +41,5 @@ export default ({history}) => {
     </Container>
   );
 };
+
+export default posts;

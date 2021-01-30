@@ -4,7 +4,7 @@ import { Container, Button } from "react-bootstrap";
 
 import "./informacoes.css";
 
-export default () => {
+const Informacoes = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -40,3 +40,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Informacoes;

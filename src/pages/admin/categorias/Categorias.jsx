@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { Switch, Route } from "react-router-dom";
 
-import { Lista } from "./Lista";
+import Lista from "./Lista";
 
 const Container = styled.div``;
 
@@ -23,7 +23,7 @@ const Button = styled.button`
   color: white;
 `;
 
-export default ({history}) => {
+const categorias = ({history}) => {
   return (
     <Container>
       <Header>
@@ -41,3 +41,5 @@ export default ({history}) => {
     </Container>
   );
 };
+
+export default categorias;

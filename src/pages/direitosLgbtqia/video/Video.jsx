@@ -2,7 +2,7 @@ import { Container } from "react-bootstrap";
 
 import "./video.css";
 
-export default () => {
+const Video = () => {
   return (
     <Container fluid>
       <div id="pg_direito_video">
@@ -37,3 +37,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Video;

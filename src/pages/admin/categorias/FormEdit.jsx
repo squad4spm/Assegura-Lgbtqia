@@ -55,7 +55,7 @@ const Button = styled.button`
   margin-bottom: 20px;
 `;
 
-export const FormEdit = ({ history, match }) => {
+const FormEdit = ({ history, match }) => {
   const { register, handleSubmit, setValue } = useForm();
 
   useEffect(() => {
@@ -97,3 +97,5 @@ export const FormEdit = ({ history, match }) => {
     </Container>
   );
 };
+
+export default FormEdit;

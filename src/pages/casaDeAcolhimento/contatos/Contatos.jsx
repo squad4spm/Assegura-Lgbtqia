@@ -5,7 +5,7 @@ import { FaFacebookSquare, FaInstagramSquare } from "react-icons/fa";
 
 import "./contatos.css";
 
-export default () => {
+const Contatos = () => {
   const data = [
     {
       name: "Casa Chama",
@@ -63,3 +63,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Contatos;

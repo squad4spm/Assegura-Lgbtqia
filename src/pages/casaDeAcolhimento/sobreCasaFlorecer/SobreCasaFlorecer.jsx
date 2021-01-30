@@ -4,7 +4,7 @@ import casa_florecer from "../../../assets/images/casa_florecer.jpg";
 
 import "./sobreCasaFlorecer.css";
 
-export default () => {
+const SobreCasaFlorecer = () => {
   return (
     <section id="pg_acolhimento_casaflorecer">
       <Container>
@@ -32,3 +32,5 @@ export default () => {
     </section>
   );
 };
+
+export default SobreCasaFlorecer;

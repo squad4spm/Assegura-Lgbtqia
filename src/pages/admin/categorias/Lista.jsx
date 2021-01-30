@@ -4,11 +4,11 @@ import { Switch, Route } from "react-router-dom";
 import styled from "styled-components";
 import axios from "axios";
 
-import { FormNew } from "./FormNew";
-import { FormEdit } from "./FormEdit";
-import { Deletar } from "./Deletar";
+import FormNew from "./FormNew";
+import FormEdit from "./FormEdit";
+import Deletar from "./Deletar";
 
-export const Lista = ({ history }) => {
+const Lista = ({ history }) => {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
@@ -75,3 +75,5 @@ export const Lista = ({ history }) => {
     </>
   );
 };
+
+export default Lista;

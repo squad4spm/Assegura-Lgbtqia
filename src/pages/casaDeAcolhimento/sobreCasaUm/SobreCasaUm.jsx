@@ -4,7 +4,7 @@ import casa1 from "../../../assets/images/casa1logo.png";
 
 import "./sobreCasaUm.css";
 
-export default () => {
+const SobreCasaUm = () => {
   return (
     <Container>
       <section id="pg_acolhimento_casaUm" className="container">
@@ -29,3 +29,5 @@ export default () => {
     </Container>
   );
 };
+
+export default SobreCasaUm;

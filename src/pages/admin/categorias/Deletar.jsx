@@ -12,7 +12,7 @@ const Button = styled.button`
     color: white;
   `;
 
-export const Deletar = ({data}) => {
+const Deletar = ({data}) => {
   const handleOnDelete = () => {
     if ( window.confirm(`Deseja mesmo deletar ""${data.nome}""`)) {
       axios.delete(`http://app.toplojavirtual.com.br/categoria/${data.id}`).then(response=>{
@@ -24,3 +24,5 @@ export const Deletar = ({data}) => {
   };
   return <Button onClick={handleOnDelete}>Deletar</Button>;
 };
+
+export default Deletar;

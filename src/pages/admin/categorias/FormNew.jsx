@@ -55,7 +55,7 @@ const Button = styled.button`
   margin-bottom: 20px;
 `;
 
-export const FormNew = ({ history }) => {
+const FormNew = ({ history }) => {
   const { register, handleSubmit } = useForm();
 
   const handleOnSubmit = (data) => {
@@ -90,3 +90,5 @@ export const FormNew = ({ history }) => {
     </Container>
   );
 };
+
+export default FormNew;

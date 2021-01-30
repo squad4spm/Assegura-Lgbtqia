@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap";
 import './banner.css'
 
-export default () => {
+const Banner = () => {
   return (
     <Container fluid>
       <section id="pg_sobre_psicologia_banner">
@@ -10,3 +10,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Banner;

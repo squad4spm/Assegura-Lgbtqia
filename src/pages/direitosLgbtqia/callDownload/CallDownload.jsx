@@ -4,7 +4,7 @@ import cartilha from "../../../assets/images/cartilha_antra.png";
 
 import "./callDownload.css";
 
-export default () => {
+const CallDownload = () => {
   return (
     <Container>
       <div id="pg_direito_call_download">
@@ -47,3 +47,5 @@ export default () => {
     </Container>
   );
 };
+
+export default CallDownload;

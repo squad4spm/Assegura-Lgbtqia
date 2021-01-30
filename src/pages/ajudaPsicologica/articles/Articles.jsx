@@ -5,7 +5,7 @@ import { Container, Button } from "react-bootstrap";
 
 import "./articles.css";
 
-export default () => {
+const Articles = () => {
 
   const [posts, setPosts] = useState([]);
 
@@ -47,3 +47,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Articles;

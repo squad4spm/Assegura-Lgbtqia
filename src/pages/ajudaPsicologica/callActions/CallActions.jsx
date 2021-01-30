@@ -4,7 +4,7 @@ import "./callActions.css";
 
 import psicologico3 from "../../../assets/images/psicologico3.jpg";
 
-export default () => {
+const CallActions = () => {
   return (
     <Container fluid>
       <section id="pg_sobre_psicologia_callAction">
@@ -25,3 +25,5 @@ export default () => {
     </Container>
   );
 };
+
+export default CallActions;

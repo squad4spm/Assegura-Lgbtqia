@@ -4,7 +4,7 @@ import casa_chama from "../../../assets/images/casa_chama.jpg";
 
 import "./sobreCasaChama.css"
 
-export default () => {
+const SobreCasaChama = () => {
   return (
     <Container>
       <section id="pg_acolhimento_casaChama" className="container">
@@ -33,3 +33,5 @@ export default () => {
     </Container>
   );
 };
+
+export default SobreCasaChama;

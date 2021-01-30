@@ -6,7 +6,7 @@ import match from "../../../assets/images/match.jpg";
 
 import "./works.css";
 
-export default () => {
+const Works = () => {
   return (
     <Container>
       <section id="pg_sobre_psicologia_works">
@@ -48,3 +48,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Works;

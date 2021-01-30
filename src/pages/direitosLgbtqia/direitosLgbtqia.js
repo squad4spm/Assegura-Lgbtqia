@@ -3,7 +3,7 @@ import Banner from "./banner/Banner";
 import CallDownload from "./callDownload/CallDownload";
 import Informacoes from "./informacoes/Informacoes";
 
-export default () => {
+const direitosLgbtqia = () => {
   return (
     <>
       <Banner />
@@ -13,3 +13,5 @@ export default () => {
     </>
   );
 };
+
+export default direitosLgbtqia;

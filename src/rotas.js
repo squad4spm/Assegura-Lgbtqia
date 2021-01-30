@@ -48,11 +48,7 @@ export default () => {
             />
             <Route exact path="/localizacoes" component={Pages.localizacoes} />
             <Route exact path="/ajude" component={Pages.ajude} />
-            <Route exact path="/pages-login" component={Pages.login} />
-            <Route exact path="/perfil" component={Pages.perfil} />
-            <Route exact path="/cadastro" component={Pages.cadastro} />
-            <Route exact path="/voluntarios" component={Pages.voluntarios} />
-            <Route exact path="/parceiros" component={Pages.parceiros} />
+            
           </Layout>
         </Route>
       </Switch>

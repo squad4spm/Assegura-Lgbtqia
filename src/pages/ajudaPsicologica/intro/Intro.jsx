@@ -4,7 +4,7 @@ import './intro.css'
 
 import psicologico2 from "../../../assets/images/psicologico2.jpg";
 
-export default () => {
+const Intro = () => {
   return (
     <Container>
       <section id="#pg_sobre_psicologia_intro">
@@ -35,3 +35,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Intro;

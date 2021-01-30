@@ -4,7 +4,7 @@ import SobreCasaFlorecer from './sobreCasaFlorecer/SobreCasaFlorecer'
 import SobreCasaUm from './sobreCasaUm/SobreCasaUm'
 import Contatos from './contatos/Contatos'
 
-export default () => {
+const casaDeAcolhimento = () => {
 
   return (
     <>
@@ -16,3 +16,5 @@ export default () => {
     </>
   );
 };
+
+export default casaDeAcolhimento;
