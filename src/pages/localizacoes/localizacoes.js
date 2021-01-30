@@ -1,9 +1,7 @@
 import "./localizacoes.css"
-import {React, useState} from "react";
+import React from "react";
 import { useHistory } from 'react-router-dom';
-import { Container, Dropdown, FormControl, Button } from "react-bootstrap";
-
-import MapContainer from "../../components/layout/maps/maps.js";
+import { Container, Dropdown, Button } from "react-bootstrap";
 
 import img01 from "../../assets/images/markerDefesa.png";
 import img02 from "../../assets/images/markerNome.png";
@@ -17,10 +15,10 @@ export default () => {
   return (
     <Container fluid>
       <section id="pg_localizacao">
-        <div class="center">
-            <div class="container">
-                <div class="row my-5">
-                    <div class="col-md-4">
+        <div className="center">
+            <div className="container">
+                <div className="row my-5">
+                    <div className="col-md-4">
                         <Dropdown>
                           <Dropdown.Toggle id="dropdown-basic">
                             <img src={img01} alt="" width="50px" />Defesa pessoal
@@ -90,7 +88,7 @@ export default () => {
                     </div>
                     
                     <div class="col-md-8 google-maps">
-                    <iframe src="https://www.google.com/maps/d/embed?mid=1vF4oeGJEHx0F0Xt6MwO1CbRC_fud4VuW" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    <iframe title="mapa" src="https://www.google.com/maps/d/embed?mid=1vF4oeGJEHx0F0Xt6MwO1CbRC_fud4VuW" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
             </div>

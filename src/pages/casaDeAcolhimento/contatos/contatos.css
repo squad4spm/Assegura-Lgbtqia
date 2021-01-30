@@ -1,0 +1,17 @@
+#pg_acolhimento_contatos {
+  padding: 100px 0;
+}
+@media (max-width: 768px) {
+  #pg_acolhimento_contatos {
+    padding: 25px 0;
+  }
+}
+
+#pg_acolhimento_contatos {
+  background-color: rgb(192, 193, 255);
+  color: #333;
+  font-size: 16px;
+  text-align: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
