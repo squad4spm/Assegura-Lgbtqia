@@ -57,46 +57,46 @@ export default () => {
                     <img src={imglogo} class="logo" alt="" />
                     <ul className="iconsM">
                         <li className="item">
-                            <a onClick={() => history.push(`/${'defesa-pessoal'}`)}
+                            <div onClick={() => history.push(`/${'defesa-pessoal'}`)}
                                 onMouseOver={() => document.getElementById('descricaoD').className='descricaoD'}
                                 onMouseLeave={() => document.getElementById('descricaoD').className='descricaoDH'}
-                            ><img src={img01} alt="" /></a>
+                            ><img src={img01} alt="" /></div>
                         </li>
                         <li className="item">
-                            <a onClick={() => history.push(`/${'nome-social'}`)}
+                            <div onClick={() => history.push(`/${'nome-social'}`)}
                                 onMouseOver={() => document.getElementById('descricaoN').className='descricaoN'}
                                 onMouseLeave={() => document.getElementById('descricaoN').className='descricaoNH'}
-                            ><img src={img02} alt="" /></a>
+                            ><img src={img02} alt="" /></div>
                         </li>
                         <li className="item">
-                            <a onClick={() => history.push(`/${'localizacoes'}`)}
+                            <div onClick={() => history.push(`/${'localizacoes'}`)}
                                 onMouseOver={() => document.getElementById('descricaoL').className='descricaoL'}
                                 onMouseLeave={() => document.getElementById('descricaoL').className='descricaoLH'}
-                            ><img src={img03} alt="" /></a>
+                            ><img src={img03} alt="" /></div>
                         </li>
                         <li className="item">
-                            <a onClick={() => history.push(`/${'ajude'}`)}
+                            <div onClick={() => history.push(`/${'ajude'}`)}
                                 onMouseOver={() => document.getElementById('descricaoA').className='descricaoA'}
                                 onMouseLeave={() => document.getElementById('descricaoA').className='descricaoAH'}
-                            ><img src={img04} alt="" /></a>
+                            ><img src={img04} alt="" /></div>
                         </li>
                         <li className="item">
-                            <a onClick={() => history.push(`/${'casa-de-acolhimento'}`)}
+                            <div onClick={() => history.push(`/${'casa-de-acolhimento'}`)}
                                 onMouseOver={() => document.getElementById('descricaoC').className='descricaoC'}
                                 onMouseLeave={() => document.getElementById('descricaoC').className='descricaoCH'}
-                            ><img src={img05} alt="" /></a>
+                            ><img src={img05} alt="" /></div>
                         </li>
                         <li className="item">
-                            <a onClick={() => history.push(`/${'direitos-lgbtqia'}`)}
+                            <div onClick={() => history.push(`/${'direitos-lgbtqia'}`)}
                                 onMouseOver={() => document.getElementById('descricaoJ').className='descricaoJ'}
                                 onMouseLeave={() => document.getElementById('descricaoJ').className='descricaoJH'}
-                            ><img src={img06} alt="" /></a>
+                            ><img src={img06} alt="" /></div>
                         </li>
                         <li className="item">
-                            <a onClick={() => history.push(`/${'ajuda-psicologica'}`)}
+                            <div onClick={() => history.push(`/${'ajuda-psicologica'}`)}
                                 onMouseOver={() => document.getElementById('descricaoP').className='descricaoP'}
                                 onMouseLeave={() => document.getElementById('descricaoP').className='descricaoPH'}
-                            ><img src={img07} alt="" /></a>
+                            ><img src={img07} alt="" /></div>
                         </li>
                     </ul>
                 </div>

@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { Container, Col, Row, Image, Button, Form } from "react-bootstrap";
+import React from 'react';
+import { Col, Row, Button, Form } from "react-bootstrap";
 import axios from "axios";
 
 const initialValues = {

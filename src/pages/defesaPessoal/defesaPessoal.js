@@ -171,7 +171,6 @@ export default () => {
                 </p>
                 <a
                   className="btn btn-primary"
-                  target="_blank"
                   href={item.link}
                   role="button"
                 >

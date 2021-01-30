@@ -1,41 +1,12 @@
 import "./userProfile.css"
-import React, {useContext} from 'react';
+import React from 'react';
 import { Container, Col, Row, Image, Button, Form } from "react-bootstrap";
-import { useHistory } from 'react-router-dom';
-import axios from "axios";
 
 import FormEndereco from "./FormEndereco";
 
 import userProfile from "../../assets/images/userProfile.png";
 
-const initialValues = {
-    nome: '',
-    sobreNome: '',
-    telefone: '',
-    email: '',
-    password: '',
-}
-
 export default () => {
-
-    const [values, setValues] = React.useState(initialValues)
-
-    console.log("euu", { values })
-
-    const HandleonChange = e => {
-        const { name, value } = e.target;
-
-        setValues({ ...values, [name]: value })
-    }
-
-
-    const handleOnEndereco = () => {
-       const result =  axios.post("http://app.toplojavirtual.com.br/endereco", values).then(response=> console.log("euu", response)).catch(err=> console.log("euu", err))
-
-       console.log('euu', result)
-    }
-
-    const history = useHistory();
 
     return (
     <Container>

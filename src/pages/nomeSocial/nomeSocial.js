@@ -39,7 +39,7 @@ export default () => {
       >
         <div className="row">
           <div className="col-md-6">
-            <img src={img01} className="img-fluid" />
+            <img src={img01} className="img-fluid" alt="" />
           </div>
           <div className="col-md-6 my-5 mb-0">
             <p>
@@ -194,7 +194,6 @@ export default () => {
                 </p>
                 <a
                   className="btn btn-primary"
-                  target="_blank"
                   href={item.link}
                   role="button"
                 >
