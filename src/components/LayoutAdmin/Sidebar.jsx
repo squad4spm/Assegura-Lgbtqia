@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 
 const Container = styled.div`
   width: 100%;
-  min-height: 400px;
   background: rgba(64, 0, 64, 0.2);
 `;
 
@@ -12,7 +11,8 @@ const Item = styled.div`
   padding: 10px;
   background: #400040;
   cursor: pointer;
-  color: white;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 `;
 
 export const Siderbar = () => {
