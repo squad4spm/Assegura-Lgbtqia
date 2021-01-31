@@ -59,15 +59,17 @@ export const FormEdit = ({ history, match }) => {
   const { register, handleSubmit, setValue } = useForm();
   const [categorias, setCategorias] = useState([]);
 
+  const idPost = match.params.id;
+
   useEffect(() => {
-    axios.get(`http://app.toplojavirtual.com.br/post/${match.params.id}`).then((response) => {
+    axios.get(`http://app.toplojavirtual.com.br/post/${idPost}`).then((response) => {
       // console.log("eee", response.data.categoria[0].nome)
       setValue("title", response.data.post[0].title);
       setValue("content", response.data.post[0].content);
       setValue("image", response.data.post[0].image);
       setValue("link", response.data.post[0].link);
     });
-  }, []);
+  }, [idPost, setValue]);
 
   useEffect(() => {
     axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {

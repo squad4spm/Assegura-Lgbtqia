@@ -12,7 +12,7 @@ const Image =styled.img`
 width: 100%;
 `;
 
-export default () => {
+const NomeSocial = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -207,3 +207,5 @@ export default () => {
     </Container>
   );
 }
+
+export default NomeSocial;

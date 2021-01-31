@@ -1,4 +1,4 @@
-export default ({children}) => {
+const PrivateRoute = ({children}) => {
     return (
         <>
         {children}
@@ -6,3 +6,5 @@ export default ({children}) => {
     
     )
 }
+
+export default PrivateRoute;

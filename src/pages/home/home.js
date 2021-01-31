@@ -13,7 +13,7 @@ import img05 from "../../assets/images/house.png";
 import img06 from "../../assets/images/law.png";
 import img07 from "../../assets/images/psicologhy.png";
 
-export default () => {
+const Home = () => {
 
     const history = useHistory();
 
@@ -54,7 +54,7 @@ export default () => {
 
             <Col xs={6} className="middle">
                 <div className="circlenav">
-                    <img src={imglogo} class="logo" alt="" />
+                    <img src={imglogo} className="logo" alt="" />
                     <ul className="iconsM">
                         <li className="item">
                             <div onClick={() => history.push(`/${'defesa-pessoal'}`)}
@@ -140,3 +140,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Home;

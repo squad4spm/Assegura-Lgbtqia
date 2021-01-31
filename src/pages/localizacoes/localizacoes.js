@@ -9,7 +9,7 @@ import img03 from "../../assets/images/markerCasaAcolhimento.png";
 import img04 from "../../assets/images/markerJuridico.png";
 import img05 from "../../assets/images/markerP.png";
 
-export default () => {
+const Localizacoes = () => {
   const history = useHistory();
 
   return (
@@ -87,7 +87,7 @@ export default () => {
                         <Button id="btnSejaP" onClick={() => history.push(`/cadastro`)}>Seja um parceiro</Button>
                     </div>
                     
-                    <div class="col-md-8 google-maps">
+                    <div className="col-md-8 google-maps">
                     <iframe title="mapa" src="https://www.google.com/maps/d/embed?mid=1vF4oeGJEHx0F0Xt6MwO1CbRC_fud4VuW" width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
                 </div>
@@ -97,3 +97,5 @@ export default () => {
     </Container>
   );
 };
+
+export default Localizacoes;

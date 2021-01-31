@@ -63,7 +63,7 @@ const FormEdit = ({ history, match }) => {
       // console.log("eee", response.data.categoria[0].nome)
       setValue("nome", response.data.categoria[0].nome);
     });
-  }, []);
+  }, [match.params.id, setValue]);
 
   const handleOnSubmit = (data) => {
     axios.patch(`http://app.toplojavirtual.com.br/categoria/${match.params.id}`, data).then((response) => {

@@ -30,7 +30,7 @@ const Articles = () => {
           <div className="row">
             {posts.map((item) => (
               <div className="col-md-4 text-center">
-                <img src={item.image} class="img-fluid" alt={item.title} />
+                <img src={item.image} className="img-fluid" alt={item.title} />
                 <h5 className="mt-0">{item.title}</h5>
                 <p>{item.content}</p>
                 <Button

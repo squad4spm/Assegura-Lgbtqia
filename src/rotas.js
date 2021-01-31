@@ -7,7 +7,7 @@ import { Layout } from "./components/layout/layout";
 import * as Pages from "./pages";
 import * as PagesAdmin from "./pages/admin";
 
-export default () => {
+const Rotas = () => {
   return (
     <BrowserRouter>
       <Switch>
@@ -15,7 +15,7 @@ export default () => {
           <Layout>
 
             <Route path="/admin">
-            <Route exact path="/admin" component={PagesAdmin.login}  />
+            <Route exact path="/admin" component={PagesAdmin.Login}  />
               <PrivateRoute>
                 <LayoutAdmin>
                   <Route path="/admin/posts" component={PagesAdmin.posts}  />
@@ -24,13 +24,13 @@ export default () => {
               </PrivateRoute>
             </Route>
 
-            <Route exact path="/" component={Pages.home} />
+            <Route exact path="/" component={Pages.Home} />
             <Route
               exact
               path="/defesa-pessoal"
-              component={Pages.defesaPessoal}
+              component={Pages.DefesaPessoal}
             />
-            <Route exact path="/nome-social" component={Pages.nomeSocial} />
+            <Route exact path="/nome-social" component={Pages.NomeSocial} />
             <Route
               exact
               path="/ajuda-psicologica"
@@ -46,7 +46,7 @@ export default () => {
               path="/casa-de-acolhimento"
               component={Pages.casaDeAcolhimento}
             />
-            <Route exact path="/localizacoes" component={Pages.localizacoes} />
+            <Route exact path="/localizacoes" component={Pages.Localizacoes} />
             <Route exact path="/ajude" component={Pages.ajude} />
             
           </Layout>
@@ -55,3 +55,5 @@ export default () => {
     </BrowserRouter>
   );
 };
+
+export default Rotas;

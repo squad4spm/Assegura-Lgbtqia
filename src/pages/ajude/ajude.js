@@ -65,7 +65,7 @@ export default () => {
 
             <div className="row">
                 <div className="col-md-3">
-                    <img src={img03} class="mr-3 img-fluid" alt="Conheça a primeira Trans faixa-preta de Jiu-Jitsu" />
+                    <img src={img03} className="mr-3 img-fluid" alt="Conheça a primeira Trans faixa-preta de Jiu-Jitsu" />
                     
                 </div>
 

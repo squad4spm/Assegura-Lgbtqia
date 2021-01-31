@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form'
 
 import "./login.css";
 
-export default ({ history }) => {
+const Login = ({ history }) => {
   const [error, setError] = useState(null)
 
   const { register, handleSubmit } = useForm();
@@ -31,9 +31,9 @@ export default ({ history }) => {
   }
 
   return (
-    <Container class="my-4 mx-5" id="contaH">
-      <Row class="coluna no-gutters">
-        <div class="col-lg-7">
+    <Container className="my-4 mx-5" id="contaH">
+      <Row className="coluna no-gutters">
+        <div className="col-lg-7">
           <Form onSubmit={handleSubmit(handleOnSubmit)}>
             <Form.Group>
               <Form.Label>Usuário</Form.Label>
@@ -57,3 +57,5 @@ export default ({ history }) => {
     </Container>
   );
 };
+
+export default Login;

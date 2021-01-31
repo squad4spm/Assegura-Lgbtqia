@@ -6,7 +6,7 @@ import img01 from "../../assets/images/Defesa.png";
 import img02 from "../../assets/images/Defesa_Pessoal.png";
 import { Container } from "react-bootstrap";
 
-export default () => {
+const DefesaPessoal = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -43,7 +43,7 @@ export default () => {
             </h3>
           </div>
           <div className="col-md-6">
-            <img src={img01} class="img-fluid" alt="" />
+            <img src={img01} className="img-fluid" alt="" />
           </div>
         </div>
       </section>
@@ -184,3 +184,5 @@ export default () => {
     </Container>
   );
 };
+
+export default DefesaPessoal;
