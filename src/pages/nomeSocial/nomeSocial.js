@@ -17,7 +17,7 @@ const NomeSocial = () => {
 
   useEffect(() => {
     axios
-      .get("http://app.toplojavirtual.com.br/post/cat/3")
+      .get("https://app-toplojavirtual-com-br.umbler.net/post/cat/3")
       .then((response) => {
         setPosts(response.data.posts);
       });

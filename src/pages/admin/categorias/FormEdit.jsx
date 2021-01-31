@@ -59,14 +59,14 @@ const FormEdit = ({ history, match }) => {
   const { register, handleSubmit, setValue } = useForm();
 
   useEffect(() => {
-    axios.get(`http://app.toplojavirtual.com.br/categoria/${match.params.id}`).then((response) => {
+    axios.get(`https://app-toplojavirtual-com-br.umbler.net/categoria/${match.params.id}`).then((response) => {
       // console.log("eee", response.data.categoria[0].nome)
       setValue("nome", response.data.categoria[0].nome);
     });
   }, [match.params.id, setValue]);
 
   const handleOnSubmit = (data) => {
-    axios.patch(`http://app.toplojavirtual.com.br/categoria/${match.params.id}`, data).then((response) => {
+    axios.patch(`https://app-toplojavirtual-com-br.umbler.net/categoria/${match.params.id}`, data).then((response) => {
       if (response.data.status === "OK") {
         alert("Atualizado com Sucesso");
 

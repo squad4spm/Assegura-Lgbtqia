@@ -12,7 +12,7 @@ export const Lista = ({ history }) => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    axios.get("http://app.toplojavirtual.com.br/post").then((response) => {
+    axios.get("https://app-toplojavirtual-com-br.umbler.net/post").then((response) => {
       setPosts(response.data.posts);
     });
   }, []);

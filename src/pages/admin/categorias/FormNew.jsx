@@ -59,7 +59,7 @@ const FormNew = ({ history }) => {
   const { register, handleSubmit } = useForm();
 
   const handleOnSubmit = (data) => {
-    axios.post("http://app.toplojavirtual.com.br/categoria", data).then((response) => {
+    axios.post("https://app-toplojavirtual-com-br.umbler.net/categoria", data).then((response) => {
       if (response.data.status === "OK") {
         alert("Cadastrado com Sucesso");
 

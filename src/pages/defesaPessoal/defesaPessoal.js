@@ -11,7 +11,7 @@ const DefesaPessoal = () => {
 
   useEffect(() => {
     axios
-      .get("http://app.toplojavirtual.com.br/post/cat/2")
+      .get("https://app-toplojavirtual-com-br.umbler.net/post/cat/2")
       .then((response) => {
         setPosts(response.data.posts);
       });

@@ -15,7 +15,7 @@ const Button = styled.button`
 export const Deletar = ({data}) => {
   const handleOnDelete = () => {
     if ( window.confirm(`Deseja mesmo deletar ""${data.title}""`)) {
-      axios.delete(`http://app.toplojavirtual.com.br/post/${data.id}`).then(response=>{
+      axios.delete(`https://app-toplojavirtual-com-br.umbler.net/post/${data.id}`).then(response=>{
         if(response.data.status === "OK"){
           window.location.reload()
         }

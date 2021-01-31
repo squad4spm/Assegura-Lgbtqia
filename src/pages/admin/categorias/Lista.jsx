@@ -12,7 +12,7 @@ const Lista = ({ history }) => {
   const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {
+    axios.get("https://app-toplojavirtual-com-br.umbler.net/categoria").then((response) => {
       setCategorias(response.data.categorias);
     });
   }, []);

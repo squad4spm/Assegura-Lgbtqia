@@ -62,7 +62,7 @@ export const FormEdit = ({ history, match }) => {
   const idPost = match.params.id;
 
   useEffect(() => {
-    axios.get(`http://app.toplojavirtual.com.br/post/${idPost}`).then((response) => {
+    axios.get(`https://app.toplojavirtual.com.br/post/${idPost}`).then((response) => {
       // console.log("eee", response.data.categoria[0].nome)
       setValue("title", response.data.post[0].title);
       setValue("content", response.data.post[0].content);
@@ -72,13 +72,13 @@ export const FormEdit = ({ history, match }) => {
   }, [idPost, setValue]);
 
   useEffect(() => {
-    axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {
+    axios.get("https://app-toplojavirtual-com-br.umbler.net/categoria").then((response) => {
       setCategorias(response.data.categorias);
     });
   }, []);
 
   const handleOnSubmit = (data) => {
-    axios.patch(`http://app.toplojavirtual.com.br/post/${match.params.id}`, data).then((response) => {
+    axios.patch(`https://app-toplojavirtual-com-br.umbler.net/post/${match.params.id}`, data).then((response) => {
       if (response.data.status === "OK") {
         alert("Atualizado com Sucesso");
 

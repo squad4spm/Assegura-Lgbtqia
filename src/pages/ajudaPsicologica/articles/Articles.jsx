@@ -11,7 +11,7 @@ const Articles = () => {
 
   useEffect(() => {
     axios
-      .get("http://app.toplojavirtual.com.br/post/cat/4")
+      .get("https://app-toplojavirtual-com-br.umbler.net/post/cat/4")
       .then((response) => {
         setPosts(response.data.posts);
       });

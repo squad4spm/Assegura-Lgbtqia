@@ -60,7 +60,7 @@ export const FormNew = ({ history }) => {
   const { register, handleSubmit } = useForm();
 
   const handleOnSubmit = (data) => {
-    axios.post("http://app.toplojavirtual.com.br/post", data).then((response) => {
+    axios.post("https://app-toplojavirtual-com-br.umbler.net/post", data).then((response) => {
       if (response.data.status === "OK") {
         alert("Cadastrado com Sucesso");
         history.push("/admin/posts");
@@ -70,7 +70,7 @@ export const FormNew = ({ history }) => {
   };
 
   useEffect(() => {
-    axios.get("http://app.toplojavirtual.com.br/categoria").then((response) => {
+    axios.get("https://app-toplojavirtual-com-br.umbler.net/categoria").then((response) => {
       setCategorias(response.data.categorias);
     });
   }, []);

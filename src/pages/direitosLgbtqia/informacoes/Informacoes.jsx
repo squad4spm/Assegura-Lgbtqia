@@ -9,7 +9,7 @@ const Informacoes = () => {
 
   useEffect(() => {
     axios
-      .get("http://app.toplojavirtual.com.br/post/cat/1")
+      .get("https://app-toplojavirtual-com-br.umbler.net/post/cat/1")
       .then((response) => {
         setPosts(response.data.posts);
       });
