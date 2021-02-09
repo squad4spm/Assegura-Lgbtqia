@@ -7,7 +7,7 @@ export const CarrosselHome = () => {
     const history = useHistory();
   
     return (
-        <Carousel>
+        <Carousel fade={true}>
            <Carousel.Item className="cardDescricaoLogo">
                 <img src={imgLogoCard} alt="" />
             </Carousel.Item>
