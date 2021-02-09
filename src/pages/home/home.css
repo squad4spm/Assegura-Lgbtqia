@@ -400,7 +400,7 @@ transition-delay: 0.02s;
 .cardDescricaoD {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -415,7 +415,7 @@ transition-delay: 0.02s;
 .cardDescricaoN {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -430,7 +430,7 @@ transition-delay: 0.02s;
 .cardDescricaoL {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -445,7 +445,7 @@ transition-delay: 0.02s;
 .cardDescricaoP {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -460,7 +460,7 @@ transition-delay: 0.02s;
 .cardDescricaoJ {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -475,7 +475,7 @@ transition-delay: 0.02s;
 .cardDescricaoC {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -490,7 +490,7 @@ transition-delay: 0.02s;
 .cardDescricaoA {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
@@ -505,7 +505,7 @@ transition-delay: 0.02s;
 .cardDescricaoLogo {
   top: 10%;
   margin: auto;
-  display: block;
+  
   width: 100%;
   height: 530px;
   background-color: #fffafa;
