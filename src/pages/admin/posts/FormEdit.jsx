@@ -62,7 +62,7 @@ export const FormEdit = ({ history, match }) => {
   const idPost = match.params.id;
 
   useEffect(() => {
-    axios.get(`https://app.toplojavirtual.com.br/post/${idPost}`).then((response) => {
+    axios.get(`https://app-toplojavirtual-com-br.umbler.net/post/${idPost}`).then((response) => {
       // console.log("eee", response.data.categoria[0].nome)
       setValue("title", response.data.post[0].title);
       setValue("content", response.data.post[0].content);
