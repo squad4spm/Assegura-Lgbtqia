@@ -1,7 +1,7 @@
 import "./localizacoes.css"
 import React from "react";
-import { useHistory } from 'react-router-dom';
-import { Container, Dropdown, Button } from "react-bootstrap";
+//import { useHistory } from 'react-router-dom';
+import { Container, Dropdown } from "react-bootstrap";
 
 import img01 from "../../assets/images/markerDefesa.png";
 import img02 from "../../assets/images/markerNome.png";
@@ -10,7 +10,7 @@ import img04 from "../../assets/images/markerJuridico.png";
 import img05 from "../../assets/images/markerP.png";
 
 const Localizacoes = () => {
-  const history = useHistory();
+  //const history = useHistory();
 
   return (
     <Container fluid>

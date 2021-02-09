@@ -1,7 +1,7 @@
 import "./ajude.css"
 import React from 'react';
-import { useHistory } from 'react-router-dom';
-import { Container, Button } from "react-bootstrap";
+//import { useHistory } from 'react-router-dom';
+import { Container } from "react-bootstrap";
 
 import img01 from "../../assets/images/ajude02.jpg";
 import img02 from "../../assets/images/ajude04.jpg";
@@ -10,7 +10,7 @@ import img04 from "../../assets/images/ajude08.jpg";
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
-    const history = useHistory();
+    //const history = useHistory();
 
     return (
     <Container fluid>
