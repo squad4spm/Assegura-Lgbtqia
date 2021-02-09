@@ -398,7 +398,6 @@ transition-delay: 0.02s;
 
 /*Cards mobile*/
 .cardDescricaoD {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -408,11 +407,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoN {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -422,11 +420,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoL {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -436,11 +433,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoP {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -450,11 +446,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoJ {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -464,11 +459,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoC {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -478,11 +472,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoA {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -492,11 +485,10 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .cardDescricaoLogo {
-  top: 10%;
   margin: auto;
   width: 100%;
   height: 530px;
@@ -506,7 +498,7 @@ transition-delay: 0.02s;
   border-radius: 15px;
   box-shadow: 4px 4px rgba(0, 0, 0, 0.2);
   text-align: center;
-  position: static;
+  position: relative;
 }
 
 .textoCards {
