@@ -83,8 +83,6 @@ const Localizacoes = () => {
                             <Dropdown.Item href="#/action-7">Centro de Cidadania LGBTI Edson Neris (Zona Sul)</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
-
-                        <Button id="btnSejaP" onClick={() => history.push(`/cadastro`)}>Seja um parceiro</Button>
                     </div>
                     
                     <div className="col-md-8 google-maps">

@@ -51,10 +51,7 @@ export default () => {
             </div>
         </div>
     </section>
-
-    <section className="container-fluid terceiraClass">
-    <Button id="btnCadastrese" onClick={() => history.push(`/cadastro`)}>Cadastre-se</Button>
-    </section>
+    
     <section className="container-fluid quartaClass">
         <div className="container">
             <div className="row my-3">

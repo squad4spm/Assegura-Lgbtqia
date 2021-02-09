@@ -4,7 +4,7 @@ import { useHistory } from 'react-router-dom';
 import React from 'react';
 
 import { IconContext } from "react-icons";
-import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaYoutubeSquare, FaUser } from 'react-icons/fa';
+import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare, FaUser } from 'react-icons/fa';
 
 export const TopHeader = () => {
   const history = useHistory();
@@ -16,13 +16,12 @@ export const TopHeader = () => {
         <IconContext.Provider value={{ color: "white", size: "1.3em" }}>
           <FaFacebookSquare id="iconsLeft" onClick={() => window.open('https://pt-br.facebook.com/')} />
           <FaInstagramSquare id="iconsLeft" onClick={() => window.open('https://www.instagram.com/')} />
-          <FaTwitterSquare id="iconsLeft" onClick={() => window.open('https://twitter.com/login?lang=pt')} />
           <FaYoutubeSquare id="iconsLeft" onClick={() => window.open('https://www.youtube.com/')} />
         </IconContext.Provider>
       </Col>
       
       <Col xs={6} id="colRight">
-        faça seu login
+        login admin
         <IconContext.Provider value={{ color: "white" }}>
           <FaUser id="iconsRight" onClick={() => history.push(`/admin`)} />
         </IconContext.Provider>
