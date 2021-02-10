@@ -14,9 +14,9 @@ export const TopHeader = () => {
     <Row id="rowTop">
       <Col xs={6} id="colLeft">
         <IconContext.Provider value={{ color: "white", size: "1.3em" }}>
-          <FaFacebookSquare id="iconsLeft" onClick={() => window.open('https://pt-br.facebook.com/')} />
-          <FaInstagramSquare id="iconsLeft" onClick={() => window.open('https://www.instagram.com/')} />
-          <FaYoutubeSquare id="iconsLeft" onClick={() => window.open('https://www.youtube.com/')} />
+          <FaFacebookSquare id="iconsLeft" onClick={() => window.open('https://www.facebook.com/assegura.lgbtqia')} />
+          <FaInstagramSquare id="iconsLeft" onClick={() => window.open('https://www.instagram.com/assegura_lgbtqia/')} />
+          <FaYoutubeSquare id="iconsLeft" onClick={() => window.open('https://www.youtube.com/channel/UCay4sSsERvpR0FiEWAf5OLw')} />
         </IconContext.Provider>
       </Col>
       
