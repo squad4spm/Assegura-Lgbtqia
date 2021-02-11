@@ -49,46 +49,26 @@
   cursor: pointer;
 }
 
-/*
-#botao_flutuante {
-  background-color: #400040;
-  color: #fff;
-  width: 80px;
-  height: 80px;
-  display: flex !important;
-  position: fixed;
-  bottom: 5%;
-  right: 2%;
-  z-index: 1;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  transition: 0.3s;
-  text-decoration: none;
-  flex-direction: column;
-}
+@media (max-width: 500px) {
+  #botao_flutuante {
+    background-color: #400040;
+    color: #fff;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    z-index: 1;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: 0.3s;
+    text-decoration: none;
+    flex-direction: column;
+  }
 
-#botao_flutuante:hover {
-  background-color: #400040;
-  color: #fff;
-  width: 80px;
-  height: 80px;
-  display: flex;
-  position: fixed;
-  bottom: 5%;
-  right: 2%;
-  z-index: 1;
-  border: 2px solid #fff;
-  border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  text-transform: uppercase;
-  font-size: 16px;
-  transition: 0.3s;
-  text-decoration: none;
-  flex-direction: column;
 }
-*/
