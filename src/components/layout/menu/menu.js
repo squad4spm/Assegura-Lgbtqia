@@ -1,6 +1,5 @@
 import { Navbar, Nav, Container } from "react-bootstrap";
 import { useHistory } from 'react-router-dom';
-import "./menuref.css";
 import "./menu.css";
 
 import { IconContext } from "react-icons";

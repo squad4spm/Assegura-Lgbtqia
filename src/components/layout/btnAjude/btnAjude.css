@@ -42,6 +42,7 @@
 
 #botao_flutuante p {
   color: white;
+  margin-bottom: 0;
 }
 
 #botao_flutuante:hover p {

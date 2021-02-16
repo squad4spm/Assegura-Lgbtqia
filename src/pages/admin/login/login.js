@@ -1,61 +1,48 @@
 import React, { useState } from 'react';
 import { Container, Form, Button, Row } from "react-bootstrap";
 import { BrowserRouter as Link } from "react-router-dom";
-import { useForm } from 'react-hook-form'
 
 import "./login.css";
 
-const Login = ({ history }) => {
-  const [error, setError] = useState(null)
+export default function Login({history}) {
 
-  const { register, handleSubmit } = useForm();
+  async function handleOnSubmit(evento) {
+    evento.preventDefault();
 
-  const handleOnSubmit = (user) => {
+    const formData = new FormData(evento.target);
 
-    if (user.senhaWord === "123456"  && user.usuario === "kaique") {
+  const resposta = await fetch('http://localhost:3000/usuario/login', {
+        body: JSON.stringify(Object.fromEntries(formData)), 
+        method: 'POST', 
+        headers: new Headers({'content-type': 'application/json'})
+    });
 
-      // axios.post("https://app-toplojavirtual-com-br.umbler.net/usuario/login").then((response) => {
-      //   if (response.data.status === "OK") {
-      //     history.push("/admin/posts")
-      //   }
+        if (resposta.status === 200) {
+            history.push('/admin/posts')
+        } else {
+         alert(await resposta.text()) 
+        } 
 
-      //   if (response.data.status === "ERROR") {
-      //     setError("Deu Ruim")
-      //   }
-
-      // })
-      history.push("/admin/posts")
-    } else {
-      setError("Deu Ruim")
-    }
-  }
+}
 
   return (
-    <Container className="my-4 mx-5" id="contaH">
+    <Container className="my-4" id="contaH">
       <Row className="coluna no-gutters">
-        <div className="col-lg-7">
-          <Form onSubmit={handleSubmit(handleOnSubmit)}>
+          <Form onSubmit={handleOnSubmit}>
             <Form.Group>
               <Form.Label>Usuário</Form.Label>
-              <Form.Control name="usuario" id="usuario" type="text" placeholder="Digite seu usúario" ref={register} />
+              <Form.Control name="usuario" id="usuario" type="text" placeholder="Digite seu usúario" required />
             </Form.Group>
 
             <Form.Group>
               <Form.Label>Senha</Form.Label>
-              <Form.Control name="senhaWord" id="senha" type="text" placeholder="Password" ref={register} />
+              <Form.Control name="password" id="password" type="password" placeholder="Password" required />
             </Form.Group>
 
             <Button variant="dark" type="submit">Entrar</Button>
             <Link to="#">Esqueceu a Senha?</Link>
-
-            {error && (
-              <span>{error}</span>
-            )}
           </Form>
-        </div>
       </Row>
     </Container>
   );
-};
-
-export default Login;
+}
