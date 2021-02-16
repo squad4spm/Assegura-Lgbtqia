@@ -11,7 +11,7 @@ export default function Login({history}) {
 
     const formData = new FormData(evento.target);
 
-  const resposta = await fetch('http://localhost:3000/usuario/login', {
+  const resposta = await fetch('https://app-toplojavirtual-com-br.umbler.net/usuario/login', {
         body: JSON.stringify(Object.fromEntries(formData)), 
         method: 'POST', 
         headers: new Headers({'content-type': 'application/json'})
