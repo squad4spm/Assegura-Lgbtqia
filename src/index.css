@@ -18,3 +18,20 @@ code {
   padding-left: 0!important;
   padding-right: 0!important;
 }
+
+.visible_mobile {
+  display: none;
+}
+.visible_desktop {
+  display: block;
+}
+
+@media (max-width: 600px){
+  .visible_desktop{
+    display: none;
+  }
+  .visible_mobile {
+    display: block;
+  }
+}
+

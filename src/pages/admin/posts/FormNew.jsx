@@ -89,16 +89,16 @@ export const FormNew = ({ history }) => {
 
       <form onSubmit={handleSubmit(handleOnSubmit)}>
         <Label>Titulo do Post:</Label>
-        <Input type="text" name="title" ref={register} />
+        <Input type="text" name="title" ref={register} required />
 
         <Label>Conteudo:</Label>
-        <Input type="text" name="content" ref={register} />
+        <Input type="text" name="content" ref={register} required />
 
         <Label>Imagem:</Label>
-        <Input type="text" name="image" ref={register} />
+        <Input type="text" name="image" ref={register} required />
 
         <Label>Link:</Label>
-        <Input type="text" name="link" ref={register} />
+        <Input type="text" name="link" ref={register} required />
 
         <Label>Categoria</Label>
         <select type="select" name="categoria_id" ref={register} required>

@@ -4,7 +4,7 @@ import styled from "styled-components"
 
 import { Container } from "react-bootstrap";
 import "./nomeSocial.css";
-
+import ImagemMobile from "../../assets/images/banner_nome_mobile.fw.png";
 import img01 from "../../assets/images/unnamed2.png";
 import img02 from "../../assets/images/imgser.jpg";
 
@@ -25,12 +25,16 @@ const NomeSocial = () => {
 
   return (
     <Container fluid>
-      <section id="pg_defesa_pessoal_banner">
+      <section id="pg_defesa_pessoal_banner" className="visible_desktop">
         <div className="jumbotron card card-image d-block nomeSocial">
           <p className="mx-2 mb-4">
             Nome Social <br /> LGBTQIA+
           </p>
         </div>
+      </section>
+
+      <section fluid className="visible_mobile">
+        <img className="img-fluid" src={ImagemMobile} alt="Banner Principal da Página de Nome Social" />
       </section>
 
       <section
