@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import "./defesaPessoal.css";
+import ImagemMobile from "../../assets/images/banner_defesa_mobile.fw.png";
 import img01 from "../../assets/images/Defesa.png";
 import img02 from "../../assets/images/Defesa_Pessoal.png";
 import { Container } from "react-bootstrap";
@@ -19,12 +20,16 @@ const DefesaPessoal = () => {
 
   return (
     <Container fluid>
-      <section id="pg_defesa_pessoal_banner">
+      <section id="pg_defesa_pessoal_banner" className="visible_desktop">
         <div className="jumbotron card card-image d-block">
           <p className="mx-2 mb-4">
             Defesa Pessoal <br /> LGBTQIA+
           </p>
         </div>
+      </section>
+      
+      <section fluid className="visible_mobile">
+        <img src={ImagemMobile} alt="Banner Principal da Página de Defesa Pessoal" />
       </section>
 
       <section id="pg_defesa_pessoal_primeiraClass" className="container">

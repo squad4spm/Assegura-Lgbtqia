@@ -3,6 +3,7 @@ import React from 'react';
 //import { useHistory } from 'react-router-dom';
 import { Container } from "react-bootstrap";
 
+import ImagemMobile from "../../assets/images/banner_botao_mobile.fw.png";
 import img01 from "../../assets/images/ajude02.jpg";
 import img02 from "../../assets/images/ajude04.jpg";
 import img03 from "../../assets/images/ajude05.jpg";
@@ -14,11 +15,15 @@ export default () => {
 
     return (
     <Container fluid>
-    <section id="pg_defesa_pessoal_banner" >
+    <section id="pg_defesa_pessoal_banner" className="visible_desktop">
         <div className="jumbotron card card-image  d-block ajude">
             <p className="mx-2 mb-4">Ajude Nossa <br /> Causa!</p>
         </div>
     </section>
+
+    <section fluid className="visible_mobile">
+        <img src={ImagemMobile} alt="Banner Principal da Página de Ajude" />
+      </section>
 
     <section id="pg_defesa_pessoal_primeiraClass" className="container">
         <div className="row">
