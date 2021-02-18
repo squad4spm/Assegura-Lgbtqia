@@ -36,15 +36,11 @@ const DefesaPessoal = () => {
         <div className="row">
           <div className="col-md-6">
             <p>
-              Muitas pessoas LGBTQIA+ no centro de São Paulo precisam de apoio,
-              para se defender de violências sofridas. Mas muitas dessas pessoas
-              não conseguem acessar esse tipo serviço. Seja por falta de grana,
-              por falta de um serviço personalizado, falta de tempo ou até mesmo
-              falta de acesso à informação.
+              Pessoas LGBTQIA+ precisam de apoio, para se defender das violências sofridas no dia a dia e também resinificar essas experiências, para terem reações mais assertivas e mais seguras. Formas de se pensar sobre isso são abordadas em aulas de defesa pessoal, além de técnicas corporais de defesa. 
             </p>
             <h3>
               <br />
-              Por isso criamos o Assegura LGBTQIA+{" "}
+              Pensando em acessibilidade e também em ambientes seguros de aprendizado.{" "}
             </h3>
           </div>
           <div className="col-md-6">
@@ -58,17 +54,7 @@ const DefesaPessoal = () => {
           <div className="row">
             <div className="col-md-12 py-5">
               <p>
-                Por isso, vamos através de Informações e Parcerias com
-                Professores e Escolas de Defesa Pessoal, conectar quem precisa
-                de acesso a esse serviço com Profissionais e Ambientes seguro,
-                livre de assédio, livre de discriminações, em que as pessoas
-                possam desenvolver suas potencialidades em um clima de respeito,
-                amizade e colaboração, buscando assegurar a comunidade LGBTQIA+.
-              </p>
-              <p>
-                Nosso diferencial, é que além de promover essa conexão, também
-                vamos disponibilizar na nossa plataforma, vídeos com aulas
-                básicas gratuitas.{" "}
+                Nossos parceirxs disponibilizam informações muito importantes, sobre cultura e aulas, e nós da Assegura, buscamos conectar quem precisa e busca por esse serviço, com Profissionais e Ambientes seguros, livres de assédio, livres de discriminações, em que as pessoas possam desenvolver técnicas de defesa pessoal em um clima de respeito, amizade e colaboração, e levando mais segurança para comunidade LGBTQIA+  em um contexto geral.
               </p>
             </div>
           </div>
@@ -79,11 +65,7 @@ const DefesaPessoal = () => {
               </div>
               <div className="col my-5">
                 <p>
-                  Pesquisas mostram que pessoas treinadas para responder
-                  adequadamente a um ataque, podem até mesmo impedir que
-                  agressões aconteçam, pois, reagem ao perigo de forma mais
-                  assertiva e confiante, aumentando as chances de evitar
-                  situações violentas ou enfrentá-las com segurança.{" "}
+                  Pesquisas mostram que pessoas treinadas para responder adequadamente a um ataque, podem até mesmo impedir que agressões aconteçam, pois, reagem ao perigo de forma mais assertiva e confiante, aumentando as chances de evitar situações violentas ou enfrentá-las com segurança.{" "}
                 </p>
               </div>
             </div>

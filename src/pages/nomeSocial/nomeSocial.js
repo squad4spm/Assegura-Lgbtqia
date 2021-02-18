@@ -47,22 +47,12 @@ const NomeSocial = () => {
           </div>
           <div className="col-md-6 my-5 mb-0">
             <p>
-              Nome social é o nome pelo qual pessoas transexuais, travestis ou
-              outros preferem ser chamadas no dia a dia, ao invés de seu nome
-              registrado em cartório, que não reflete a sua identidade de
-              gênero. O conceito de identidade de gênero faz referência ao
-              gênero com o qual a pessoa se identifica, podendo ser feminino,
-              masculino, não-binário, entre outros.
+              Nome social é o nome pelo qual pessoas transexuais, travestis ou outras preferem ser chamadas no dia a dia, ao invés de seu nome registrado em cartório, que não reflete a sua identidade de gênero. O conceito de identidade de gênero faz referência ao gênero com o qual a pessoa se identifica, podendo ser feminino, masculino, não-binário, entre outros.
             </p>
           </div>
           <div className="col-md-12">
             <p>
-              No processo de aceitação e entendimento em relação à identidade de
-              gênero de cada um, o nome é uma das questões que têm maior
-              impacto, já que os nomes estão diretamente ligados a um conceito
-              de masculino e feminino em nossa sociedade. Felizmente, o processo
-              para que pessoas trans possam utilizar seu nome social em
-              documentos oficiais ficou menos complicado e mais inclusivo.
+               No processo de aceitação e entendimento em relação à identidade de gênero de cada pessoa, o nome é uma das questões que têm maior impacto, já que os nomes estão diretamente ligados a um conceito de masculino e feminino em nossa sociedade. Felizmente, o processo para que pessoas trans possam utilizar seu nome social em documentos oficiais ficou menos complicado e mais inclusivo.
             </p>
           </div>
         </div>
@@ -80,30 +70,19 @@ const NomeSocial = () => {
                 <b> Agora vamos tirar algumas duvidas</b>
               </p>
               <p>
-                <b>O que pode ser alterado?</b>Conforme a regulamentação, podem
-                ser alterados o prenome, agnomes indicativos de gênero (filho,
-                júnior, neto e etc.) e o gênero em certidões de nascimento e de
-                casamento (com a autorização do cônjuge).{" "}
+                <b>O que pode ser alterado?</b>Conforme a regulamentação, podem ser alterados o prenome, agnomes indicativos de gênero (filho, júnior, neto e etc.) e o gênero em certidões de nascimento e de casamento (com a autorização do cônjuge).{" "}
               </p>
               <p>
                 <b>
                   Preciso fazer a alteração no cartório em que fui registrado?
                 </b>
-                Não. O pedido pode ser realizado em qualquer cartório de
-                Registro Civil de Pessoas Naturais em todo território nacional.
-                O cartório que fizer a alteração deverá encaminhar via sistema
-                eletrônico o procedimento ao cartório que registrou o nascimento
-                da pessoa.
+                  Não. O pedido pode ser realizado em qualquer cartório de Registro Civil de Pessoas Naturais em todo território nacional. O cartório que fizer a alteração deverá encaminhar via sistema eletrônico o procedimento ao cartório que registrou o nascimento da pessoa.
               </p>
               <p>
-                <b> É possível solicitar a gratuidade do procedimento?</b>Caso o
-                interessado na mudança não tenha condições de arcar com os
-                custos do procedimento, ele pode solicitar a gratuidade no
-                cartório . Para isso, basta apresentar a declaração de
-                hipossuficiência – documento necessário para obter assistência
-                judiciária gratuita. Caso deseje, o cidadão que deseja realizar
-                as mudanças pode contatar a Defensoria Pública de seu estado
-                para conseguir a gratuidade.
+                <b> 
+                  É possível solicitar a gratuidade do procedimento?
+                </b>
+                  Caso o interessado na mudança não tenha condições de arcar com os custos do procedimento, ele pode solicitar a gratuidade no cartório . Para isso, basta apresentar a declaração de hipossuficiência – documento necessário para obter assistência judiciária gratuita. Caso deseje, o cidadão que deseja realizar as mudanças pode contatar a Defensoria Pública de seu estado para conseguir a gratuidade.
               </p>
             </div>
             <div className="col-md-6 my-5 mb-0">
@@ -187,7 +166,8 @@ const NomeSocial = () => {
               <div className="col-md-3">
                 <Image
                   src={item.image}
-                  className="mr-3 img-fluid"
+                  className="mr-3 img-fluid" 
+                  style= {{height:"180px"}}
                   alt={item.title}
                 />
                 <h5 className="mt-0">

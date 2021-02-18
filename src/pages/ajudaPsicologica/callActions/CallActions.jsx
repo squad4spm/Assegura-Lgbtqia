@@ -2,7 +2,7 @@ import { Container, Button } from "react-bootstrap";
 
 import "./callActions.css";
 
-import psicologico3 from "../../../assets/images/psicologico3.jpg";
+import psicologico3 from "../../../assets/images/Acolhe_LGBT.png";
 
 const CallActions = () => {
   return (
@@ -15,8 +15,9 @@ const CallActions = () => {
             </div>
             <div className="col-md-6 text-center">
               <div className="containerButtonActions">
-                <Button variant="outline-success">QUERO AJUDAR!</Button>
-                <Button variant="outline-success">PRECISO DE AJUDA!</Button>
+                <p>O Acolhe LGBT+ é uma plataforma que conecta pessoas LGBT+ que precisam de acolhimento psicológico com profissionais que topem ajudá-las de forma voluntária.</p>
+                <Button onClick={() => window.open("https://www.acolhelgbt.org/", "_blank")}variant="outline-success">Acolhe LGBT+  |  Acesse Agora
+                </Button>
               </div>
             </div>
           </div>
