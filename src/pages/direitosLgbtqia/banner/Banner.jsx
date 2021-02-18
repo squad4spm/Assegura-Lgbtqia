@@ -12,7 +12,7 @@ const Banner = () => {
     </Container>
 
     <Container fluid className="visible_mobile">
-      <img src={ImagemMobile} alt="Banner Principal da Página de Direitos" />
+      <img className="img-fluid" src={ImagemMobile} alt="Banner Principal da Página de Direitos" />
     </Container>
   </>
   );

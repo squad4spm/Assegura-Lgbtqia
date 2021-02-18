@@ -29,7 +29,7 @@ const DefesaPessoal = () => {
       </section>
       
       <section fluid className="visible_mobile">
-        <img src={ImagemMobile} alt="Banner Principal da Página de Defesa Pessoal" />
+        <img className="img-fluid" src={ImagemMobile} alt="Banner Principal da Página de Defesa Pessoal" />
       </section>
 
       <section id="pg_defesa_pessoal_primeiraClass" className="container">

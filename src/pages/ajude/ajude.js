@@ -22,7 +22,7 @@ export default () => {
     </section>
 
     <section fluid className="visible_mobile">
-        <img src={ImagemMobile} alt="Banner Principal da Página de Ajude" />
+        <img className="img-fluid" src={ImagemMobile} alt="Banner Principal da Página de Ajude" />
       </section>
 
     <section id="pg_defesa_pessoal_primeiraClass" className="container">
