@@ -6,6 +6,7 @@ import { useHistory } from 'react-router-dom';
 import imagParceria from "../../assets/images/Antra.png";
 import imagParceria2 from "../../assets/images/Acolhe_LGBT.png";
 import imagParceria3 from "../../assets/images/casa1logo.png";
+import imagParceria4 from "../../assets/images/logo_allout.png";
 
 export const CarrosselHome = () => {
     const history = useHistory();
@@ -71,7 +72,8 @@ export const CarrosselHome = () => {
                     <p className="textoCards">
                         A LGBTIfobia é o termo utilizado para compreender as violências cometidas contra a população LGBTI+ e se apresenta como uma série de atitudes ou sentimentos negativos em relação às pessoas LGBTI+, motivadas pela orientação sexual e/ou sua Identidade de gênero.
                     </p>
-                    <img className="img-fluid" style={{width:"35%", margin:"auto", display:"block"}}  src={imagParceria} alt="" />
+                    <img className="img-fluid" style={{width:"20%", height: "60px", margin:"0 10px 0 auto", display:"inline"}}  src={imagParceria} alt="" />
+                    <img className="img-fluid" style={{width:"20%", margin:"0 auto 0 10px", display:"inline"}}  src={imagParceria4} alt="" />
                 </Carousel.Caption>
             </Carousel.Item>
 

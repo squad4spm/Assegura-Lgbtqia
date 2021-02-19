@@ -29,20 +29,29 @@ const DefesaPessoal = () => {
           </p>
         </div>
       </section>
-      
+
       <section fluid className="visible_mobile">
-        <img className="img-fluid" src={ImagemMobile} alt="Banner Principal da Página de Defesa Pessoal" />
+        <img
+          className="img-fluid"
+          src={ImagemMobile}
+          alt="Banner Principal da Página de Defesa Pessoal"
+        />
       </section>
 
       <section id="pg_defesa_pessoal_primeiraClass" className="container">
         <div className="row">
           <div className="col-md-6">
             <p>
-              Pessoas LGBTQIA+ precisam de apoio, para se defender das violências sofridas no dia a dia e também resinificar essas experiências, para terem reações mais assertivas e mais seguras. Formas de se pensar sobre isso são abordadas em aulas de defesa pessoal, além de técnicas corporais de defesa. 
+              Pessoas LGBTQIA+ precisam de apoio, para se defender das
+              violências sofridas no dia a dia e também resinificar essas
+              experiências, para terem reações mais assertivas e mais seguras.
+              Formas de se pensar sobre isso são abordadas em aulas de defesa
+              pessoal, além de técnicas corporais de defesa.
             </p>
             <h3>
               <br />
-              Pensando em acessibilidade e também em ambientes seguros de aprendizado.{" "}
+              Pensando em acessibilidade e também em ambientes seguros de
+              aprendizado.{" "}
             </h3>
           </div>
           <div className="col-md-6">
@@ -51,12 +60,21 @@ const DefesaPessoal = () => {
         </div>
       </section>
 
-      <section id="pg_defesa_pessoal_segundaClass" className="container-fluid my-4">
+      <section
+        id="pg_defesa_pessoal_segundaClass"
+        className="container-fluid my-4"
+      >
         <div className="container">
           <div className="row">
             <div className="col-md-12 py-5">
               <p>
-                Nossos parceirxs disponibilizam informações muito importantes, sobre cultura e aulas, e nós da Assegura, buscamos conectar quem precisa e busca por esse serviço, com Profissionais e Ambientes seguros, livres de assédio, livres de discriminações, em que as pessoas possam desenvolver técnicas de defesa pessoal em um clima de respeito, amizade e colaboração, e levando mais segurança para comunidade LGBTQIA+  em um contexto geral.
+                Nossos parceirxs disponibilizam informações muito importantes,
+                sobre cultura e aulas, e nós da Assegura, buscamos conectar quem
+                precisa e busca por esse serviço, com Profissionais e Ambientes
+                seguros, livres de assédio, livres de discriminações, em que as
+                pessoas possam desenvolver técnicas de defesa pessoal em um
+                clima de respeito, amizade e colaboração, e levando mais
+                segurança para comunidade LGBTQIA+ em um contexto geral.
               </p>
             </div>
           </div>
@@ -67,7 +85,11 @@ const DefesaPessoal = () => {
               </div>
               <div className="col my-5">
                 <p>
-                  Pesquisas mostram que pessoas treinadas para responder adequadamente a um ataque, podem até mesmo impedir que agressões aconteçam, pois, reagem ao perigo de forma mais assertiva e confiante, aumentando as chances de evitar situações violentas ou enfrentá-las com segurança.{" "}
+                  Pesquisas mostram que pessoas treinadas para responder
+                  adequadamente a um ataque, podem até mesmo impedir que
+                  agressões aconteçam, pois, reagem ao perigo de forma mais
+                  assertiva e confiante, aumentando as chances de evitar
+                  situações violentas ou enfrentá-las com segurança.{" "}
                 </p>
               </div>
             </div>
@@ -83,7 +105,9 @@ const DefesaPessoal = () => {
                 Você que é alvo de violência deve saber se defender, isto é
                 empoderamento, é ser livre, <br /> é não viver refém do medo.
               </p>
-              <h3 className="text-center">Vídeos com Aulas de Defesa Pessoal</h3>
+              <h3 className="text-center">
+                Vídeos com Aulas de Defesa Pessoal
+              </h3>
             </div>
           </div>
 
@@ -152,17 +176,9 @@ const DefesaPessoal = () => {
                   className="mr-3 img-fluid"
                   alt={item.title}
                 />
-                <h5 className="mt-0">
-                    {item.title}
-                </h5>
-                <p>
-                {item.content}
-                </p>
-                <a
-                  className="btn btn-primary"
-                  href={item.link}
-                  role="button"
-                >
+                <h5 className="mt-0">{item.title}</h5>
+                <p>{item.content}</p>
+                <a className="btn btn-primary" href={item.link} role="button">
                   Leia Mais
                 </a>
               </div>
