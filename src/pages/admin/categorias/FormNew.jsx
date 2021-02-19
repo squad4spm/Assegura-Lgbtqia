@@ -84,7 +84,7 @@ const FormNew = ({ history }) => {
 
       <form onSubmit={handleSubmit(handleOnSubmit)}>
         <Label>Nome Categoria:</Label>
-        <Input type="text" name="nome" ref={register} />
+        <Input type="text" name="nome" ref={register} required />
         <Button>Enviar</Button>
       </form>
     </Container>

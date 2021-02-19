@@ -1,4 +1,5 @@
 import './App.css';
+import VLibras from "@djpfs/react-vlibras";
 
 import Rotas from './rotas.js';
 import MyContextProvider from './contexts/MyContext';
@@ -10,6 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <MyContextProvider>
+      <VLibras />
         <BrowserRouter>
           <Rotas />
       </BrowserRouter>
