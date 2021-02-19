@@ -42,7 +42,7 @@ export const Feedback = () => {
     axios.get(`https://app-toplojavirtual-com-br.umbler.net/${tabelaFeed}`).then((response) => {
       setAvaliacoes(response.data[tabelaFeed]);
     });
-  }, []);
+  }, [tabelaFeed]);
 
   let total = 0;
   let media = 0;
