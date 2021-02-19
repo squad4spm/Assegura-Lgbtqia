@@ -1,0 +1,136 @@
+#botao_flutuanteS {
+    background-color: #400040;
+    color: rgb(255, 255, 255);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 18%;
+    right: 2%;
+    z-index: 1;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: 0.3s;
+    text-decoration: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  #botao_flutuanteS:hover {
+    background-color: #ffd5ff;
+    color: #400040;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    bottom: 18%;
+    right: 2%;
+    z-index: 1;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    transition: 0.3s;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  #botao_flutuanteS p {
+    color: white;
+    margin-bottom: 0;
+  }
+  
+  #botao_flutuanteS:hover p {
+    color: #400040;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 500px) {
+    #botao_flutuanteS {
+      background-color: #400040;
+      color: #fff;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      position: fixed;
+      bottom: 18%;
+      right: 2%;
+      z-index: 1;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      justify-content: center;
+      align-items: center;
+      text-transform: uppercase;
+      font-size: 16px;
+      transition: 0.3s;
+      text-decoration: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+  }
+
+.share1{
+  display: none;
+}
+.share2{
+  display: none;
+}
+.share3{
+  display: none;
+}
+.share4{
+  display: none;
+}
+
+#botao_flutuanteS:hover .share1{
+  width: 50px;
+  height: 50px;
+  right: 90px;
+  bottom: -90px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ffd5ff !important;
+  display: block;
+}
+
+#botao_flutuanteS:hover .share2{
+  width: 50px;
+  height: 50px;
+  right: 90px;
+  bottom: -20px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ffd5ff !important;
+  display: block;
+}
+
+#botao_flutuanteS:hover .share3{
+  width: 50px;
+  height: 50px;
+  right: 90px;
+  bottom: 50px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ffd5ff !important;
+  display: block;
+}
+
+#botao_flutuanteS:hover .share4{
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  right: 90px;
+  bottom: 120px;
+  position: absolute;
+  border-radius: 25px;
+  background-color: #ffd5ff !important;
+  display: block;
+}
