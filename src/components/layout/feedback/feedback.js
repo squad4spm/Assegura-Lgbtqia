@@ -72,15 +72,15 @@ export const Feedback = () => {
                 <div id='linhaA' className="row">
                   <div className="estrelas">
                     <input type="radio" id="cm_star-empty" name="nota" value="" />
-                    <label for="cm_star-1"><i class="fa"></i></label>
+                    <label htmlFor="cm_star-1"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-1" value="1" name="nota" ref={register} />
-                    <label for="cm_star-2"><i class="fa"></i></label>
+                    <label htmlFor="cm_star-2"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-2" value="2" name="nota" ref={register} />
-                    <label for="cm_star-3"><i class="fa"></i></label>
+                    <label htmlFor="cm_star-3"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-3" value="3" name="nota" ref={register} />
-                    <label for="cm_star-4"><i class="fa"></i></label>
+                    <label htmlFor="cm_star-4"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-4" value="4" name="nota" ref={register} />
-                    <label for="cm_star-5"><i class="fa"></i></label>
+                    <label htmlFor="cm_star-5"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-5" value="5" name="nota" ref={register} />
                   </div>
                   <button id='btnEnviar' form="formAvaliacao">Enviar</button>
@@ -92,7 +92,7 @@ export const Feedback = () => {
 
           <div className="col">
             <div className="estrelas">{[...new Array(5)].map((item, key) => (
-              <label for="cm_star-1R" key={key}><i style={ key >= media ? {opacity: '.1'} : {opacity: '1'} } class="fa"></i></label>
+              <label htmlFor="cm_star-1R" key={key}><i style={ key >= media ? {opacity: '.1'} : {opacity: '1'} } className="fa"></i></label>
             ))}
             </div>
           </div>

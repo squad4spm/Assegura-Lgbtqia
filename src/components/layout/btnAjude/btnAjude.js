@@ -14,8 +14,8 @@ export const BtnAjude = () => {
 
   return (
     <div id="botao_flutuante">
-      {menuItens.map((iten) => (
-        <p onClick={() => history.push(`/${iten.path}`)}>Ajude!<i className="fas fa-mouse"></i></p>
+      {menuItens.map((iten, key) => (
+        <p key={key} onClick={() => history.push(`/${iten.path}`)}>Ajude!<i className="fas fa-mouse"></i></p>
       ))}
     </div>
   );

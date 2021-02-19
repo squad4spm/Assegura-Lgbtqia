@@ -94,9 +94,9 @@ const DefesaPessoal = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/HF8NxF1QYh0"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-md-3">
@@ -105,9 +105,9 @@ const DefesaPessoal = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/kxnjvWnpnxQ"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-md-3">
@@ -116,9 +116,9 @@ const DefesaPessoal = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/rSmerT0ZpFI"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-md-3">
@@ -127,9 +127,9 @@ const DefesaPessoal = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/C14myVELhnE"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>
@@ -145,8 +145,8 @@ const DefesaPessoal = () => {
           </div>
 
           <div className="row">
-            {posts.map((item) => (
-              <div className="col-md-3" key={item.id}>
+            {posts.map((item, key) => (
+              <div className="col-md-3" key={key}>
                 <img
                   src={item.image}
                   className="mr-3 img-fluid"

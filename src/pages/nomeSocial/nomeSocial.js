@@ -113,9 +113,9 @@ const NomeSocial = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/3oqztdVbivk"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-md-3">
@@ -124,9 +124,9 @@ const NomeSocial = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/hRD_xTbIgYc"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-md-3">
@@ -135,9 +135,9 @@ const NomeSocial = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/sBKF5va4nRI"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
             <div className="col-md-3">
@@ -146,9 +146,9 @@ const NomeSocial = () => {
                 width="100%"
                 height="160"
                 src="https://www.youtube.com/embed/1NOetBCF_pw"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
             </div>
           </div>

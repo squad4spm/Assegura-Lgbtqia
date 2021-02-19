@@ -57,8 +57,8 @@ export const Menu = () => {
         <Navbar.Collapse id="menu-topo">
           <Nav className="menu m-auto">
 
-            {menuItens.map((iten) => (
-              <Nav.Item>
+            {menuItens.map((iten, key) => (
+              <Nav.Item key={key}>
                 <Nav.Link className="item" onClick={() => history.push(`/${iten.path}`)}>
                   {iten.label}
                 </Nav.Link>
