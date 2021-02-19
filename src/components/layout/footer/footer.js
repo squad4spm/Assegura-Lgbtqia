@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { useForm } from "react-hook-form";
+import React from "react";
+
 
 import "./footer.css";
 

@@ -9,19 +9,19 @@ export const Feedback = () => {
 
   let tabelaFeed = "";
 
-  if (window.location.pathname == "/defesa-pessoal") {
+  if (window.location.pathname === "/defesa-pessoal") {
     tabelaFeed = "avaliacoes"
-  } else if (window.location.pathname == "/nome-social") {
+  } else if (window.location.pathname === "/nome-social") {
     tabelaFeed = "avaliacoesnome"
-  } else if (window.location.pathname == "/direitos-lgbtqia") {
+  } else if (window.location.pathname === "/direitos-lgbtqia") {
     tabelaFeed = "avaliacoesdireitos"
-  } else if (window.location.pathname == "/casa-de-acolhimento") {
+  } else if (window.location.pathname === "/casa-de-acolhimento") {
     tabelaFeed = "avaliacoescasa"
-  } else if (window.location.pathname == "/localizacoes") {
+  } else if (window.location.pathname === "/localizacoes") {
     tabelaFeed = "avaliacoeslocalizacoes"
-  } else if (window.location.pathname == "/ajude") {
+  } else if (window.location.pathname === "/ajude") {
     tabelaFeed = "avaliacoesajude"
-  } else if (window.location.pathname == "/ajuda-psicologica") {
+  } else if (window.location.pathname === "/ajuda-psicologica") {
     tabelaFeed = "avaliacoespsico"
   }
 
@@ -71,7 +71,7 @@ export const Feedback = () => {
               <form id="formAvaliacao" onSubmit={handleSubmit(handleOnSubmit)}>
                 <div id='linhaA' className="row">
                   <div className="estrelas">
-                    <input type="radio" id="cm_star-empty" name="nota" value="" checked />
+                    <input type="radio" id="cm_star-empty" name="nota" value="" />
                     <label for="cm_star-1"><i class="fa"></i></label>
                     <input type="radio" id="cm_star-1" value="1" name="nota" ref={register} />
                     <label for="cm_star-2"><i class="fa"></i></label>
