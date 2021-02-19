@@ -8,6 +8,8 @@ import ImagemMobile from "../../assets/images/banner_nome_mobile.fw.png";
 import img01 from "../../assets/images/unnamed2.png";
 import img02 from "../../assets/images/imgser.jpg";
 
+import Feedback  from "../../components/layout/feedback/feedback";
+
 const Image =styled.img`
 width: 100%;
 `;
@@ -208,6 +210,7 @@ const NomeSocial = () => {
           </div>
         </div>
       </section>
+      <Feedback />
     </Container>
   );
 }

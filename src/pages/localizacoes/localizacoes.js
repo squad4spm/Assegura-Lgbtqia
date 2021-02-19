@@ -9,6 +9,8 @@ import img03 from "../../assets/images/markerCasaAcolhimento.png";
 import img04 from "../../assets/images/markerJuridico.png";
 import img05 from "../../assets/images/markerP.png";
 
+import Feedback  from "../../components/layout/feedback/feedback";
+
 const Localizacoes = () => {
   //const history = useHistory();
 
@@ -92,6 +94,7 @@ const Localizacoes = () => {
             </div>
         </div>
       </section>
+      <Feedback />
     </Container>
   );
 };

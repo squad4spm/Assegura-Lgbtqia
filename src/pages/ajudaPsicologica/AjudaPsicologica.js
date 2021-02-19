@@ -4,6 +4,8 @@ import CallActions from "./callActions/CallActions";
 import Works from "./works/Works";
 import Articles from "./articles/Articles";
 
+import Feedback  from "../../components/layout/feedback/feedback";
+
 const ajudaPsicologica = () => {
   return (
     <>
@@ -12,6 +14,7 @@ const ajudaPsicologica = () => {
       <CallActions />
       <Works/>
       <Articles/>
+      <Feedback />
     </>
   );
 };

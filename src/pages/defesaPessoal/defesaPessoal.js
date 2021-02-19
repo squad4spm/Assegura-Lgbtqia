@@ -7,6 +7,8 @@ import img01 from "../../assets/images/Defesa.png";
 import img02 from "../../assets/images/Defesa_Pessoal.png";
 import { Container } from "react-bootstrap";
 
+import Feedback  from "../../components/layout/feedback/feedback";
+
 const DefesaPessoal = () => {
   const [posts, setPosts] = useState([]);
 
@@ -186,6 +188,7 @@ const DefesaPessoal = () => {
           </div>
         </div>
       </section>
+      <Feedback />
     </Container>
   );
 };

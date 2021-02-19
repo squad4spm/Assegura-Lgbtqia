@@ -4,6 +4,8 @@ import SobreCasaFlorecer from './sobreCasaFlorecer/SobreCasaFlorecer'
 import SobreCasaUm from './sobreCasaUm/SobreCasaUm'
 import Contatos from './contatos/Contatos'
 
+import Feedback  from "../../components/layout/feedback/feedback";
+
 const casaDeAcolhimento = () => {
 
   return (
@@ -13,6 +15,7 @@ const casaDeAcolhimento = () => {
       <SobreCasaFlorecer/>
       <SobreCasaUm/>
       <Contatos/>
+      <Feedback />
     </>
   );
 };

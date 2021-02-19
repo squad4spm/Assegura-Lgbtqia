@@ -9,6 +9,8 @@ import img02 from "../../assets/images/ajude04.jpg";
 import img03 from "../../assets/images/ajude05.jpg";
 import img04 from "../../assets/images/ajude08.jpg";
 
+import Feedback  from "../../components/layout/feedback/feedback";
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
     //const history = useHistory();
@@ -96,6 +98,7 @@ export default () => {
             </div>
         </div>
     </section>
+    <Feedback />
     </Container >
   );
 };

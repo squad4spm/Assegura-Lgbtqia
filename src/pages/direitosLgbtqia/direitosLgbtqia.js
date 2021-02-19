@@ -2,6 +2,7 @@ import Video from "./video/Video";
 import Banner from "./banner/Banner";
 import CallDownload from "./callDownload/CallDownload";
 import Informacoes from "./informacoes/Informacoes";
+import Feedback  from "../../components/layout/feedback/feedback";
 
 const direitosLgbtqia = () => {
   return (
@@ -10,6 +11,7 @@ const direitosLgbtqia = () => {
       <Informacoes />
       <Video />
       <CallDownload />
+      <Feedback />
     </>
   );
 };
