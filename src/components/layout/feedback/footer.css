@@ -1,46 +1,66 @@
 footer {
-    background-color: #333;
-    color: #f2f2f2;
-    width: 100%;
-    padding: 25px 0 10px 0;
+  background-color: #333;
+  color: #f2f2f2;
+  width: 100%;
+  padding: 0px 0 16px 0;
 }
 
 footer p {
   text-align: center;
 }
 
-.estrelas input[type=radio] {
-  display: none;
-}
 .estrelas label i.fa:before {
-  content:'\f005';
-  color: #FC0;
+  content: "\f005";
   margin-left: 10px;
+  color: #fc0;
 }
-.estrelas input[type=radio]:checked ~ label i.fa:before {
-  color: #CCC;
+
+.estrelas input[type="radio"]:checked {
+  color: #ccc;
+}
+
+.estrelas.pergunta label i.fa:before {
+  content: "\f005";
+  margin-left: 10px;
+  color: rgb(245, 242, 56);
+  cursor: pointer;
+}
+
+.estrelas.pergunta input[type="radio"]:checked {
+  color: #ccc;
 }
 
 #avaliacao {
   padding: 5px;
   border-radius: 10px;
   border: 1px solid black;
-  background-color: #FFD5FF;
+  background-color: #ffd5ff;
 }
 #linhaA {
   width: 100%;
   margin: 0;
 }
+
 #sugestao {
   width: 100%;
   height: 60px;
+  padding: 8px;
+  border-radius: 4px;
 }
-#btnEnviar{
-  margin-left: auto;
-  width: 80px;
-  height: 30px;
-  border-radius: 10px;
+
+#sugestao:focus {
+  outline: none;
+}
+
+#btnEnviar {
+  margin: 8px auto;
+  width: unset;
+  padding: 8px 20px;
+  border: 1px solid #dedede;
+  height: auto;
+  border-radius: 4px;
   background-color: #400040;
   color: white;
-  font-weight: bold;
+  font-weight: unset;
+  text-transform: uppercase;
 }

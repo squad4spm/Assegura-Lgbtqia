@@ -50,27 +50,40 @@ export const Feedback = () => {
   for (let i = 0; i < avaliacoes.length; i++) {
     //console.log(avaliacoes[i].nota);
 
-    if(avaliacoes.length !== 0){
+    if (avaliacoes.length !== 0) {
       let valor = parseFloat(avaliacoes[i].nota);
       total = total + valor;
 
       media = total / avaliacoes.length;
       Math.round(media);
-    }else{
-      total = 0 
+    } else {
+      total = 0
     }
 
   }
 
   return (
     <footer>
-      <div className="container">
+      <div className="container" style={{ paddingTop: '26px' }}>
         <div className="row">
+          <div className="col"></div>
           <div className="col">
+            <h3 style={{ textAlign: "center" }}>Avaliação desta Página</h3>
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '10px' }} className="estrelas">{[...new Array(5)].map((item, key) => (
+              <label htmlFor="cm_star-1R" key={key}><i style={key >= media ? { opacity: '.1' } : { opacity: '1' }} className="fa"></i></label>
+            ))}
+            </div>
+
             <div id='avaliacao'>
               <form id="formAvaliacao" onSubmit={handleSubmit(handleOnSubmit)}>
                 <div id='linhaA' className="row">
-                  <div className="estrelas">
+                  <div style={{ width: '100%' }}>
+                    <h3 style={{ fontSize: '16px', color: "#333", textAlign: 'center' }}>
+                      Quantas estrelas essa página merece?
+                    </h3>
+                  </div>
+
+                  <div className="estrelas pergunta" style={{ width: '100%', justifyContent: 'center', display: "flex" }}>
                     <input type="radio" id="cm_star-empty" name="nota" value="" />
                     <label htmlFor="cm_star-1"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-1" value="1" name="nota" ref={register} />
@@ -83,19 +96,17 @@ export const Feedback = () => {
                     <label htmlFor="cm_star-5"><i className="fa"></i></label>
                     <input type="radio" id="cm_star-5" value="5" name="nota" ref={register} />
                   </div>
-                  <button id='btnEnviar' form="formAvaliacao">Enviar</button>
                 </div>
-                <input id="sugestao" type="text" placeholder="sugestões" name="comentario" ref={register} />
+                <textarea id="sugestao" name="comentario" ref={register} placeholder="Deixe sua sugestão">
+                </textarea>
+
+                <div style={{ width: '100%', justifyContent: 'center', display: "flex" }}>
+                  <button id='btnEnviar' form="formAvaliacao">Enviar Avaliação</button>
+                </div>
               </form>
             </div>
           </div>
-
-          <div className="col">
-            <div className="estrelas">{[...new Array(5)].map((item, key) => (
-              <label htmlFor="cm_star-1R" key={key}><i style={ key >= media ? {opacity: '.1'} : {opacity: '1'} } className="fa"></i></label>
-            ))}
-            </div>
-          </div>
+          <div className="col"></div>
         </div>
       </div>
     </footer>
