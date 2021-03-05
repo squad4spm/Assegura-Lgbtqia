@@ -18,8 +18,7 @@ export const BtnShare = () => {
         <FacebookShareButton className="share2" url={window.location.href}><FaFacebookF /></FacebookShareButton>
         <WhatsappShareButton className="share3" url={window.location.href}><FaWhatsapp /></WhatsappShareButton>
         <TelegramShareButton className="share4" url={window.location.href}><FaTelegramPlane /></TelegramShareButton>
-      </IconContext.Provider>
-      
+      </IconContext.Provider>   
     </div>
   );
 };

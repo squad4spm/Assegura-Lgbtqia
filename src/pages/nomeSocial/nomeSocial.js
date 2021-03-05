@@ -112,7 +112,7 @@ const NomeSocial = () => {
                 title="video1"
                 width="100%"
                 height="160"
-                src="https://www.youtube.com/embed/3oqztdVbivk"
+                src="https://www.youtube.com/embed/1H3WonO7ZYg"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -1,81 +1,81 @@
 #botao_flutuanteS {
+  background-color: #400040;
+  color: rgb(255, 255, 255);
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  bottom: 25%;
+  right: 2%;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: 0.3s;
+  text-decoration: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+#botao_flutuanteS:hover {
+  background-color: #ffd5ff;
+  color: #400040;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  bottom: 25%;
+  right: 2%;
+  z-index: 1;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  transition: 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#botao_flutuanteS p {
+  color: white;
+  margin-bottom: 0;
+}
+
+#botao_flutuanteS:hover p {
+  color: #400040;
+  cursor: pointer;
+}
+  
+@media (max-width: 500px) {
+  #botao_flutuanteS {
     background-color: #400040;
-    color: rgb(255, 255, 255);
+    color: #fff;
     width: 80px;
     height: 80px;
     display: flex;
     position: fixed;
-    bottom: 18%;
+    bottom: 25%;
     right: 2%;
     z-index: 1;
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid #fff;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     transition: 0.3s;
     text-decoration: none;
     flex-direction: column;
     cursor: pointer;
   }
-  
-  #botao_flutuanteS:hover {
-    background-color: #ffd5ff;
-    color: #400040;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    position: fixed;
-    bottom: 18%;
-    right: 2%;
-    z-index: 1;
-    border: 2px solid rgb(255, 255, 255);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    text-transform: uppercase;
-    font-size: 22px;
-    transition: 0.3s;
-    text-decoration: none;
-    font-weight: 600;
-    cursor: pointer;
-  }
-  
-  #botao_flutuanteS p {
-    color: white;
-    margin-bottom: 0;
-  }
-  
-  #botao_flutuanteS:hover p {
-    color: #400040;
-    cursor: pointer;
-  }
-  
-  @media (max-width: 500px) {
-    #botao_flutuanteS {
-      background-color: #400040;
-      color: #fff;
-      width: 80px;
-      height: 80px;
-      display: flex;
-      position: fixed;
-      bottom: 25%;
-      right: 2%;
-      z-index: 1;
-      border: 2px solid #fff;
-      border-radius: 50%;
-      justify-content: center;
-      align-items: center;
-      text-transform: uppercase;
-      font-size: 16px;
-      transition: 0.3s;
-      text-decoration: none;
-      flex-direction: column;
-      cursor: pointer;
-    }
-  
-  }
+
+}
 
 .share1{
   display: none;
@@ -88,6 +88,39 @@
 }
 .share4{
   display: none;
+}
+
+.share1:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  left: 0px;
+  height: 65px;
+  
+}
+.share2:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  left: 0px;
+  height: 65px;
+  
+}
+.share3:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  left: 0px;
+  height: 65px;
+  
+}
+.share4:before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  left: 0px;
+  height: 65px;
+  
 }
 
 #botao_flutuanteS:hover .share1{
